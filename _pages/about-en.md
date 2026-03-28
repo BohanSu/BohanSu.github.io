@@ -7,14 +7,17 @@ author_profile: true
 
 <span class='anchor' id='about-me'></span>
 
-I am an undergraduate in **Software Engineering** at **Wuhan University**. My current interests focus on **computer vision**, **LLM reasoning**, and **multi-agent systems**. My ongoing work includes:
-- **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification** (ECCV 2026 submission)
-- **GraphLite**, a small-model framework for scientific graph extraction (planned SDM submission)
-- **Survey and Metric Design for Appearance-Variant Person Re-identification** (TPAMI survey preparation)
+# 👋 Overview
 
-My recent work mainly develops along two tracks:
-1. **Vision and 3D Modeling**: person ReID, SMPL-based human modeling, 3D Gaussian Splatting, and multi-benchmark evaluation.
-2. **LLM Reasoning and Multi-Agent Systems**: task routing, validation, observability, and structured extraction workflows.
+I am an undergraduate in **Software Engineering** at **Wuhan University**. My work currently focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Instead of treating these as separate buzzwords, I care about three concrete questions:
+1. How can visual representations remain reliable in hard real-world settings?
+2. How can LLM reasoning become more structured and deployable at manageable cost?
+3. How can multi-agent systems stay stable when user intent is ambiguous?
+
+If this is your first time visiting the site, I suggest starting with:
+- **Research & Ongoing Work** for what I am seriously working on now
+- **Projects** for how I turn ideas into systems and prototypes
+- **Contact** if you want to discuss research fit or collaboration
 
 ---
 
@@ -32,18 +35,42 @@ My recent work mainly develops along two tracks:
 
 ## Reliability-Aware 3D Geometric Injection for Universal Person Re-identification
 - *2025.10 - 2026.03*, ECCV 2026 Submission
-- First-author work on reliability-aware 2D–3D feature fusion for Universal ReID.
-- Built around SMPL-based geometry representation and adaptive fusion.
-- Evaluated through unified training, comparison, and ablation across 9 ReID benchmarks.
+- **Problem:** 3D geometric priors in Universal ReID are often unreliable under occlusion, clothing change, and cross-modal settings.
+- **Method:** I built a reliability-aware 2D–3D fusion framework around SMPL-based geometry representation.
+- **Evidence:** Unified training, comparison, and ablation analysis across 9 ReID benchmarks.
 
 ## GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction
 - *2026.03 - present*, planned submission to SDM
-- A small-model scientific graph extraction framework built on ARCHE-derived supervision.
-- Current progress includes supervision construction, evaluation workflow validation, and 0.8B-scale training pipeline setup.
+- **Problem:** scientific graph extraction often relies on large-model prompting that is expensive and hard to deploy.
+- **Method:** I construct ARCHE-derived supervision for a compact graph extraction model and optimize toward deployable extraction quality.
+- **Progress:** Supervision construction, evaluation workflow validation, and 0.8B-scale training pipeline setup have been completed.
 
 ## Survey and Metric Design for Appearance-Variant Person Re-identification
 - *2026.03 - present*, TPAMI survey preparation
-- Ongoing work on ReID under clothing, illumination, and pose changes, with current focus on taxonomy, evaluation limitations, and metric design.
+- **Focus:** task taxonomy, method categorization, and evaluation limitations for ReID under appearance variation.
+- **Progress:** framework design, representative method organization, and metric-oriented analysis are ongoing.
+
+---
+
+<span class='anchor' id='focus'></span>
+
+# 🧭 Research Themes
+
+## 1. Vision Understanding and 3D Modeling
+- Universal ReID
+- SMPL-based human modeling
+- Robust visual representation under difficult settings
+
+## 2. LLM Reasoning and Structured Extraction
+- scientific graph extraction
+- high-quality supervision design
+- deployable small-model reasoning pipelines
+
+## 3. Multi-Agent Collaboration and Workflow Design
+- routing
+- validation
+- observability
+- uncertain-intent handling
 
 ---
 
@@ -53,17 +80,29 @@ My recent work mainly develops along two tracks:
 
 ## A4R Guided Mobile AI Assistant
 - *2025.05 - 2025.08*, China Unicom challenge-based innovation competition
-- Designed a guided mobile AI assistant for ambiguous user requests, supporting clarification, task refinement, and closed-loop execution.
-- Built a real interaction set with 150+ samples across 6 domains and 16 mobile apps, and compared against strong baselines.
+- **Problem:** mobile agents often fail when user requests are under-specified.
+- **Method:** designed an A4R (Ask for Refine) interaction scheme for clarification, task refinement, and closed-loop execution.
+- **Evidence:** built 150+ real interaction samples across 6 domains and 16 mobile apps, and compared against strong baselines.
 
 ## A2A Multi-Agent System Development
 - *2025.11.08 - 2025.11.10*, Shanghai Future Intelligence Academy camp
-- Developed a multi-agent system based on the Holos platform and A2A protocol, focusing on routing, validation, and observability.
+- **Problem:** stable multi-agent coordination under uncertain tasks.
+- **Method:** built a Holos + A2A workflow focusing on routing, validation, and observability.
 
 ## Modular Robot Communication and Control System
 - *2023.11 - 2025.08*
-- Participated in software architecture, protocol logic, and embedded integration for a modular robot platform.
-- Project won **National First Prize (Top 6)** in the Huawei Cup IoT Design Competition.
+- **Problem:** communication logic and embedded coordination in a modular robot platform.
+- **Method:** participated in software architecture, protocol logic, and embedded system integration.
+- **Result:** National First Prize (Top 6) in the Huawei Cup IoT Design Competition.
+
+---
+
+<span class='anchor' id='artifacts'></span>
+
+# 📎 Artifacts
+- Resume PDF: <a href="/files/苏渤涵简历.pdf">苏渤涵简历.pdf</a>
+- GitHub: <a href="https://github.com/BohanSu">https://github.com/BohanSu</a>
+- More detailed research materials can be shared upon request.
 
 ---
 
@@ -72,7 +111,7 @@ My recent work mainly develops along two tracks:
 # 🛠 Skills
 - **Programming & Tools**: Python, C / C++, Java, Git, MATLAB
 - **Vision & 3D**: Person ReID, SMPL-based human modeling, 3D Gaussian Splatting
-- **LLM & Multi-Agent Systems**: multi-agent design, task routing, validation, and observability
+- **LLM & Multi-Agent Systems**: multi-agent design, routing, validation, and observability
 - **Embedded Systems**: RISC-V / ESP32 development, modular hardware protocol design, driver development, and system integration
 
 ---
