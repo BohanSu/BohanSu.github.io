@@ -9,15 +9,15 @@ author_profile: true
 
 # 👋 Overview
 
-I am an undergraduate in **Software Engineering** at **Wuhan University**. My work currently focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Instead of treating these as separate buzzwords, I care about three concrete questions:
+I am an undergraduate in **Software Engineering** at **Wuhan University**. My work currently focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Rather than treating them as disconnected buzzwords, I care about three concrete questions:
 1. How can visual representations remain reliable in hard real-world settings?
 2. How can LLM reasoning become more structured and deployable at manageable cost?
 3. How can multi-agent systems stay stable when user intent is ambiguous?
 
 If this is your first time visiting the site, I suggest starting with:
-- **Research & Ongoing Work** for what I am seriously working on now
-- **Projects** for how I turn ideas into systems and prototypes
-- **Contact** if you want to discuss research fit or collaboration
+- **Research & Ongoing Work** for what I am actively investing in now;
+- **Selected Projects** for how I turn problems into systems and prototypes;
+- **Artifacts** for resume and supporting materials.
 
 ---
 
@@ -26,6 +26,28 @@ If this is your first time visiting the site, I suggest starting with:
 # 🎓 Education
 - *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
 - GPA: **3.74 / 4.0**
+
+---
+
+<span class='anchor' id='focus'></span>
+
+# 🧭 Research Themes
+
+## 1. Vision Understanding and 3D Modeling
+- Universal ReID
+- SMPL-based human modeling
+- Robust visual representation under difficult settings
+
+## 2. LLM Reasoning and Structured Extraction
+- scientific graph extraction
+- high-quality supervision design
+- deployable small-model reasoning pipelines
+
+## 3. Multi-Agent Collaboration and Workflow Design
+- routing
+- validation
+- observability
+- uncertain-intent handling
 
 ---
 
@@ -49,28 +71,6 @@ If this is your first time visiting the site, I suggest starting with:
 - *2026.03 - present*, TPAMI survey preparation
 - **Focus:** task taxonomy, method categorization, and evaluation limitations for ReID under appearance variation.
 - **Progress:** framework design, representative method organization, and metric-oriented analysis are ongoing.
-
----
-
-<span class='anchor' id='focus'></span>
-
-# 🧭 Research Themes
-
-## 1. Vision Understanding and 3D Modeling
-- Universal ReID
-- SMPL-based human modeling
-- Robust visual representation under difficult settings
-
-## 2. LLM Reasoning and Structured Extraction
-- scientific graph extraction
-- high-quality supervision design
-- deployable small-model reasoning pipelines
-
-## 3. Multi-Agent Collaboration and Workflow Design
-- routing
-- validation
-- observability
-- uncertain-intent handling
 
 ---
 
@@ -103,6 +103,15 @@ If this is your first time visiting the site, I suggest starting with:
 - Resume PDF: <a href="/files/苏渤涵简历.pdf">苏渤涵简历.pdf</a>
 - GitHub: <a href="https://github.com/BohanSu">https://github.com/BohanSu</a>
 - More detailed research materials can be shared upon request.
+
+---
+
+<span class='anchor' id='fit'></span>
+
+# 🤝 What I’m Looking For
+- Research environments centered on **Computer Vision / LLM Reasoning / Multi-Agent Systems**;
+- Training that values **research questions + evidence + system realization**, not only demos;
+- Opportunities to work on problems that can be iterated and deepened over time.
 
 ---
 
