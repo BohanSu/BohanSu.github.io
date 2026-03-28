@@ -21,11 +21,15 @@ redirect_from:
 
 ---
 
+<span class='anchor' id='education'></span>
+
 # 🎓 教育背景
 - *2023.09 - 2027.06 (预计毕业)*，武汉大学，软件工程，本科
 - GPA: **3.74 / 4.0**
 
 ---
+
+<span class='anchor' id='research'></span>
 
 # 🔬 科研与在研工作
 
@@ -46,6 +50,8 @@ redirect_from:
 
 ---
 
+<span class='anchor' id='projects'></span>
+
 # 🚀 项目经历
 
 ## A4R 引导式手机 AI 助手
@@ -64,6 +70,8 @@ redirect_from:
 
 ---
 
+<span class='anchor' id='skills'></span>
+
 # 🛠 技能
 - **编程语言与工具**：Python、C / C++、Java、Git、MATLAB
 - **计算机视觉与三维建模**：Person ReID、SMPL 人体参数建模、3D Gaussian Splatting
@@ -71,6 +79,8 @@ redirect_from:
 - **嵌入式系统开发**：RISC-V / ESP32 平台开发、模块化硬件协议设计、驱动开发与系统联调
 
 ---
+
+<span class='anchor' id='honors'></span>
 
 # 🏅 荣誉奖项
 - 全国大学生物联网设计大赛（华为杯）**全国一等奖（Top 6）**
@@ -80,6 +90,8 @@ redirect_from:
 - 郑格如一等奖学金（年级答辩排名第一且唯一）
 
 ---
+
+<span class='anchor' id='contact'></span>
 
 # 📫 联系方式
 - Email: <a href="mailto:2023302143001@whu.edu.cn">2023302143001@whu.edu.cn</a>
