@@ -1,0 +1,15 @@
+default:
+  name             : "苏渤涵"
+  avatar           : "/images/photo.jpg"
+  bio              : "武汉大学软件工程本科生"
+  location         : "湖北 武汉"
+  email            : "2023302143001@whu.edu.cn"
+  github           : "BohanSu"
+
+en:
+  name             : "Bohan Su"
+  avatar           : "/images/photo.jpg"
+  bio              : "Undergraduate Student in Software Engineering at Wuhan University"
+  location         : "Wuhan, Hubei, China"
+  email            : "2023302143001@whu.edu.cn"
+  github           : "BohanSu"

@@ -22,7 +22,7 @@ baidu_site_verification  : # optional
 # Site Author
 author:
   name             : "苏渤涵"
-  avatar           : "images/photo.jpg"
+  avatar           : "/images/photo.jpg"
   bio              : "武汉大学软件工程本科生"
   location         : "湖北 武汉"
   employer         : #"Hefei General Machinery Research Institute"

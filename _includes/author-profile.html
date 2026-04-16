@@ -16,7 +16,13 @@
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
+      {% assign is_en = false %}
+      {% if page.url contains '/en/' %}
+        {% assign is_en = true %}
+      {% endif %}
+      {% if is_en %}
+        <li><div style="white-space: normal; margin-bottom: 1em;">Computer Vision, LLM Reasoning, and Multi-Agent Systems</div></li>
+      {% elsif site.description %}
         <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
       {% endif %}
       {% if author.location %}
