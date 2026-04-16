@@ -7,17 +7,17 @@ author_profile: true
 
 <span class='anchor' id='about-me'></span>
 
-# 👋 Overview
+# 👋 About Me
 
-I am an undergraduate in **Software Engineering** at **Wuhan University**. My work currently focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Rather than treating them as disconnected buzzwords, I care about three concrete questions:
+I am an undergraduate student in **Software Engineering** at **Wuhan University**. My current work focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Rather than treating them as isolated buzzwords, I care about three concrete research questions:
 1. How can visual representations remain reliable in hard real-world settings?
 2. How can LLM reasoning become more structured and deployable at manageable cost?
 3. How can multi-agent systems stay stable when user intent is ambiguous?
 
 If this is your first time visiting the site, I suggest starting with:
-- **Research & Ongoing Work** for what I am actively investing in now;
-- **Selected Projects** for how I turn problems into systems and prototypes;
-- **Artifacts** for resume and supporting materials.
+- **Research & Ongoing Work** for the problems I am actively working on now;
+- **Selected Projects** for how I turn research questions into systems and prototypes;
+- **Artifacts** for my resume and supporting materials.
 
 ---
 
@@ -36,7 +36,7 @@ If this is your first time visiting the site, I suggest starting with:
 ## 1. Vision Understanding and 3D Modeling
 - Universal ReID
 - SMPL-based human modeling
-- Robust visual representation under difficult settings
+- Robust visual representation under challenging real-world settings
 
 ## 2. LLM Reasoning and Structured Extraction
 - scientific graph extraction
@@ -47,7 +47,7 @@ If this is your first time visiting the site, I suggest starting with:
 - routing
 - validation
 - observability
-- uncertain-intent handling
+- handling under-specified or uncertain user intent
 
 ---
 
@@ -58,13 +58,13 @@ If this is your first time visiting the site, I suggest starting with:
 ## Reliability-Aware 3D Geometric Injection for Universal Person Re-identification
 - *2025.10 - 2026.03*, ECCV 2026 Submission
 - **Problem:** 3D geometric priors in Universal ReID are often unreliable under occlusion, clothing change, and cross-modal settings.
-- **Method:** I built a reliability-aware 2D–3D fusion framework around SMPL-based geometry representation.
+- **Method:** I built a reliability-aware 2D–3D fusion framework based on SMPL geometry representations.
 - **Evidence:** Unified training, comparison, and ablation analysis across 9 ReID benchmarks.
 
 ## GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction
 - *2026.03 - present*, planned submission to SDM
 - **Problem:** scientific graph extraction often relies on large-model prompting that is expensive and hard to deploy.
-- **Method:** I construct ARCHE-derived supervision for a compact graph extraction model and optimize toward deployable extraction quality.
+- **Method:** I construct ARCHE-derived supervision for a compact graph extraction model and optimize it for deployable extraction quality.
 - **Progress:** Supervision construction, evaluation workflow validation, and 0.8B-scale training pipeline setup have been completed.
 
 ## Survey and Metric Design for Appearance-Variant Person Re-identification
@@ -81,18 +81,18 @@ If this is your first time visiting the site, I suggest starting with:
 ## A4R Guided Mobile AI Assistant
 - *2025.05 - 2025.08*, China Unicom challenge-based innovation competition
 - **Problem:** mobile agents often fail when user requests are under-specified.
-- **Method:** designed an A4R (Ask for Refine) interaction scheme for clarification, task refinement, and closed-loop execution.
+- **Method:** Designed an A4R (Ask for Refine) interaction scheme for clarification, task refinement, and closed-loop execution.
 - **Evidence:** built 150+ real interaction samples across 6 domains and 16 mobile apps, and compared against strong baselines.
 
 ## A2A Multi-Agent System Development
 - *2025.11.08 - 2025.11.10*, Shanghai Future Intelligence Academy camp
-- **Problem:** stable multi-agent coordination under uncertain tasks.
-- **Method:** built a Holos + A2A workflow focusing on routing, validation, and observability.
+- **Problem:** Stable multi-agent coordination under uncertain tasks.
+- **Method:** Built a Holos + A2A workflow focused on routing, validation, and observability.
 
 ## Modular Robot Communication and Control System
 - *2023.11 - 2025.08*
 - **Problem:** communication logic and embedded coordination in a modular robot platform.
-- **Method:** participated in software architecture, protocol logic, and embedded system integration.
+- **Method:** Participated in software architecture, protocol logic, and embedded system integration.
 - **Result:** National First Prize (Top 6) in the Huawei Cup IoT Design Competition.
 
 ---
@@ -110,8 +110,8 @@ If this is your first time visiting the site, I suggest starting with:
 
 # 🤝 What I’m Looking For
 - Research environments centered on **Computer Vision / LLM Reasoning / Multi-Agent Systems**;
-- Training that values **research questions + evidence + system realization**, not only demos;
-- Opportunities to work on problems that can be iterated and deepened over time.
+- Training that values **research questions + evidence + system realization**, rather than one-off demos;
+- Opportunities to work on problems that can be iterated, deepened, and validated over time.
 
 ---
 

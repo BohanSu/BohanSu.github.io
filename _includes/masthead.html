@@ -24,13 +24,13 @@
           </li>
 
           {% if is_en %}
-            <li class="masthead__menu-item"><a href="/#about-me">About</a></li>
-            <li class="masthead__menu-item"><a href="/#education">Education</a></li>
-            <li class="masthead__menu-item"><a href="/#research">Research</a></li>
-            <li class="masthead__menu-item"><a href="/#projects">Projects</a></li>
-            <li class="masthead__menu-item"><a href="/#skills">Skills</a></li>
-            <li class="masthead__menu-item"><a href="/#honors">Honors</a></li>
-            <li class="masthead__menu-item"><a href="/#contact">Contact</a></li>
+            <li class="masthead__menu-item"><a href="/en/#about-me">About</a></li>
+            <li class="masthead__menu-item"><a href="/en/#education">Education</a></li>
+            <li class="masthead__menu-item"><a href="/en/#research">Research</a></li>
+            <li class="masthead__menu-item"><a href="/en/#projects">Projects</a></li>
+            <li class="masthead__menu-item"><a href="/en/#skills">Skills</a></li>
+            <li class="masthead__menu-item"><a href="/en/#honors">Honors</a></li>
+            <li class="masthead__menu-item"><a href="/en/#contact">Contact</a></li>
           {% else %}
             {% for link in site.data.navigation.main %}
               <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
