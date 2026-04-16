@@ -2,8 +2,7 @@
 permalink: /en/
 title: ""
 excerpt: ""
-author_profile: true
-author: en
+layout: page-full
 ---
 
 <span class='anchor' id='about-me'></span>
