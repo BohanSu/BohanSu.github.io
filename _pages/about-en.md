@@ -9,6 +9,9 @@ layout: page-full
 
 # 👋 About Me
 
+> Undergraduate researcher in Computer Vision, LLM Reasoning, and Multi-Agent Systems.  
+> I care about research questions that can be **defined clearly, validated rigorously, and realized in working systems**.
+
 I am an undergraduate student in **Software Engineering** at **Wuhan University**. My current work focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Rather than treating them as isolated buzzwords, I care about three concrete research questions:
 1. How can visual representations remain reliable in hard real-world settings?
 2. How can LLM reasoning become more structured and deployable at manageable cost?
@@ -18,6 +21,8 @@ If this is your first time visiting the site, I suggest starting with:
 - **Research & Ongoing Work** for the problems I am actively working on now;
 - **Selected Projects** for how I turn research questions into systems and prototypes;
 - **Artifacts** for my resume and supporting materials.
+
+**Quick links:** <a href="/files/苏渤涵简历.pdf">Resume</a> · <a href="https://github.com/BohanSu">GitHub</a> · <a href="/">中文主页</a>
 
 ---
 
@@ -103,6 +108,8 @@ If this is your first time visiting the site, I suggest starting with:
 - Resume PDF: <a href="/files/苏渤涵简历.pdf">苏渤涵简历.pdf</a>
 - GitHub: <a href="https://github.com/BohanSu">https://github.com/BohanSu</a>
 - More detailed research materials can be shared upon request.
+
+> If you are evaluating me for research collaboration, RA opportunities, or graduate applications, I am happy to provide additional materials such as experiment scripts, ablation tables, project slides, or technical write-ups upon request.
 
 ---
 
