@@ -25,6 +25,13 @@ If this is your first time visiting the site, I suggest starting with:
 
 - **Quick links:** <a href="/files/苏渤涵简历.pdf">Resume</a> · <a href="https://github.com/BohanSu">GitHub</a> · <a href="/">中文主页</a>
 
+<div class="profile-stats">
+  <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
+  <div class="profile-stat-card"><div class="label">Research Pipeline</div><div class="value">3 ongoing works</div></div>
+  <div class="profile-stat-card"><div class="label">Competition Results</div><div class="value">National Top 6 / National 2nd Prize</div></div>
+  <div class="profile-stat-card"><div class="label">System Projects</div><div class="value">Robotics / Agents / Interactive Systems</div></div>
+</div>
+
 ---
 
 <span class='anchor' id='research'></span>
@@ -86,6 +93,7 @@ If this is your first time visiting the site, I suggest starting with:
 - **Problem:** mobile agents often fail when user requests are under-specified.
 - **Method:** Designed an A4R (Ask for Refine) interaction scheme for clarification, task refinement, and closed-loop execution.
 - **Evidence:** built 150+ real interaction samples across 6 domains and 16 mobile apps, and compared against strong baselines.
+- **Result:** On China Unicom real-world tasks, the A4R system outperformed multiple baselines on completion, skipping, and guidance effectiveness, reaching a completion score of **64.68**.
 
 ## A2A Multi-Agent System Development
 - *2025.11.08 - 2025.11.10*, Shanghai Future Intelligence Academy camp
@@ -97,6 +105,7 @@ If this is your first time visiting the site, I suggest starting with:
 - **Problem:** communication logic and embedded coordination in a modular robot platform.
 - **Method:** Participated in software architecture, protocol logic, and embedded system integration.
 - **Result:** National First Prize (Top 6) in the Huawei Cup IoT Design Competition.
+- **System metrics:** communication success rate reached **98.5%**, with roughly **40%** higher communication efficiency than the previous solution.
 
 ---
 
@@ -116,11 +125,20 @@ If you want to evaluate my fit quickly, I suggest checking:
 
 ---
 
+<span class='anchor' id='service'></span>
+
+# 🧑‍💼 Academic Service & Student Leadership
+- Deputy Director, News and Publicity Department, WHU Student Party Branch Secretaries' Association (2024.09 - 2025.09): contributed to undergraduate Party-affairs communication and participated in publishing **100+** pieces of content.
+- Project Group Member, Second Classroom Center of WHU Youth League Committee (2023.10 - 2024.09): participated in platform quality monitoring, issue reporting, and experience improvement.
+
+---
+
 <span class='anchor' id='education'></span>
 
 # 🎓 Education
 - *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
 - GPA: **3.74 / 4.0**
+- Selected coursework: Computer Vision, Frontier AI Technologies, Computer Networks, Operating Systems, Software Engineering, Software Quality Assurance and Testing, Database Systems, Object-Oriented Programming
 
 ---
 
