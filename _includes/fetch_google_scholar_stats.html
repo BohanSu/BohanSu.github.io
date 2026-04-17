@@ -1,3 +1,4 @@
+{% if site.googlescholar or site.author.googlescholar %}
 <script>
     $(document).ready(function () {
         {% if site.google_scholar_stats_use_cdn %}
@@ -7,13 +8,21 @@
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitationEle = document.getElementById('total_cit');
+            if (totalCitationEle) {
+                totalCitationEle.innerHTML = totalCitation;
+            }
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                if (data['publications'] && data['publications'][paperId]) {
+                    var numCitations = data['publications'][paperId]['num_citations']
+                    element.innerHTML = '| Citations: ' + numCitations;
+                }
             });
+        }).fail(function () {
+            console.log('Google Scholar stats data not available; skipping citation badge rendering.');
         });
     })
 </script>
+{% endif %}
