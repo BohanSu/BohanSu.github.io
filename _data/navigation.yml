@@ -3,14 +3,26 @@ main:
   - title: "简介"
     url: "/#about-me"
 
-  - title: "教育背景"
-    url: "/#education"
+  - title: "研究主题"
+    url: "/#focus"
 
   - title: "科研与在研"
     url: "/#research"
 
   - title: "项目经历"
     url: "/#projects"
+
+  - title: "教育背景"
+    url: "/#education"
+
+  - title: "研究材料"
+    url: "/#artifacts"
+
+  - title: "学生工作"
+    url: "/#service"
+
+  - title: "研究机会"
+    url: "/#fit"
 
   - title: "技能"
     url: "/#skills"
