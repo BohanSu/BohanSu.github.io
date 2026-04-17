@@ -2,26 +2,16 @@
 permalink: /en/
 title: ""
 excerpt: ""
-layout: page-full
+layout: default
+author_profile: true
+author: en
 ---
 
 <span class='anchor' id='about-me'></span>
 
-<div class="en-hero">
-
-<div class="en-hero-avatar">
-  <img src="/images/photo.jpg" alt="Bohan Su">
-</div>
-
-<div class="en-hero-meta">
-
 # 👋 About Me
 
-<div class="en-tagline">Undergraduate researcher in Computer Vision, LLM Reasoning, and Multi-Agent Systems.</div>
-
-I am an undergraduate student in **Software Engineering** at **Wuhan University**. My current work focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Rather than treating them as isolated buzzwords, I care about research questions that can be **defined clearly, validated rigorously, and realized in working systems**.
-
-More concretely, I am interested in three questions:
+I am an undergraduate student in **Software Engineering** at **Wuhan University**. My current work focuses on **computer vision**, **LLM reasoning**, and **multi-agent systems**. Rather than treating them as isolated buzzwords, I care about three concrete research questions:
 1. How can visual representations remain reliable in hard real-world settings?
 2. How can LLM reasoning become more structured and deployable at manageable cost?
 3. How can multi-agent systems stay stable when user intent is ambiguous?
@@ -31,19 +21,11 @@ If this is your first time visiting the site, I suggest starting with:
 - **Selected Projects** for how I turn research questions into systems and prototypes;
 - **Artifacts** for my resume and supporting materials.
 
-<div class="en-quicklinks">
-  <a href="/files/苏渤涵简历.pdf">Resume</a>
-  <a href="https://github.com/BohanSu">GitHub</a>
-  <a href="/">中文主页</a>
-</div>
+- **Quick links:** <a href="/files/苏渤涵简历.pdf">Resume</a> · <a href="https://github.com/BohanSu">GitHub</a> · <a href="/">中文主页</a>
 
-</div>
-
-</div>
+---
 
 <span class='anchor' id='research'></span>
-
-<div class="en-section">
 
 # 🔬 Research & Ongoing Work
 
@@ -64,11 +46,9 @@ If this is your first time visiting the site, I suggest starting with:
 - **Focus:** task taxonomy, method categorization, and evaluation limitations for ReID under appearance variation.
 - **Progress:** framework design, representative method organization, and metric-oriented analysis are ongoing.
 
-</div>
+---
 
 <span class='anchor' id='focus'></span>
-
-<div class="en-section">
 
 # 🧭 Research Themes
 
@@ -88,11 +68,9 @@ If this is your first time visiting the site, I suggest starting with:
 - observability
 - handling under-specified or uncertain user intent
 
-</div>
+---
 
 <span class='anchor' id='projects'></span>
-
-<div class="en-section">
 
 # 🚀 Selected Projects
 
@@ -113,47 +91,37 @@ If this is your first time visiting the site, I suggest starting with:
 - **Method:** Participated in software architecture, protocol logic, and embedded system integration.
 - **Result:** National First Prize (Top 6) in the Huawei Cup IoT Design Competition.
 
-</div>
+---
 
 <span class='anchor' id='artifacts'></span>
-
-<div class="en-section">
 
 # 📎 Artifacts
 - Resume PDF: <a href="/files/苏渤涵简历.pdf">苏渤涵简历.pdf</a>
 - GitHub: <a href="https://github.com/BohanSu">https://github.com/BohanSu</a>
 - More detailed research materials can be shared upon request.
 
-<div class="en-note">
 If you are evaluating me for research collaboration, RA opportunities, or graduate applications, I am happy to provide additional materials such as experiment scripts, ablation tables, project slides, or technical write-ups upon request.
-</div>
 
-</div>
+---
 
 <span class='anchor' id='education'></span>
-
-<div class="en-section">
 
 # 🎓 Education
 - *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
 - GPA: **3.74 / 4.0**
 
-</div>
+---
 
 <span class='anchor' id='fit'></span>
-
-<div class="en-section">
 
 # 🤝 What I’m Looking For
 - Research environments centered on **Computer Vision / LLM Reasoning / Multi-Agent Systems**;
 - Training that values **research questions + evidence + system realization**, rather than one-off demos;
 - Opportunities to work on problems that can be iterated, deepened, and validated over time.
 
-</div>
+---
 
 <span class='anchor' id='skills'></span>
-
-<div class="en-section">
 
 # 🛠 Skills
 - **Programming & Tools**: Python, C / C++, Java, Git, MATLAB
@@ -161,11 +129,9 @@ If you are evaluating me for research collaboration, RA opportunities, or gradua
 - **LLM & Multi-Agent Systems**: multi-agent design, routing, validation, and observability
 - **Embedded Systems**: RISC-V / ESP32 development, modular hardware protocol design, driver development, and system integration
 
-</div>
+---
 
 <span class='anchor' id='honors'></span>
-
-<div class="en-section">
 
 # 🏅 Honors
 - National First Prize (Top 6), Huawei Cup IoT Design Competition
@@ -174,15 +140,11 @@ If you are evaluating me for research collaboration, RA opportunities, or gradua
 - Honorable Mention, Mathematical Contest in Modeling (MCM/ICM)
 - Zheng Ge Ru First Prize Scholarship (ranked first in grade-level defense evaluation)
 
-</div>
+---
 
 <span class='anchor' id='contact'></span>
-
-<div class="en-section">
 
 # 📫 Contact
 - Email: <a href="mailto:2023302143001@whu.edu.cn">2023302143001@whu.edu.cn</a>
 - GitHub: <a href="https://github.com/BohanSu">https://github.com/BohanSu</a>
 - 中文版: <a href="/">Home / 中文</a>
-
-</div>
