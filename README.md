@@ -12,7 +12,7 @@ I am an undergraduate in **Software Engineering** at **Wuhan University**. My cu
 - **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**  
   ECCV 2026 submission.
 - **GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction**  
-  Ongoing work, planned submission to SDM.
+Ongoing work, planned submission to EMNLP.
 - **Survey and Metric Design for Appearance-Variant Person Re-identification**  
   Ongoing work, TPAMI survey preparation.
 

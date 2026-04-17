@@ -27,9 +27,9 @@ If this is your first time visiting the site, I suggest starting with:
 
 <div class="profile-stats">
   <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
-  <div class="profile-stat-card"><div class="label">Research Pipeline</div><div class="value">3 ongoing works</div></div>
-  <div class="profile-stat-card"><div class="label">Competition Results</div><div class="value">National Top 6 / National 2nd Prize</div></div>
-  <div class="profile-stat-card"><div class="label">System Projects</div><div class="value">Robotics / Agents / Interactive Systems</div></div>
+  <div class="profile-stat-card"><div class="label">Research Pipeline</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
+  <div class="profile-stat-card"><div class="label">Competition Results</div><div class="value">National 1st (Top 6) / 2nd / 3rd</div></div>
+  <div class="profile-stat-card"><div class="label">Systems Built</div><div class="value">Robotics / Mobile Agent / Multi-Agent</div></div>
 </div>
 
 ---
@@ -45,7 +45,7 @@ If this is your first time visiting the site, I suggest starting with:
 - **Evidence:** Unified training, comparison, and ablation analysis across 9 ReID benchmarks.
 
 ## GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction
-- *2026.03 - present*, planned submission to SDM
+- *2026.03 - present*, planned submission to EMNLP
 - **Problem:** scientific graph extraction often relies on large-model prompting that is expensive and hard to deploy.
 - **Method:** I construct ARCHE-derived supervision for a compact graph extraction model and optimize it for deployable extraction quality.
 - **Progress:** Supervision construction, evaluation workflow validation, and 0.8B-scale training pipeline setup have been completed.

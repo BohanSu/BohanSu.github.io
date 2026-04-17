@@ -26,9 +26,9 @@ redirect_from:
 
 <div class="profile-stats">
   <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
-  <div class="profile-stat-card"><div class="label">在研/投稿</div><div class="value">3 项</div></div>
-  <div class="profile-stat-card"><div class="label">代表性竞赛</div><div class="value">国家级 Top 6 / 国二</div></div>
-  <div class="profile-stat-card"><div class="label">系统项目</div><div class="value">机器人 / Agent / 交互系统</div></div>
+  <div class="profile-stat-card"><div class="label">在研/投稿</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
+  <div class="profile-stat-card"><div class="label">代表性竞赛</div><div class="value">国一 Top 6 / 国二 / 国三</div></div>
+  <div class="profile-stat-card"><div class="label">系统构建</div><div class="value">机器人 / 手机Agent / 多智能体</div></div>
 </div>
 
 ---
@@ -80,7 +80,7 @@ redirect_from:
 - **证据：** 在 9 个 ReID benchmark 上完成统一训练、对比实验与消融分析。
 
 ## GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction
-- *2026.03 - 至今*，预计投稿 SDM
+- *2026.03 - 至今*，预计投稿 EMNLP
 - **问题：** scientific graph extraction 依赖大模型直接抽取时成本高、稳定性弱，而小模型缺乏高质量结构监督。
 - **方法：** 基于 ARCHE 衍生监督信号构建小模型图谱抽取框架，强调图结构一致性、证据对齐与可部署性。
 - **当前进展：** 已完成结构化监督构建、评测流程验证与 0.8B 级训练流程打通。
