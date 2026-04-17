@@ -16,6 +16,8 @@ I am an undergraduate student in **Software Engineering** at **Wuhan University*
 2. How can LLM reasoning become more structured and deployable at manageable cost?
 3. How can multi-agent systems stay stable when user intent is ambiguous?
 
+In one sentence, I try to keep **problem definition, evidence, and system realization** on the same research path rather than stopping at ideas or demos.
+
 If this is your first time visiting the site, I suggest starting with:
 - **Research & Ongoing Work** for the problems I am actively working on now;
 - **Selected Projects** for how I turn research questions into systems and prototypes;
@@ -51,6 +53,11 @@ If this is your first time visiting the site, I suggest starting with:
 <span class='anchor' id='focus'></span>
 
 # 🧭 Research Themes
+
+## Current Focus
+- **Vision**: robust representations, 3D geometric priors, and cross-setting generalization
+- **LLM reasoning**: structured extraction, high-quality supervision, and deployable small-model pipelines
+- **Multi-agent systems**: routing, validation, observability, and stable collaboration workflows
 
 ## 1. Vision Understanding and 3D Modeling
 - Universal ReID
@@ -98,9 +105,14 @@ If this is your first time visiting the site, I suggest starting with:
 # 📎 Artifacts
 - Resume PDF: <a href="/files/苏渤涵简历.pdf">苏渤涵简历.pdf</a>
 - GitHub: <a href="https://github.com/BohanSu">https://github.com/BohanSu</a>
-- More detailed research materials can be shared upon request.
+- More detailed research materials can be shared upon request, including experiment scripts, result tables, slides, and technical write-ups.
 
 If you are evaluating me for research collaboration, RA opportunities, or graduate applications, I am happy to provide additional materials such as experiment scripts, ablation tables, project slides, or technical write-ups upon request.
+
+If you want to evaluate my fit quickly, I suggest checking:
+- whether my current research problems overlap with yours;
+- how I turn research questions into working systems in the project section;
+- whether additional technical materials would help your decision.
 
 ---
 
