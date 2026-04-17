@@ -9,6 +9,12 @@ layout: page-full
 
 <div class="en-hero">
 
+<div class="en-hero-avatar">
+  <img src="/images/photo.jpg" alt="Bohan Su">
+</div>
+
+<div class="en-hero-meta">
+
 # 👋 About Me
 
 <div class="en-tagline">Undergraduate researcher in Computer Vision, LLM Reasoning, and Multi-Agent Systems.</div>
@@ -32,38 +38,6 @@ If this is your first time visiting the site, I suggest starting with:
 </div>
 
 </div>
-
-<span class='anchor' id='education'></span>
-
-<div class="en-section">
-
-# 🎓 Education
-- *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
-- GPA: **3.74 / 4.0**
-
-</div>
-
-<span class='anchor' id='focus'></span>
-
-<div class="en-section">
-
-# 🧭 Research Themes
-
-## 1. Vision Understanding and 3D Modeling
-- Universal ReID
-- SMPL-based human modeling
-- Robust visual representation under challenging real-world settings
-
-## 2. LLM Reasoning and Structured Extraction
-- scientific graph extraction
-- high-quality supervision design
-- deployable small-model reasoning pipelines
-
-## 3. Multi-Agent Collaboration and Workflow Design
-- routing
-- validation
-- observability
-- handling under-specified or uncertain user intent
 
 </div>
 
@@ -89,6 +63,30 @@ If this is your first time visiting the site, I suggest starting with:
 - *2026.03 - present*, TPAMI survey preparation
 - **Focus:** task taxonomy, method categorization, and evaluation limitations for ReID under appearance variation.
 - **Progress:** framework design, representative method organization, and metric-oriented analysis are ongoing.
+
+</div>
+
+<span class='anchor' id='focus'></span>
+
+<div class="en-section">
+
+# 🧭 Research Themes
+
+## 1. Vision Understanding and 3D Modeling
+- Universal ReID
+- SMPL-based human modeling
+- Robust visual representation under challenging real-world settings
+
+## 2. LLM Reasoning and Structured Extraction
+- scientific graph extraction
+- high-quality supervision design
+- deployable small-model reasoning pipelines
+
+## 3. Multi-Agent Collaboration and Workflow Design
+- routing
+- validation
+- observability
+- handling under-specified or uncertain user intent
 
 </div>
 
@@ -129,6 +127,16 @@ If this is your first time visiting the site, I suggest starting with:
 <div class="en-note">
 If you are evaluating me for research collaboration, RA opportunities, or graduate applications, I am happy to provide additional materials such as experiment scripts, ablation tables, project slides, or technical write-ups upon request.
 </div>
+
+</div>
+
+<span class='anchor' id='education'></span>
+
+<div class="en-section">
+
+# 🎓 Education
+- *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
+- GPA: **3.74 / 4.0**
 
 </div>
 
