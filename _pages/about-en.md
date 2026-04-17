@@ -34,29 +34,6 @@ If this is your first time visiting the site, I suggest starting with:
 
 ---
 
-<span class='anchor' id='research'></span>
-
-# 🔬 Research & Ongoing Work
-
-## Reliability-Aware 3D Geometric Injection for Universal Person Re-identification
-- *2025.10 - 2026.03*, ECCV 2026 Submission
-- **Problem:** 3D geometric priors in Universal ReID are often unreliable under occlusion, clothing change, and cross-modal settings.
-- **Method:** I built a reliability-aware 2D–3D fusion framework based on SMPL geometry representations.
-- **Evidence:** Unified training, comparison, and ablation analysis across 9 ReID benchmarks.
-
-## GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction
-- *2026.03 - present*, planned submission to EMNLP
-- **Problem:** scientific graph extraction often relies on large-model prompting that is expensive and hard to deploy.
-- **Method:** I construct ARCHE-derived supervision for a compact graph extraction model and optimize it for deployable extraction quality.
-- **Progress:** Supervision construction, evaluation workflow validation, and 0.8B-scale training pipeline setup have been completed.
-
-## Survey and Metric Design for Appearance-Variant Person Re-identification
-- *2026.03 - present*, TPAMI survey preparation
-- **Focus:** task taxonomy, method categorization, and evaluation limitations for ReID under appearance variation.
-- **Progress:** framework design, representative method organization, and metric-oriented analysis are ongoing.
-
----
-
 <span class='anchor' id='focus'></span>
 
 # 🧭 Research Themes
@@ -81,6 +58,29 @@ If this is your first time visiting the site, I suggest starting with:
 - validation
 - observability
 - handling under-specified or uncertain user intent
+
+---
+
+<span class='anchor' id='research'></span>
+
+# 🔬 Research & Ongoing Work
+
+## Reliability-Aware 3D Geometric Injection for Universal Person Re-identification
+- *2025.10 - 2026.03*, ECCV 2026 Submission
+- **Problem:** 3D geometric priors in Universal ReID are often unreliable under occlusion, clothing change, and cross-modal settings.
+- **Method:** I built a reliability-aware 2D–3D fusion framework based on SMPL geometry representations.
+- **Evidence:** Unified training, comparison, and ablation analysis across 9 ReID benchmarks.
+
+## GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction
+- *2026.03 - present*, planned submission to EMNLP
+- **Problem:** scientific graph extraction often relies on large-model prompting that is expensive and hard to deploy.
+- **Method:** I construct ARCHE-derived supervision for a compact graph extraction model and optimize it for deployable extraction quality.
+- **Progress:** Supervision construction, evaluation workflow validation, and 0.8B-scale training pipeline setup have been completed.
+
+## Survey and Metric Design for Appearance-Variant Person Re-identification
+- *2026.03 - present*, TPAMI survey preparation
+- **Focus:** task taxonomy, method categorization, and evaluation limitations for ReID under appearance variation.
+- **Progress:** framework design, representative method organization, and metric-oriented analysis are ongoing.
 
 ---
 
@@ -109,6 +109,15 @@ If this is your first time visiting the site, I suggest starting with:
 
 ---
 
+<span class='anchor' id='education'></span>
+
+# 🎓 Education
+- *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
+- GPA: **3.74 / 4.0**
+- Selected coursework: Computer Vision, Frontier AI Technologies, Computer Networks, Operating Systems, Software Engineering, Software Quality Assurance and Testing, Database Systems, Object-Oriented Programming
+
+---
+
 <span class='anchor' id='artifacts'></span>
 
 # 📎 Artifacts
@@ -130,15 +139,6 @@ If you want to evaluate my fit quickly, I suggest checking:
 # 🧑‍💼 Academic Service & Student Leadership
 - Deputy Director, News and Publicity Department, WHU Student Party Branch Secretaries' Association (2024.09 - 2025.09): contributed to undergraduate Party-affairs communication and participated in publishing **100+** pieces of content.
 - Project Group Member, Second Classroom Center of WHU Youth League Committee (2023.10 - 2024.09): participated in platform quality monitoring, issue reporting, and experience improvement.
-
----
-
-<span class='anchor' id='education'></span>
-
-# 🎓 Education
-- *2023.09 - 2027.06 (expected)*, Wuhan University, B.Eng. in Software Engineering
-- GPA: **3.74 / 4.0**
-- Selected coursework: Computer Vision, Frontier AI Technologies, Computer Networks, Operating Systems, Software Engineering, Software Quality Assurance and Testing, Database Systems, Object-Oriented Programming
 
 ---
 
