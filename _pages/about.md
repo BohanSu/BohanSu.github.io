@@ -24,11 +24,16 @@ redirect_from:
 - **精选项目**：了解我如何把研究问题落到系统与原型；
 - **研究材料**：查看简历、GitHub 与可提供的补充材料。
 
+如果你只有 **30 秒** 了解我，建议按这个顺序看：
+1. **研究主题**：我现在最关注什么问题；
+2. **科研与在研工作**：我是否已经在这些问题上形成了具体研究；
+3. **精选项目**：我如何把想法落成系统、原型和可验证结果。
+
 <div class="profile-stats">
   <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
-  <div class="profile-stat-card"><div class="label">在研/投稿</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
-  <div class="profile-stat-card"><div class="label">代表性竞赛</div><div class="value">国一 Top 6 / 国二 / 国三</div></div>
-  <div class="profile-stat-card"><div class="label">系统构建</div><div class="value">机器人 / 手机Agent / 多智能体</div></div>
+  <div class="profile-stat-card"><div class="label">研究主线</div><div class="value">视觉 / 推理 / 多智能体</div></div>
+  <div class="profile-stat-card"><div class="label">在研与投稿</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
+  <div class="profile-stat-card"><div class="label">能做什么</div><div class="value">论文 + 系统 + 实验验证</div></div>
 </div>
 
 ---

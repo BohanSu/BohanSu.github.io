@@ -23,13 +23,18 @@ If this is your first time visiting the site, I suggest starting with:
 - **Selected Projects** for how I turn research questions into systems and prototypes;
 - **Artifacts** for my resume and supporting materials.
 
+If you only spend **30 seconds** on this homepage, I suggest this order:
+1. **Research Themes** to understand the problems I care about most;
+2. **Research & Ongoing Work** to see whether those problems are already turning into concrete research;
+3. **Selected Projects** to see how I turn ideas into systems, prototypes, and evidence.
+
 - **Quick links:** <a href="/files/苏渤涵简历.pdf">Resume</a> · <a href="https://github.com/BohanSu">GitHub</a> · <a href="/">中文主页</a>
 
 <div class="profile-stats">
   <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
-  <div class="profile-stat-card"><div class="label">Research Pipeline</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
-  <div class="profile-stat-card"><div class="label">Competition Results</div><div class="value">National 1st (Top 6) / 2nd / 3rd</div></div>
-  <div class="profile-stat-card"><div class="label">Systems Built</div><div class="value">Robotics / Mobile Agent / Multi-Agent</div></div>
+  <div class="profile-stat-card"><div class="label">Research Focus</div><div class="value">Vision / Reasoning / Multi-Agent</div></div>
+  <div class="profile-stat-card"><div class="label">Current Pipeline</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
+  <div class="profile-stat-card"><div class="label">What I Build</div><div class="value">Papers + Systems + Evaluation</div></div>
 </div>
 
 ---
