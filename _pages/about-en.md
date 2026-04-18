@@ -30,11 +30,13 @@ If you only spend **30 seconds** on this homepage, I suggest this order:
 
 - **Quick links:** <a href="/files/苏渤涵简历.pdf">Resume</a> · <a href="https://github.com/BohanSu">GitHub</a> · <a href="/">中文主页</a>
 
-<div class="profile-stats">
-  <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
-  <div class="profile-stat-card"><div class="label">Research Focus</div><div class="value">Vision / Reasoning / Multi-Agent</div></div>
-  <div class="profile-stat-card"><div class="label">Current Pipeline</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
-  <div class="profile-stat-card"><div class="label">What I Build</div><div class="value">Papers + Systems + Evaluation</div></div>
+<div class="quick-profile">
+  <strong>At a glance:</strong>
+  <ul>
+    <li>If you care about <strong>Computer Vision, LLM Reasoning, or Multi-Agent Systems</strong>, start with “Research Themes”.</li>
+    <li>If you want to judge whether these interests are already turning into concrete research, start with “Research & Ongoing Work”.</li>
+    <li>If you care more about whether I can turn ideas into systems and prototypes, start with “Selected Projects”.</li>
+  </ul>
 </div>
 
 ---

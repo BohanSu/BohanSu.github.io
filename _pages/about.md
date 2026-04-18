@@ -29,11 +29,13 @@ redirect_from:
 2. **科研与在研工作**：我是否已经在这些问题上形成了具体研究；
 3. **精选项目**：我如何把想法落成系统、原型和可验证结果。
 
-<div class="profile-stats">
-  <div class="profile-stat-card"><div class="label">GPA</div><div class="value">3.74 / 4.0</div></div>
-  <div class="profile-stat-card"><div class="label">研究主线</div><div class="value">视觉 / 推理 / 多智能体</div></div>
-  <div class="profile-stat-card"><div class="label">在研与投稿</div><div class="value">ECCV / EMNLP / TPAMI</div></div>
-  <div class="profile-stat-card"><div class="label">能做什么</div><div class="value">论文 + 系统 + 实验验证</div></div>
+<div class="quick-profile">
+  <strong>快速判断：</strong>
+  <ul>
+    <li>如果你关心 <strong>计算机视觉 / 大模型推理 / 多智能体系统</strong>，可以先看“研究主题”。</li>
+    <li>如果你想判断我是否已经在这些方向上形成了研究积累，可以先看“科研与在研工作”。</li>
+    <li>如果你更看重我是否能把问题真正落到系统和原型，建议看“精选项目”。</li>
+  </ul>
 </div>
 
 ---
