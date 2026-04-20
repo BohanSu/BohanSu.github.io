@@ -6,29 +6,17 @@ main:
   - title: "研究主题"
     url: "/#focus"
 
-  - title: "科研与在研"
+  - title: "在研工作"
     url: "/#research"
 
-  - title: "项目经历"
+  - title: "项目"
     url: "/#projects"
 
-  - title: "教育背景"
-    url: "/#education"
+  - title: "资历"
+    url: "/#background"
 
-  - title: "研究材料"
+  - title: "材料"
     url: "/#artifacts"
-
-  - title: "学生工作"
-    url: "/#service"
-
-  - title: "研究机会"
-    url: "/#fit"
-
-  - title: "技能"
-    url: "/#skills"
-
-  - title: "荣誉奖项"
-    url: "/#honors"
 
   - title: "联系方式"
     url: "/#contact"
