@@ -12,7 +12,7 @@ redirect_from:
   <section class="home-hero" id="about-me">
     <div class="home-hero__content">
       <p class="section-kicker">Wuhan University · Software Engineering</p>
-      <h1>把问题定义、证据验证与系统实现放到同一条研究链路里。</h1>
+      <h1>站在问题的肩膀上。</h1>
       <p class="home-lead">
         我目前专注于计算机视觉、大模型推理与多智能体系统，尤其关注复杂场景下的稳健表征、可部署的结构化推理流程，以及不确定需求下的协作链路设计。
       </p>
@@ -34,22 +34,31 @@ redirect_from:
         </ul>
       </div>
 
-      <div class="metric-grid">
-        <div class="metric-card">
-          <strong>9</strong>
-          <span>ReID benchmarks</span>
+      <div class="highlight-box">
+        <p class="section-kicker">Research Scale</p>
+        <div class="highlight-stats">
+          <div class="stat-item">
+            <strong>9</strong>
+            <span>ReID benchmarks</span>
+          </div>
+          <div class="stat-item">
+            <strong>150+</strong>
+            <span>真实交互样本</span>
+          </div>
         </div>
-        <div class="metric-card">
-          <strong>150+</strong>
-          <span>真实交互样本</span>
-        </div>
-        <div class="metric-card">
-          <strong>Top 6</strong>
-          <span>全国一等奖</span>
-        </div>
-        <div class="metric-card">
-          <strong>3.74</strong>
-          <span>GPA / 4.0</span>
+      </div>
+
+      <div class="highlight-box">
+        <p class="section-kicker">Recognition</p>
+        <div class="highlight-stats">
+          <div class="stat-item">
+            <strong>Top 6</strong>
+            <span>全国一等奖</span>
+          </div>
+          <div class="stat-item">
+            <strong>3.74</strong>
+            <span>GPA / 4.0</span>
+          </div>
         </div>
       </div>
     </aside>

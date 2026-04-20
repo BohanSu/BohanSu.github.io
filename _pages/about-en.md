@@ -11,7 +11,7 @@ author: en
   <section class="home-hero" id="about-me">
     <div class="home-hero__content">
       <p class="section-kicker">Wuhan University · Software Engineering</p>
-      <h1>Keeping problem definition, evidence, and system realization on the same research path.</h1>
+      <h1>Standing on the shoulders of problems.</h1>
       <p class="home-lead">
         I currently focus on computer vision, LLM reasoning, and multi-agent systems, with particular interest in robust representation under challenging settings, deployable structured reasoning pipelines, and stable collaboration workflows under uncertain user intent.
       </p>
@@ -33,22 +33,31 @@ author: en
         </ul>
       </div>
 
-      <div class="metric-grid">
-        <div class="metric-card">
-          <strong>9</strong>
-          <span>ReID benchmarks</span>
+      <div class="highlight-box">
+        <p class="section-kicker">Research Scale</p>
+        <div class="highlight-stats">
+          <div class="stat-item">
+            <strong>9</strong>
+            <span>ReID benchmarks</span>
+          </div>
+          <div class="stat-item">
+            <strong>150+</strong>
+            <span>real interaction samples</span>
+          </div>
         </div>
-        <div class="metric-card">
-          <strong>150+</strong>
-          <span>real interaction samples</span>
-        </div>
-        <div class="metric-card">
-          <strong>Top 6</strong>
-          <span>national first prize</span>
-        </div>
-        <div class="metric-card">
-          <strong>3.74</strong>
-          <span>GPA / 4.0</span>
+      </div>
+
+      <div class="highlight-box">
+        <p class="section-kicker">Recognition</p>
+        <div class="highlight-stats">
+          <div class="stat-item">
+            <strong>Top 6</strong>
+            <span>national first prize</span>
+          </div>
+          <div class="stat-item">
+            <strong>3.74</strong>
+            <span>GPA / 4.0</span>
+          </div>
         </div>
       </div>
     </aside>
