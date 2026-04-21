@@ -345,7 +345,7 @@ h6,
     line-height: 1.6;
 }
 
-.pub-list {
+.page__content .pub-list {
     display: grid;
     gap: 2.5rem;
 }
@@ -368,7 +368,7 @@ h6,
     border-left: 4px solid var(--home-accent);
 }
 
-.pub-meta {
+.page__content .pub-meta {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -376,7 +376,7 @@ h6,
     flex-wrap: wrap;
 }
 
-.pub-badge {
+.page__content .pub-badge {
     display: inline-flex;
     padding: 0.3rem 0.7rem;
     border-radius: 999px;
@@ -386,7 +386,7 @@ h6,
     font-weight: 600;
 }
 
-.pub-date {
+.page__content .pub-date {
     font-size: 0.85rem;
     color: var(--home-muted);
 }
@@ -407,13 +407,13 @@ h6,
     margin-top: 0;
 }
 
-.pub-tags {
+.page__content .pub-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.pub-tags span {
+.page__content .pub-tags span {
     padding: 0.3rem 0.7rem;
     border-radius: 999px;
     background: var(--home-accent-soft);
