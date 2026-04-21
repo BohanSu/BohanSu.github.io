@@ -272,7 +272,6 @@ h6,
     text-transform: uppercase;
 }
 
-.home-hero,
 .guide-card,
 .topic-card,
 .entry-card,
@@ -540,48 +539,10 @@ h6,
         grid-template-columns: 1fr;
     }
 }
-    position: relative;
-    display: grid;
-    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.95fr);
-    gap: 1.4rem;
-    padding: 2rem;
-    border-radius: 32px;
-    background:
-        linear-gradient(135deg, rgba(11, 60, 120, 0.11), rgba(255, 255, 255, 0) 42%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 246, 239, 0.95));
-    overflow: hidden;
-    will-change: transform, opacity;
-}
 
-.home-hero::after {
-    content: "";
-    position: absolute;
-    inset: auto -8% -35% auto;
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(183, 122, 47, 0.14), rgba(183, 122, 47, 0));
-    pointer-events: none;
-    animation: float 8s ease-in-out infinite;
-}
-
-.home-hero__content,
-.home-hero__side,
 .home-contact__content {
     display: grid;
     gap: 1rem;
-}
-
-.home-hero__content h1 {
-    max-width: 11.2ch;
-    font-size: clamp(2.4rem, 5vw, 4.6rem);
-}
-
-.home-lead {
-    max-width: 58ch;
-    color: var(--home-muted);
-    font-size: 1.07rem;
-    line-height: 1.9;
 }
 
 .hero-actions {
@@ -949,7 +910,6 @@ h6,
 }
 
 @media (max-width: 1100px) {
-    .home-hero,
     .home-contact,
     .home-intro-grid,
     .card-grid--three,
@@ -967,7 +927,6 @@ h6,
         gap: 1.2rem;
     }
 
-    .home-hero,
     .guide-card,
     .topic-card,
     .entry-card,
@@ -984,11 +943,6 @@ h6,
 
     .highlight-stats {
         grid-template-columns: 1fr;
-    }
-
-    .home-hero__content h1 {
-        max-width: none;
-        font-size: 2.25rem;
     }
 
     .hero-actions {
