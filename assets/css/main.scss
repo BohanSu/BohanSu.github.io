@@ -352,21 +352,21 @@ h6,
 }
 
 .page__content .pub-item {
-    padding: 2rem;
-    border: 1px solid var(--home-border);
-    border-radius: 16px;
-    background: var(--home-surface-strong);
-    transition: all 0.25s ease;
+    padding: 2rem !important;
+    border: 1px solid var(--home-border) !important;
+    border-radius: 16px !important;
+    background: var(--home-surface-strong) !important;
+    transition: all 0.25s ease !important;
 }
 
 .page__content .pub-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(26, 45, 74, 0.08);
-    border-color: var(--home-border-strong);
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 16px rgba(26, 45, 74, 0.08) !important;
+    border-color: var(--home-border-strong) !important;
 }
 
 .page__content .pub-item--featured {
-    border-left: 4px solid var(--home-accent);
+    border-left: 4px solid var(--home-accent) !important;
 }
 
 .page__content .pub-meta {
