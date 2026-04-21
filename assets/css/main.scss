@@ -983,4 +983,18 @@ h6,
     p, li {
         line-height: 1.8;
     }
+
+    .pub-item h3 {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .pub-desc {
+        word-break: break-word;
+        hyphens: none;
+    }
+
+    .pub-tags span {
+        white-space: nowrap;
+    }
 }
