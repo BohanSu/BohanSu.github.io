@@ -232,34 +232,34 @@ h6,
     color: var(--home-accent);
 }
 
-.home-shell {
+.page__content .home-shell {
     display: grid;
     gap: 2.5rem;
     padding-bottom: 3rem;
 }
 
-.home-shell #about-me {
+.page__content .home-shell #about-me {
     margin-top: 0;
 }
 
-.home-shell #about-me::before {
+.page__content .home-shell #about-me::before {
     display: none;
 }
 
-.home-shell [id] {
+.page__content .home-shell [id] {
     scroll-margin-top: 7rem;
 }
 
-.home-shell h1,
-.home-shell h2,
-.home-shell h3 {
+.page__content .home-shell h1,
+.page__content .home-shell h2,
+.page__content .home-shell h3 {
     margin: 0;
     padding: 0;
     border: 0;
     line-height: 1.08;
 }
 
-.home-shell p {
+.page__content .home-shell p {
     margin: 0;
 }
 
@@ -282,26 +282,28 @@ h6,
     box-shadow: var(--home-shadow);
 }
 
-.home-hero-simple {
+.page__content .home-hero-simple {
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 2rem;
     text-align: center;
 }
 
-.hero-simple__content h1 {
+.page__content .hero-simple__content h1 {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
     color: var(--home-text);
+    border: 0;
+    padding: 0;
 }
 
-.hero-simple__title {
+.page__content .hero-simple__title {
     font-size: 1.1rem;
     color: var(--home-muted);
     margin-bottom: 1.5rem;
 }
 
-.hero-simple__bio {
+.page__content .hero-simple__bio {
     font-size: 1.15rem;
     color: var(--home-text);
     line-height: 1.7;
@@ -347,7 +349,7 @@ h6,
     gap: 1.8rem;
 }
 
-.pub-item {
+.page__content .pub-item {
     padding: 1.8rem;
     border: 1px solid var(--home-border);
     border-radius: 16px;
@@ -355,13 +357,13 @@ h6,
     transition: all 0.25s ease;
 }
 
-.pub-item:hover {
+.page__content .pub-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(26, 45, 74, 0.08);
     border-color: var(--home-border-strong);
 }
 
-.pub-item--featured {
+.page__content .pub-item--featured {
     border-left: 4px solid var(--home-accent);
 }
 
@@ -388,16 +390,20 @@ h6,
     color: var(--home-muted);
 }
 
-.pub-item h3 {
+.page__content .pub-item h3 {
     font-size: 1.25rem;
     margin-bottom: 0.8rem;
     line-height: 1.4;
+    margin-top: 0;
+    padding: 0;
+    border: 0;
 }
 
-.pub-desc {
+.page__content .pub-desc {
     color: var(--home-muted);
     line-height: 1.7;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .pub-tags {
@@ -705,19 +711,26 @@ h6,
     font-size: 1.28rem;
 }
 
-.home-section {
+.page__content .home-section {
     display: grid;
     gap: 1.5rem;
 }
 
-.home-section--compact {
+.page__content .home-section--compact {
     gap: 1.2rem;
 }
 
-.section-heading {
+.page__content .section-heading {
     display: grid;
     gap: 0.45rem;
     max-width: 62rem;
+}
+
+.page__content .section-heading h2 {
+    font-size: clamp(1.9rem, 3vw, 2.7rem);
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .card-grid--three {
