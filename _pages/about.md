@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+{% raw %}
 <div class="home-shell home-shell--zh">
 <section class="home-hero-simple" id="about-me">
 <div class="hero-simple__content">
@@ -164,3 +164,4 @@ redirect_from:
 </div>
 </section>
 </div>
+{% endraw %}

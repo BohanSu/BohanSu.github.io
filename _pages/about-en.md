@@ -6,7 +6,7 @@ layout: default
 author_profile: true
 author: en
 ---
-
+{% raw %}
 <div class="home-shell home-shell--en">
 <section class="home-hero-simple" id="about-me">
 <div class="hero-simple__content">
@@ -163,3 +163,4 @@ Revisiting task definition, method taxonomy, and evaluation limits for ReID unde
 </div>
 </section>
 </div>
+{% endraw %}
