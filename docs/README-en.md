@@ -4,13 +4,16 @@ This repository contains the source files for my academic homepage.
 
 ## Profile
 - Undergraduate in **Software Engineering** at **Wuhan University**
-- Research interests: **Computer Vision**, **LLM Reasoning**, **Multi-Agent Systems**
+- Research tracks:
+  - **Visual representation under appearance variation**
+  - **Small-model structured scientific reasoning**
+  - **Multi-agent systems for real tasks**
 
 ## Current Work
 1. **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**
    - ECCV 2026 submission
 2. **PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction**
-- Ongoing, planned submission to EMNLP
+   - Ongoing, planned submission to EMNLP
 3. **Appearance Variations in Person Re-Identification: A Survey**
    - Ongoing, TPAMI survey preparation
 

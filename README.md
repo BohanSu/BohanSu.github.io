@@ -3,17 +3,17 @@
 This repository hosts my academic homepage built on top of the `AcadHomepage` template.
 
 ## About
-I am an undergraduate in **Software Engineering** at **Wuhan University**. My current interests focus on:
-- **Computer Vision**
-- **LLM Reasoning**
-- **Multi-Agent Systems**
+I am an undergraduate in **Software Engineering** at **Wuhan University**. My current research spans three parallel tracks:
+- **Visual representation under appearance variation** — reliability-aware 3D geometric injection (UniGeo) and a survey on appearance variations in person Re-ID
+- **Small-model structured scientific reasoning** — PEARL, a schema-first framework that decouples generation from verification
+- **Multi-agent systems for real tasks** — guided mobile interaction, A2A-protocol multi-agent workflows, and modular robot communication
 
 ## Current Research
-- **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**  
+- **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**
   ECCV 2026 submission.
-- **PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction**  
-Ongoing work, planned submission to EMNLP.
-- **Appearance Variations in Person Re-Identification: A Survey**  
+- **PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction**
+  Ongoing work, planned submission to EMNLP.
+- **Appearance Variations in Person Re-Identification: A Survey**
   Ongoing work, TPAMI survey preparation.
 
 ## Website

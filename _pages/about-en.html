@@ -14,8 +14,8 @@ author: en
         <p class="home-kicker">Wuhan University · Software Engineering · 2027</p>
         <h1>Start from the problem itself</h1>
         <p class="home-lead">
-          I am Bohan Su, an undergraduate in Software Engineering at Wuhan University. My work is problem-driven and focused on
-          turning methods into reproducible, analyzable, and deployable systems instead of stopping at isolated benchmark gains.
+          I am Bohan Su, an undergraduate in Software Engineering at Wuhan University. My current work spans visual representation under appearance variation,
+          small-model structured scientific reasoning, and multi-agent systems for real tasks, with an emphasis on methods that actually turn into reproducible, analyzable, deployable systems rather than isolated benchmark gains.
         </p>
         <div class="hero-pill-row">
           <span class="hero-pill">Computer Vision</span>
@@ -41,7 +41,7 @@ author: en
             <p class="mini-label">Now</p>
             <h2>Undergraduate in Software Engineering</h2>
             <p>
-              Interested in visual understanding under challenging conditions, structured reasoning, and agent systems built for real tasks.
+              Interested in visual understanding under appearance variation, small-model structured scientific reasoning, and multi-agent systems built for real tasks.
             </p>
             <dl class="identity-facts">
               <div>
@@ -50,7 +50,7 @@ author: en
               </div>
               <div>
                 <dt>Focus</dt>
-                <dd>Visual understanding / reasoning / agent systems</dd>
+                <dd>Visual representation / structured reasoning / multi-agent systems</dd>
               </div>
               <div>
                 <dt>Status</dt>
@@ -66,12 +66,12 @@ author: en
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Research State</p>
         <h3>Three active research tracks</h3>
-        <p>Work currently spans visual representation, graph extraction, and evaluation design in one connected loop.</p>
+        <p>Visual representation under appearance variation, generation–verification decoupling for structured reasoning, and multi-agent systems for real tasks — moving together.</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Current Output</p>
         <h3>Papers, systems, and competitions together</h3>
-        <p>ECCV submission progress, PEARL system work, and a Top 6 national project now define the current portfolio.</p>
+        <p>An ECCV submission, PEARL system progress, a drafted TPAMI survey, and a Top 6 national project now define the current portfolio.</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Collaboration Fit</p>
@@ -93,8 +93,8 @@ author: en
           <div class="timeline-item">
             <span class="timeline-date">2026.04</span>
             <div class="timeline-body">
-              <h3>TPAMI survey entering empirical backbone</h3>
-              <p>Eight chapters and 231 references are drafted; work has moved into building the experimental backbone for the survey.</p>
+              <h3>TPAMI survey body drafted</h3>
+              <p>§2–§8 of the appearance-variation ReID survey are drafted with 231 references; §1 Introduction and citation-key alignment are still being iterated.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -107,8 +107,8 @@ author: en
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>PEARL pipeline in place</h3>
-              <p>Brought the graph_spec IR, validator/compiler, issue-list repair, and joint-score evaluation loop online, entering main experiments.</p>
+              <h3>PEARL pipeline online, Phase 1 Gate B passed</h3>
+              <p>The graph_spec IR, validator/compiler, issue-list repair, and joint-score evaluation code are in place; Gate B passed locally at converter 100% / validator 97.1% / roundtrip 100%, with Phase 3–5 main experiments queued up.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -143,18 +143,18 @@ author: en
     <div class="research-grid">
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 01</p>
-        <h3>Visual representation under challenging conditions</h3>
-        <p>Studying when geometric priors help and when they hurt in Universal ReID rather than assuming they are always beneficial.</p>
+        <h3>Visual representation under appearance variation</h3>
+        <p>Studying how visual evidence breaks and reorganises under occlusion, clothing change, cross-modal imaging, and in-the-wild viewpoints in Universal ReID — covering both UniGeo's reliability-aware 3D geometric injection and the TPAMI appearance-variation survey and methodology.</p>
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 02</p>
-        <h3>Decoupling generation from verification for graph extraction</h3>
-        <p>Letting a small model handle generation while a validator, compiler, and repair loop own correctness, so that structured extraction becomes reproducible and deployable.</p>
+        <h3>Generation–verification decoupled structured scientific reasoning</h3>
+        <p>Letting a small model own generation while a validator, compiler, and issue-list repair own correctness. PEARL turns ARCHE's scientific reasoning graph extraction into a schema-first, verifier-guided training framework.</p>
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 03</p>
-        <h3>Task-oriented evaluation design</h3>
-        <p>Revisiting evaluation protocols, error sources, and system behavior for appearance variation and agent workflows under realistic constraints.</p>
+        <h3>Multi-agent systems for real tasks</h3>
+        <p>Guided mobile interaction for ambiguous requests, A2A-protocol multi-agent workflows, and modular robot communication — treating evaluation protocol, observability, and engineering closure as first-class design goals.</p>
       </article>
     </div>
 
@@ -166,12 +166,14 @@ author: en
         </div>
         <h3>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</h3>
         <p>
-          Addresses the instability of 3D geometric priors in Universal ReID with an SMPL-based reliability-aware adaptive fusion design,
-          validated across 9 benchmarks.
+          Treats monocular 3D human geometry in Universal ReID as conditionally-used structural evidence rather than an always-trusted auxiliary:
+          SMPL parameters are kinematically decoupled, a consistency-aware gate predicts when the 3D signal is reliable,
+          and a residual dual-stream fusion prevents bad 3D from contaminating the 2D backbone — validated across 9 benchmarks.
         </p>
         <div class="metric-row">
-          <span>SMPL-based fusion</span>
-          <span>Reliability modeling</span>
+          <span>SMPL kinematic decoupling</span>
+          <span>reliability-aware gate</span>
+          <span>residual dual-stream fusion</span>
           <span>9 benchmarks</span>
         </div>
       </article>
@@ -183,13 +185,16 @@ author: en
         </div>
         <h3>PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction</h3>
         <p>
-          An end-to-end pipeline for the ARCHE task: graph_spec IR, validator/compiler, issue-list self-repair, and joint-score evaluation.
-          The 4B Qwen student only generates, while syntax and structure checks are offloaded to code, targeting majority-teacher superiority.
+          A schema-first framework for Peircean scientific reasoning graph extraction on ARCHE: structure learning is decoupled from DOT-syntax generation,
+          and diagnosis is decoupled from repair. A 4B Qwen student is trained on the graph_spec IR with code-based validator, compiler, and issue-list repair,
+          backed by 5-teacher quality-weighted SFT and a smart prompt — targeting majority-teacher superiority on joint-score.
         </p>
         <div class="metric-row">
           <span>graph_spec IR</span>
-          <span>validator + repair</span>
-          <span>4B Qwen student</span>
+          <span>validator + compiler</span>
+          <span>issue-list repair</span>
+          <span>5-teacher quality-weighted SFT</span>
+          <span>joint-score majority superiority</span>
         </div>
       </article>
 
@@ -200,13 +205,14 @@ author: en
         </div>
         <h3>Appearance Variations in Person Re-Identification: A Survey</h3>
         <p>
-          A three-axis reorganisation of appearance variation in person Re-ID along clothing-state, beyond-clothing, and deployment-evolution,
-          with a robustness-vs-generalization methodology framework. The manuscript body and 231 references are in place, with work now on the empirical backbone.
+          Rebuilds the taxonomy of appearance variation along short-term, long-term, and compound branches, and reorganises existing methods with a robustness-vs-generalization framework;
+          the long-term axis explicitly separates clothing-state, beyond-clothing, and deployment-distribution evolution. §2–§8 are drafted with 231 references; §1 Introduction and citation alignment are still iterating.
         </p>
         <div class="metric-row">
-          <span>three-axis taxonomy</span>
-          <span>eight chapters drafted</span>
-          <span>building experimental backbone</span>
+          <span>three-branch taxonomy</span>
+          <span>robustness vs. generalization</span>
+          <span>§2–§8 drafted</span>
+          <span>231 references</span>
         </div>
       </article>
     </div>
@@ -278,7 +284,7 @@ author: en
         <p>B.Eng. in Software Engineering, 2023.09 - 2027.06 (expected)</p>
         <ul class="compact-list">
           <li>GPA 3.74 / 4.0</li>
-          <li>Focus areas: computer vision, LLM reasoning, multi-agent systems</li>
+          <li>Focus areas: visual representation under appearance variation / small-model structured reasoning / multi-agent systems</li>
           <li>Open to research collaboration and system projects</li>
         </ul>
       </article>
