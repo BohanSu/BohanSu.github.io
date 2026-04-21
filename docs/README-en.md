@@ -9,9 +9,9 @@ This repository contains the source files for my academic homepage.
 ## Current Work
 1. **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**
    - ECCV 2026 submission
-2. **GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction**
+2. **PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction**
 - Ongoing, planned submission to EMNLP
-3. **Survey and Metric Design for Appearance-Variant Person Re-identification**
+3. **Appearance Variations in Person Re-Identification: A Survey**
    - Ongoing, TPAMI survey preparation
 
 ## Contact

@@ -11,9 +11,9 @@ I am an undergraduate in **Software Engineering** at **Wuhan University**. My cu
 ## Current Research
 - **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**  
   ECCV 2026 submission.
-- **GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction**  
+- **PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction**  
 Ongoing work, planned submission to EMNLP.
-- **Survey and Metric Design for Appearance-Variant Person Re-identification**  
+- **Appearance Variations in Person Re-Identification: A Survey**  
   Ongoing work, TPAMI survey preparation.
 
 ## Website

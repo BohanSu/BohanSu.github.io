@@ -73,7 +73,7 @@ redirect_from:
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">近期成果</p>
         <h3>论文、系统、竞赛同时输出</h3>
-        <p>ECCV 投稿、GraphLite 系统推进，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
+        <p>ECCV 投稿、PEARL 系统推进，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">合作偏好</p>
@@ -93,6 +93,13 @@ redirect_from:
       <article class="timeline-card surface-card" data-reveal="up">
         <div class="timeline-list">
           <div class="timeline-item">
+            <span class="timeline-date">2026.04</span>
+            <div class="timeline-body">
+              <h3>TPAMI 综述进入实验 backbone 构建</h3>
+              <p>外观变化 ReID 综述 8 章正文与 231 条引用已成稿，当前转入实验 backbone 构建阶段。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
               <h3>ECCV 2026 投稿完成</h3>
@@ -102,8 +109,8 @@ redirect_from:
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>GraphLite 启动</h3>
-              <p>开始探索高质量监督下的小模型图谱抽取，已打通 0.8B 级训练流程。</p>
+              <h3>PEARL 代码链路打通</h3>
+              <p>graph_spec IR、validator/compiler、issue-list repair 与 joint-score 评测全流程就绪，进入主线实验。</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -143,8 +150,8 @@ redirect_from:
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">方向 02</p>
-        <h3>高质量监督图谱抽取</h3>
-        <p>关注如何通过更干净的 supervision，让小模型具备真正可部署的结构化抽取能力。</p>
+        <h3>生成与验证解耦的图谱抽取</h3>
+        <p>关注把生成交给小模型、把校验与修复外包给 validator/compiler/repair，让结构化抽取真正可复现、可部署。</p>
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">方向 03</p>
@@ -176,14 +183,15 @@ redirect_from:
           <span class="work-badge">Planned EMNLP Submission</span>
           <span class="work-date">2026.03 - 至今</span>
         </div>
-        <h3>GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction</h3>
+        <h3>PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction</h3>
         <p>
-          基于 ARCHE 衍生监督信号构建图谱抽取训练框架，已完成 0.8B 级训练流程打通，正在推进模型质量、泛化能力与部署可行性。
+          面向 ARCHE 任务的 graph_spec IR + validator/compiler + issue-list repair + joint-score 评测全链路；
+          让 4B Qwen 只负责生成，把句法与结构校验外包给代码，追求 majority-teacher superiority。
         </p>
         <div class="metric-row">
-          <span>高质量监督</span>
-          <span>0.8B 训练链路</span>
-          <span>可部署抽取</span>
+          <span>graph_spec IR</span>
+          <span>validator + repair</span>
+          <span>4B Qwen 学生模型</span>
         </div>
       </article>
 
@@ -192,14 +200,15 @@ redirect_from:
           <span class="work-badge">TPAMI Survey Preparation</span>
           <span class="work-date">2026.03 - 至今</span>
         </div>
-        <h3>外观变化条件下行人重识别综述与评测指标研究</h3>
+        <h3>Appearance Variations in Person Re-Identification: A Survey</h3>
         <p>
-          围绕 appearance variation 场景重新梳理任务定义、方法分类与评测局限，当前已完成问题结构与综述主体框架设计。
+          以 clothing-state / beyond-clothing / deployment-evolution 三轴重构 appearance variation 的任务分类、
+          鲁棒性-泛化性方法框架与评测协议；正文与 231 条引用已成稿，当前进入实验 backbone 构建阶段。
         </p>
         <div class="metric-row">
-          <span>任务分类</span>
-          <span>指标设计</span>
-          <span>综述框架</span>
+          <span>三轴分类</span>
+          <span>8 章全成稿</span>
+          <span>实验 backbone 构建中</span>
         </div>
       </article>
     </div>

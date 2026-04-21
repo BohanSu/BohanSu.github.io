@@ -71,7 +71,7 @@ author: en
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Current Output</p>
         <h3>Papers, systems, and competitions together</h3>
-        <p>ECCV submission progress, GraphLite system work, and a Top 6 national project now define the current portfolio.</p>
+        <p>ECCV submission progress, PEARL system work, and a Top 6 national project now define the current portfolio.</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Collaboration Fit</p>
@@ -91,6 +91,13 @@ author: en
       <article class="timeline-card surface-card" data-reveal="up">
         <div class="timeline-list">
           <div class="timeline-item">
+            <span class="timeline-date">2026.04</span>
+            <div class="timeline-body">
+              <h3>TPAMI survey entering empirical backbone</h3>
+              <p>Eight chapters and 231 references are drafted; work has moved into building the experimental backbone for the survey.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
               <h3>ECCV 2026 submission completed</h3>
@@ -100,8 +107,8 @@ author: en
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>GraphLite started</h3>
-              <p>Started a graph extraction project driven by high-quality supervision, with a 0.8B training pipeline already running.</p>
+              <h3>PEARL pipeline in place</h3>
+              <p>Brought the graph_spec IR, validator/compiler, issue-list repair, and joint-score evaluation loop online, entering main experiments.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -141,8 +148,8 @@ author: en
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 02</p>
-        <h3>High-quality supervision for graph extraction</h3>
-        <p>Exploring how cleaner supervision can make smaller models genuinely deployable for structured extraction tasks.</p>
+        <h3>Decoupling generation from verification for graph extraction</h3>
+        <p>Letting a small model handle generation while a validator, compiler, and repair loop own correctness, so that structured extraction becomes reproducible and deployable.</p>
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 03</p>
@@ -174,15 +181,15 @@ author: en
           <span class="work-badge">Planned EMNLP Submission</span>
           <span class="work-date">2026.03 - present</span>
         </div>
-        <h3>GraphLite: High-Quality Supervision Enables Deployable Small Models for Graph Extraction</h3>
+        <h3>PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction</h3>
         <p>
-          An ARCHE-derived supervision framework for graph extraction. The 0.8B-scale training pipeline is in place, with current work on
-          quality, generalization, and deployment readiness.
+          An end-to-end pipeline for the ARCHE task: graph_spec IR, validator/compiler, issue-list self-repair, and joint-score evaluation.
+          The 4B Qwen student only generates, while syntax and structure checks are offloaded to code, targeting majority-teacher superiority.
         </p>
         <div class="metric-row">
-          <span>high-quality supervision</span>
-          <span>0.8B pipeline</span>
-          <span>deployable extraction</span>
+          <span>graph_spec IR</span>
+          <span>validator + repair</span>
+          <span>4B Qwen student</span>
         </div>
       </article>
 
@@ -191,14 +198,15 @@ author: en
           <span class="work-badge">TPAMI Survey Preparation</span>
           <span class="work-date">2026.03 - present</span>
         </div>
-        <h3>Survey and Metric Design for Appearance-Variant Person Re-identification</h3>
+        <h3>Appearance Variations in Person Re-Identification: A Survey</h3>
         <p>
-          Reframing task definition, taxonomy, and evaluation limits for appearance-variant ReID, with the main structure and problem framing completed.
+          A three-axis reorganisation of appearance variation in person Re-ID along clothing-state, beyond-clothing, and deployment-evolution,
+          with a robustness-vs-generalization methodology framework. The manuscript body and 231 references are in place, with work now on the empirical backbone.
         </p>
         <div class="metric-row">
-          <span>task taxonomy</span>
-          <span>metric design</span>
-          <span>survey framing</span>
+          <span>three-axis taxonomy</span>
+          <span>eight chapters drafted</span>
+          <span>building experimental backbone</span>
         </div>
       </article>
     </div>
