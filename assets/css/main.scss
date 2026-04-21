@@ -1185,7 +1185,6 @@ h6,
 .homepage .page__content .project-card p,
 .homepage .page__content .research-card p,
 .homepage .page__content .background-card p,
-.homepage .page__content .signal-card p,
 .homepage .page__content .timeline-body p,
 .homepage .page__content .hero-identity-card__body p {
     color: var(--landing-muted);
@@ -1453,13 +1452,6 @@ h6,
     line-height: 1.65;
 }
 
-.homepage .signal-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-}
-
-.homepage .signal-card,
 .homepage .research-card,
 .homepage .background-card,
 .homepage .project-card,
@@ -1468,21 +1460,6 @@ h6,
 .homepage .timeline-card,
 .homepage .home-contact {
     padding: 1.4rem;
-}
-
-.homepage .signal-card {
-    display: grid;
-    align-content: start;
-    gap: 0.65rem;
-    min-height: 11.2rem;
-}
-
-.homepage .signal-card strong {
-    font-family: var(--landing-font-display);
-    font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 0.95;
-    letter-spacing: -0.05em;
-    color: #10263a;
 }
 
 .homepage .news-board {
@@ -1744,11 +1721,6 @@ h6,
         padding-top: 0.4rem;
     }
 
-    .homepage .signal-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .homepage .signal-card,
     .homepage .research-card,
     .homepage .background-card,
     .homepage .project-card,
