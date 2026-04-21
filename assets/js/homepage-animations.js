@@ -1,194 +1,137 @@
 (function() {
   'use strict';
 
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
+  const homeRoot = document.querySelector('.home-v4');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+  if (!homeRoot) {
+    return;
+  }
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animateCounter(element) {
+    const target = parseFloat(element.dataset.counter);
+
+    if (!Number.isFinite(target)) {
+      return;
+    }
+
+    const prefix = element.dataset.counterPrefix || '';
+    const suffix = element.dataset.counterSuffix || '';
+    const decimals = (element.dataset.counter || '').includes('.') ? 2 : 0;
+    const duration = 1200;
+    const start = performance.now();
+
+    function render(value) {
+      const rounded = decimals > 0 ? value.toFixed(decimals) : Math.round(value);
+      element.textContent = prefix + rounded + suffix;
+    }
+
+    if (prefersReducedMotion) {
+      render(target);
+      return;
+    }
+
+    function step(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      render(target * eased);
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
       }
-    });
-  }, observerOptions);
+    }
 
-  function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.home-section, .pub-item, .project-item, .news-item, .background-item');
-
-    animatedElements.forEach((el, index) => {
-      el.classList.add('animate-on-scroll');
-      el.style.setProperty('--stagger-index', index);
-      observer.observe(el);
-    });
+    window.requestAnimationFrame(step);
   }
 
-  function initStatCounters() {
-    const statItems = document.querySelectorAll('.stat-item strong');
+  function initReveals() {
+    const revealItems = Array.from(homeRoot.querySelectorAll('[data-reveal]'));
 
-    statItems.forEach(item => {
-      const text = item.textContent.trim();
-      const match = text.match(/^(\d+\.?\d*)/);
+    if (revealItems.length === 0) {
+      return;
+    }
 
-      if (match) {
-        const targetValue = parseFloat(match[1]);
-        const isDecimal = text.includes('.');
-        const suffix = text.replace(match[1], '').trim();
-
-        let currentValue = 0;
-        const increment = targetValue / 50;
-        const duration = 1500;
-        const stepTime = duration / 50;
-
-        item.textContent = '0' + (suffix ? ' ' + suffix : '');
-
-        const counter = setInterval(() => {
-          currentValue += increment;
-          if (currentValue >= targetValue) {
-            currentValue = targetValue;
-            clearInterval(counter);
-          }
-
-          const displayValue = isDecimal ? currentValue.toFixed(2) : Math.floor(currentValue);
-          item.textContent = displayValue + (suffix ? ' ' + suffix : '');
-        }, stepTime);
-      }
+    revealItems.forEach((item, index) => {
+      item.style.setProperty('--reveal-order', index);
     });
-  }
 
-  function initParallaxEffect() {
-    let ticking = false;
+    if (prefersReducedMotion || typeof IntersectionObserver === 'undefined') {
+      revealItems.forEach(item => item.classList.add('is-visible'));
+      return;
+    }
 
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const scrolled = window.pageYOffset;
-          const hero = document.querySelector('.home-hero-simple');
-
-          if (hero && scrolled < window.innerHeight * 1.5) {
-            const translateY = scrolled * 0.15;
-            const opacity = Math.max(0.7, 1 - (scrolled / window.innerHeight) * 0.3);
-            hero.style.transform = `translateY(${translateY}px)`;
-            hero.style.opacity = opacity;
-          }
-
-          ticking = false;
-        });
-
-        ticking = true;
-      }
-    });
-  }
-
-  function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          const offsetTop = target.offsetTop - 100;
-
-          window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  }
-
-  function initCardHoverEffects() {
-    const cards = document.querySelectorAll('.topic-card, .entry-card, .project-card, .pub-item, .news-item');
-
-    cards.forEach(card => {
-      card.addEventListener('mouseenter', function(e) {
-        const rect = this.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        this.style.setProperty('--mouse-x', `${x}px`);
-        this.style.setProperty('--mouse-y', `${y}px`);
-      });
-    });
-  }
-
-  function initProgressiveImageLoading() {
-    const images = document.querySelectorAll('img[data-src]');
-
-    const imageObserver = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.classList.add('loaded');
-          imageObserver.unobserve(img);
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
         }
       });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -40px 0px'
     });
 
-    images.forEach(img => imageObserver.observe(img));
+    revealItems.forEach(item => observer.observe(item));
+  }
+
+  function initCounters() {
+    const counterItems = Array.from(homeRoot.querySelectorAll('[data-counter]'));
+
+    if (counterItems.length === 0) {
+      return;
+    }
+
+    if (prefersReducedMotion || typeof IntersectionObserver === 'undefined') {
+      counterItems.forEach(animateCounter);
+      return;
+    }
+
+    const seen = new WeakSet();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !seen.has(entry.target)) {
+          seen.add(entry.target);
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.65
+    });
+
+    counterItems.forEach(item => observer.observe(item));
+  }
+
+  function initSpotlightCards() {
+    if (prefersReducedMotion) {
+      return;
+    }
+
+    const cards = homeRoot.querySelectorAll('.surface-card');
+
+    cards.forEach(card => {
+      card.addEventListener('pointermove', (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+        card.style.setProperty('--spotlight-x', `${x}%`);
+        card.style.setProperty('--spotlight-y', `${y}%`);
+      });
+    });
   }
 
   function init() {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        initScrollAnimations();
-        initSmoothScroll();
-        initCardHoverEffects();
-        initProgressiveImageLoading();
-
-        setTimeout(() => {
-          const statBoxes = document.querySelectorAll('.highlight-box');
-          if (statBoxes.length > 0) {
-            const statObserver = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  initStatCounters();
-                  statObserver.unobserve(entry.target);
-                }
-              });
-            }, { threshold: 0.5 });
-
-            statBoxes.forEach(box => statObserver.observe(box));
-          }
-        }, 100);
-
-        if (window.innerWidth > 768) {
-          initParallaxEffect();
-        }
-      });
-    } else {
-      initScrollAnimations();
-      initSmoothScroll();
-      initCardHoverEffects();
-      initProgressiveImageLoading();
-
-      setTimeout(() => {
-        const statBoxes = document.querySelectorAll('.highlight-box');
-        if (statBoxes.length > 0) {
-          const statObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                initStatCounters();
-                statObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.5 });
-
-          statBoxes.forEach(box => statObserver.observe(box));
-        }
-      }, 100);
-
-      if (window.innerWidth > 768) {
-        initParallaxEffect();
-      }
-    }
+    initReveals();
+    initCounters();
+    initSpotlightCards();
   }
 
-  init();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
 })();
