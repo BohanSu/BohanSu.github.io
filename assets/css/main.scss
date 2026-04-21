@@ -1307,8 +1307,7 @@ h6,
 }
 
 .homepage .page__content .section-heading h2,
-.homepage .page__content .home-contact h2,
-.homepage .page__content .hero-identity-card__body h2 {
+.homepage .page__content .home-contact h2 {
     text-wrap: balance;
 }
 
@@ -1412,10 +1411,19 @@ h6,
 
 .homepage .page__content .hero-identity-card__body h2 {
     font-family: var(--landing-font-display);
-    font-size: clamp(1.7rem, 3vw, 2.35rem);
-    line-height: 1.02;
-    letter-spacing: -0.03em;
+    line-height: 1.08;
     color: #10263a;
+    white-space: nowrap;
+}
+
+.homepage--zh .page__content .hero-identity-card__body h2 {
+    font-size: clamp(1.38rem, 1.22rem + 0.72vw, 1.72rem);
+    letter-spacing: -0.02em;
+}
+
+.homepage--en .page__content .hero-identity-card__body h2 {
+    font-size: clamp(0.98rem, 0.9rem + 0.42vw, 1.22rem);
+    letter-spacing: -0.018em;
 }
 
 .homepage .identity-facts {
