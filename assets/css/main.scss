@@ -984,9 +984,27 @@ h6,
         line-height: 1.8;
     }
 
-    .pub-item h3 {
-        word-break: keep-all;
-        overflow-wrap: break-word;
+    .pub-item {
+        padding: 2rem;
+        border: 1px solid var(--home-border);
+        border-radius: 16px;
+        background: var(--home-surface-strong);
+        transition: all 0.25s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(26, 45, 74, 0.08);
+            border-color: var(--home-border-strong);
+        }
+
+        &--featured {
+            border-left: 4px solid var(--home-accent);
+        }
+
+        h3 {
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
     }
 
     .pub-desc {
