@@ -1,6 +1,6 @@
 # Bohan Su Academic Homepage
 
-This repository hosts my academic homepage built on top of the `AcadHomepage` template.
+This repository hosts the academic homepage of Bohan Su (苏渤涵).
 
 ## About
 I am an undergraduate in **Software Engineering** at **Wuhan University**. My current research spans three parallel tracks:
