@@ -43,12 +43,10 @@ Problem-driven research in computer vision, LLM reasoning, and multi-agent syste
 </article>
 </div>
 </section>
-
 <section class="home-section" id="publications">
 <div class="section-heading">
 <h2>Selected Publications</h2>
 </div>
-
 <div class="pub-list">
 <article class="pub-item pub-item--featured">
 <div class="pub-meta">
@@ -99,12 +97,10 @@ Revisiting task definition, method taxonomy, and evaluation limits for ReID unde
 </article>
 </div>
 </section>
-
 <section class="home-section" id="projects">
 <div class="section-heading">
 <h2>Selected Projects</h2>
 </div>
-
 <div class="project-grid">
 <article class="project-item">
 <div class="project-meta">
@@ -134,12 +130,10 @@ Revisiting task definition, method taxonomy, and evaluation limits for ReID unde
 </article>
 </div>
 </section>
-
 <section class="home-section home-section--compact" id="background">
 <div class="section-heading">
 <h2>Background</h2>
 </div>
-
 <div class="background-grid">
 <div class="background-item">
 <h3>Education</h3>
@@ -157,7 +151,6 @@ Revisiting task definition, method taxonomy, and evaluation limits for ReID unde
 </div>
 </div>
 </section>
-
 <section class="home-contact" id="contact">
 <div class="contact-content">
 <h2>Contact</h2>
