@@ -1003,8 +1003,8 @@ h6,
 .homepage {
     --landing-bg: #f5efe4;
     --landing-bg-soft: #fbf7f1;
-    --landing-surface: rgba(255, 252, 247, 0.78);
-    --landing-surface-strong: rgba(255, 254, 250, 0.94);
+    --landing-surface: rgba(255, 252, 247, 0.88);
+    --landing-surface-strong: rgba(255, 254, 250, 0.98);
     --landing-text: #182b40;
     --landing-muted: #5f6f7f;
     --landing-border: rgba(24, 43, 64, 0.11);
@@ -1013,8 +1013,8 @@ h6,
     --landing-accent-soft: rgba(19, 63, 119, 0.09);
     --landing-accent-2: #0d7a67;
     --landing-warm: #b97d31;
-    --landing-shadow: 0 24px 60px rgba(24, 43, 64, 0.12);
-    --landing-shadow-soft: 0 16px 34px rgba(24, 43, 64, 0.08);
+    --landing-shadow: 0 22px 52px rgba(24, 43, 64, 0.11);
+    --landing-shadow-soft: 0 12px 28px rgba(24, 43, 64, 0.075);
     --landing-radius-lg: 34px;
     --landing-radius-md: 24px;
     --landing-radius-sm: 18px;
@@ -1065,7 +1065,7 @@ h6,
 }
 
 .homepage .masthead {
-    background: rgba(251, 248, 242, 0.76);
+    background: rgba(251, 248, 242, 0.86);
     border-bottom: 1px solid rgba(24, 43, 64, 0.1);
     box-shadow: 0 12px 30px rgba(24, 43, 64, 0.06);
     -webkit-backdrop-filter: blur(18px);
@@ -1116,10 +1116,10 @@ h6,
 .homepage .home-v4 {
     position: relative;
     display: grid;
-    gap: 4.5rem;
+    gap: 4rem;
     max-width: var(--landing-max-width);
     margin: 0 auto;
-    padding: 1rem 0 4rem;
+    padding: 1.1rem 0 4.25rem;
 }
 
 .homepage .home-v4::before,
@@ -1161,7 +1161,7 @@ h6,
 .homepage .page__content .home-section,
 .homepage .page__content .home-hero {
     display: grid;
-    gap: 1.75rem;
+    gap: 1.5rem;
 }
 
 .homepage .page__content .section-heading {
@@ -1220,23 +1220,23 @@ h6,
 
 .homepage .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.18fr) minmax(330px, 0.82fr);
-    gap: 1.6rem;
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1.32fr) minmax(300px, 0.68fr);
+    gap: 1.9rem;
+    align-items: start;
 }
 
 .homepage .hero-copy {
     display: grid;
     align-content: center;
-    gap: 1.35rem;
-    padding: 1rem 0.2rem 1rem 0;
+    gap: 1.2rem;
+    padding: 0.8rem 0.35rem 0.8rem 0;
 }
 
 .homepage .page__content .hero-copy h1 {
-    max-width: 12ch;
+    max-width: 13.2ch;
     font-family: var(--landing-font-display);
-    font-size: clamp(3.2rem, 7vw, 5.4rem);
-    line-height: 0.94;
+    font-size: clamp(3rem, 6.6vw, 5rem);
+    line-height: 0.96;
     letter-spacing: -0.055em;
     color: #10263a;
 }
@@ -1248,9 +1248,9 @@ h6,
 }
 
 .homepage .page__content .home-lead {
-    max-width: 45rem;
-    font-size: 1.08rem;
-    line-height: 1.9;
+    max-width: 41rem;
+    font-size: 1.04rem;
+    line-height: 1.84;
     color: #284056;
 }
 
@@ -1271,7 +1271,7 @@ h6,
     padding: 0.45rem 0.85rem;
     border-radius: 999px;
     border: 1px solid rgba(19, 63, 119, 0.12);
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.9);
     color: var(--landing-accent);
     font-size: 0.82rem;
     font-weight: 650;
@@ -1325,7 +1325,7 @@ h6,
     overflow: hidden;
     border: 1px solid var(--landing-border);
     border-radius: var(--landing-radius-lg);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), var(--landing-surface-strong));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), var(--landing-surface-strong));
     box-shadow: var(--landing-shadow-soft);
     isolation: isolate;
 }
@@ -1353,19 +1353,19 @@ h6,
 
 .homepage .surface-card--accent {
     background:
-        linear-gradient(135deg, rgba(19, 63, 119, 0.12), rgba(13, 122, 103, 0.09), rgba(255, 255, 255, 0.95));
+        linear-gradient(135deg, rgba(19, 63, 119, 0.15), rgba(13, 122, 103, 0.11), rgba(255, 255, 255, 0.98));
     border-color: rgba(19, 63, 119, 0.14);
 }
 
 .homepage .hero-identity-card {
     display: grid;
-    gap: 1.25rem;
-    padding: 1.3rem;
+    gap: 1.1rem;
+    padding: 1.45rem;
 }
 
 .homepage .hero-portrait {
     position: relative;
-    min-height: 21rem;
+    min-height: 19.5rem;
     border-radius: 28px;
     overflow: hidden;
     background: linear-gradient(145deg, rgba(19, 63, 119, 0.14), rgba(13, 122, 103, 0.08));
@@ -1374,7 +1374,7 @@ h6,
 .homepage .hero-portrait img {
     width: 100%;
     height: 100%;
-    min-height: 21rem;
+    min-height: 19.5rem;
     object-fit: cover;
     object-position: center top;
     transform: scale(1.03);
@@ -1422,7 +1422,7 @@ h6,
 
 .homepage .identity-facts {
     display: grid;
-    gap: 0.9rem;
+    gap: 0.75rem;
     margin: 0;
 }
 
@@ -1430,7 +1430,7 @@ h6,
     display: grid;
     grid-template-columns: 4.6rem 1fr;
     gap: 0.75rem;
-    padding-top: 0.85rem;
+    padding-top: 0.8rem;
     border-top: 1px solid rgba(24, 43, 64, 0.08);
 }
 
@@ -1459,13 +1459,13 @@ h6,
 .homepage .work-card,
 .homepage .timeline-card,
 .homepage .home-contact {
-    padding: 1.4rem;
+    padding: 1.5rem;
 }
 
 .homepage .news-board {
     display: grid;
     grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
-    gap: 1rem;
+    gap: 1.15rem;
 }
 
 .homepage .timeline-list {
@@ -1521,7 +1521,7 @@ h6,
 .homepage .project-grid--featured {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.15rem;
 }
 
 .homepage .research-card {
@@ -1531,7 +1531,7 @@ h6,
 
 .homepage .work-stack {
     display: grid;
-    gap: 1rem;
+    gap: 1.15rem;
 }
 
 .homepage .work-card {
@@ -1601,7 +1601,7 @@ h6,
     display: grid;
     grid-template-columns: minmax(0, 1.18fr) auto;
     align-items: center;
-    gap: 1.4rem;
+    gap: 1.6rem;
     border-radius: 30px;
 }
 
@@ -1624,7 +1624,7 @@ h6,
     padding: 0.8rem 1.15rem;
     border-radius: 999px;
     border: 1px solid rgba(24, 43, 64, 0.12);
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.9);
     color: var(--landing-text);
     font-size: 0.94rem;
     font-weight: 700;
@@ -1677,6 +1677,11 @@ h6,
 
     .homepage .page__content .hero-copy h1 {
         max-width: 13.5ch;
+    }
+
+    .homepage--zh .page__content .hero-copy h1 {
+        max-width: 100%;
+        white-space: normal;
     }
 
     .homepage .hero-panel {
@@ -1744,6 +1749,10 @@ h6,
         line-height: 0.96;
     }
 
+    .homepage--zh .page__content .hero-copy h1 {
+        white-space: normal;
+    }
+
     .homepage .timeline-item {
         grid-template-columns: 1fr;
         gap: 0.45rem;
@@ -1784,4 +1793,11 @@ h6,
 .homepage--zh .page__content .section-heading h2,
 .homepage--zh .page__content .home-contact h2 {
     font-weight: 600;
+}
+
+.homepage--zh .page__content .hero-copy h1 {
+    max-width: none;
+    white-space: nowrap;
+    font-size: clamp(3rem, 4.95vw, 4.6rem);
+    letter-spacing: -0.04em;
 }
