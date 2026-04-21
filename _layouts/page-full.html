@@ -14,10 +14,10 @@ layout: compress
     {% include masthead.html %}
 
     <div id="main" role="main">
-      <article class="page page--full" itemscope itemtype="http://schema.org/CreativeWork" style="float:none; width:100%; max-width: 1220px; margin: 0 auto;">
+      <article class="page page--full page--landing" itemscope itemtype="http://schema.org/CreativeWork">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap" style="float:none; width:100%; margin:0 auto;">
-          <section class="page__content" itemprop="text" style="float:none; width:100%; margin:0 auto;">
+        <div class="page__inner-wrap page__inner-wrap--full">
+          <section class="page__content page__content--full" itemprop="text">
             {{ content }}
           </section>
         </div>
