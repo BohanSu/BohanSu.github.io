@@ -11,12 +11,12 @@
 
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
             {% if is_en %}
-              <a href="https://bohansu.github.io/" target="_self">
+              <a href="https://bohansu.github.io/" aria-label="Switch to Chinese version">
                 <img class="svg" src="/images/cn.svg" width="20pt">
                 中文
               </a>
             {% else %}
-              <a href="https://bohansu.github.io/en/" target="_self">
+              <a href="https://bohansu.github.io/en/" aria-label="Switch to English version">
                 <img class="svg" src="/images/en.svg" width="20pt">
                 English
               </a>
@@ -24,15 +24,20 @@
           </li>
 
           {% if is_en %}
-            <li class="masthead__menu-item"><a href="/en/#about-me">About</a></li>
-            <li class="masthead__menu-item"><a href="/en/#news">News</a></li>
-            <li class="masthead__menu-item"><a href="/en/#publications">Publications</a></li>
-            <li class="masthead__menu-item"><a href="/en/#projects">Projects</a></li>
-            <li class="masthead__menu-item"><a href="/en/#background">Background</a></li>
-            <li class="masthead__menu-item"><a href="/en/#contact">Contact</a></li>
+            <li class="masthead__menu-item"><a href="/en/#about-me" data-section-link="about-me">About</a></li>
+            <li class="masthead__menu-item"><a href="/en/#news" data-section-link="news">News</a></li>
+            <li class="masthead__menu-item"><a href="/en/#publications" data-section-link="publications">Publications</a></li>
+            <li class="masthead__menu-item"><a href="/en/#projects" data-section-link="projects">Projects</a></li>
+            <li class="masthead__menu-item"><a href="/en/#background" data-section-link="background">Background</a></li>
+            <li class="masthead__menu-item"><a href="/en/#contact" data-section-link="contact">Contact</a></li>
           {% else %}
             {% for link in site.data.navigation.main %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              {% if link.url contains '#' %}
+                {% assign section_id = link.url | split: '#' | last %}
+                <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" data-section-link="{{ section_id }}">{{ link.title }}</a></li>
+              {% else %}
+                <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              {% endif %}
             {% endfor %}
           {% endif %}
         </ul>
