@@ -261,26 +261,9 @@ h6,
     line-height: 1.08;
 }
 
-.page__content .home-shell p {
+.page__content .home-shell > section > p,
+.page__content .home-shell > section > div > p {
     margin: 0;
-}
-
-.page__content .home-shell .pub-item {
-    padding: 2rem;
-    border: 1px solid var(--home-border);
-    border-radius: 16px;
-    background: var(--home-surface-strong);
-    transition: all 0.25s ease;
-}
-
-.page__content .home-shell .pub-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(26, 45, 74, 0.08);
-    border-color: var(--home-border-strong);
-}
-
-.page__content .home-shell .pub-item--featured {
-    border-left: 4px solid var(--home-accent);
 }
 
 .page__content .section-kicker {
