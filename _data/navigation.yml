@@ -3,20 +3,17 @@ main:
   - title: "简介"
     url: "/#about-me"
 
-  - title: "研究主题"
-    url: "/#focus"
+  - title: "动态"
+    url: "/#news"
 
-  - title: "在研工作"
-    url: "/#research"
+  - title: "论文"
+    url: "/#publications"
 
   - title: "项目"
     url: "/#projects"
 
-  - title: "资历"
+  - title: "背景"
     url: "/#background"
 
-  - title: "材料"
-    url: "/#artifacts"
-
-  - title: "联系方式"
+  - title: "联系"
     url: "/#contact"
