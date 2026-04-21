@@ -1222,14 +1222,16 @@ h6,
     display: grid;
     grid-template-columns: minmax(0, 1.32fr) minmax(300px, 0.68fr);
     gap: 1.9rem;
-    align-items: start;
+    align-items: center;
 }
 
 .homepage .hero-copy {
     display: grid;
-    align-content: center;
-    gap: 1.2rem;
-    padding: 0.8rem 0.35rem 0.8rem 0;
+    align-content: start;
+    justify-self: start;
+    max-width: 42rem;
+    gap: 1.05rem;
+    padding: 0.3rem 0.2rem 0.3rem 0;
 }
 
 .homepage .page__content .hero-copy h1 {
@@ -1260,6 +1262,12 @@ h6,
     display: flex;
     flex-wrap: wrap;
     gap: 0.72rem;
+}
+
+.homepage .hero-pill-row,
+.homepage .page__content .hero-actions,
+.homepage .hero-jump-links {
+    max-width: 39rem;
 }
 
 .homepage .hero-pill,
@@ -1318,6 +1326,7 @@ h6,
 .homepage .hero-panel {
     display: grid;
     gap: 1rem;
+    align-self: center;
 }
 
 .homepage .surface-card {
@@ -1673,6 +1682,7 @@ h6,
 
     .homepage .hero-copy {
         padding-right: 0;
+        max-width: 100%;
     }
 
     .homepage .page__content .hero-copy h1 {
@@ -1740,6 +1750,7 @@ h6,
 
     .homepage .hero-copy {
         gap: 1.1rem;
+        max-width: 100%;
     }
 
     .homepage .page__content .hero-copy h1,
