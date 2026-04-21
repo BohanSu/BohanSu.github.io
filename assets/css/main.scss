@@ -1482,12 +1482,12 @@ h6,
 }
 
 .homepage--zh .page__content .hero-identity-card__body h2 {
-    font-size: clamp(1.38rem, 1.22rem + 0.72vw, 1.72rem);
+    font-size: clamp(1.38rem, calc(1.22rem + 0.72vw), 1.72rem);
     letter-spacing: -0.02em;
 }
 
 .homepage--en .page__content .hero-identity-card__body h2 {
-    font-size: clamp(0.98rem, 0.9rem + 0.42vw, 1.22rem);
+    font-size: clamp(0.98rem, calc(0.9rem + 0.42vw), 1.22rem);
     letter-spacing: -0.018em;
 }
 
