@@ -1229,7 +1229,9 @@ h6,
     display: grid;
     align-content: start;
     justify-self: start;
+    width: 100%;
     max-width: 42rem;
+    --hero-inline-max: min(100%, 39rem);
     gap: 1.05rem;
     padding: 0.3rem 0.2rem 0.3rem 0;
 }
@@ -1241,11 +1243,12 @@ h6,
     line-height: 0.96;
     letter-spacing: -0.055em;
     color: #10263a;
+    text-wrap: balance;
 }
 
 .homepage--en .page__content .hero-copy h1 {
-    max-width: 11.6ch;
-    font-size: clamp(2.8rem, 6vw, 4.85rem);
+    max-width: 14ch;
+    font-size: clamp(2.9rem, 5.8vw, 4.6rem);
     line-height: 0.98;
 }
 
@@ -1258,13 +1261,13 @@ h6,
 
 .homepage .hero-pill-row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-self: center;
     justify-self: center;
     gap: 0.72rem;
     width: 100%;
-    max-width: 39rem;
+    max-width: var(--hero-inline-max);
     margin-inline: auto;
 }
 
@@ -1277,11 +1280,12 @@ h6,
 
 .homepage .page__content .hero-actions {
     width: 100%;
-    max-width: 39rem;
+    max-width: var(--hero-inline-max);
     justify-content: center;
     align-self: center;
     justify-self: center;
     margin-inline: auto;
+    align-items: center;
 }
 
 .homepage .hero-pill,
@@ -1300,6 +1304,12 @@ h6,
     font-weight: 650;
     text-align: center;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.homepage .page__content .section-heading h2,
+.homepage .page__content .home-contact h2,
+.homepage .page__content .hero-identity-card__body h2 {
+    text-wrap: balance;
 }
 
 .homepage .hero-panel {
@@ -1452,8 +1462,9 @@ h6,
 
 .homepage .news-board {
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
     gap: 1.15rem;
+    align-items: start;
 }
 
 .homepage .timeline-list {
@@ -1496,6 +1507,7 @@ h6,
     font-size: 1.28rem;
     line-height: 1.25;
     color: #10263a;
+    text-wrap: balance;
 }
 
 .homepage .focus-note {
@@ -1508,7 +1520,7 @@ h6,
 .homepage .background-grid--three,
 .homepage .project-grid--featured {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
     gap: 1.15rem;
 }
 
@@ -1662,6 +1674,7 @@ h6,
     .homepage .hero-copy {
         padding-right: 0;
         max-width: 100%;
+        --hero-inline-max: 100%;
     }
 
     .homepage .page__content .hero-copy h1 {
@@ -1682,12 +1695,6 @@ h6,
     .homepage .home-v4 {
         gap: 3.5rem;
         padding-bottom: 3rem;
-    }
-
-    .homepage .research-grid,
-    .homepage .background-grid--three,
-    .homepage .project-grid--featured {
-        grid-template-columns: 1fr;
     }
 
     .homepage .hero-portrait {
@@ -1733,7 +1740,6 @@ h6,
     }
 
     .homepage .hero-pill-row {
-        flex-wrap: wrap;
         justify-content: center;
         max-width: 100%;
     }
