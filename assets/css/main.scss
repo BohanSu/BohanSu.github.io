@@ -1265,6 +1265,7 @@ h6,
     gap: 0.72rem;
     width: 100%;
     max-width: 39rem;
+    margin-inline: auto;
 }
 
 .homepage .metric-row,
@@ -1275,7 +1276,12 @@ h6,
 }
 
 .homepage .page__content .hero-actions {
+    width: 100%;
     max-width: 39rem;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    margin-inline: auto;
 }
 
 .homepage .hero-pill,
@@ -1750,6 +1756,7 @@ h6,
 
     .homepage .page__content .hero-actions {
         gap: 0.7rem;
+        max-width: 100%;
     }
 
     .homepage .home-button {
