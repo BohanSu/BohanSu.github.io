@@ -16,7 +16,7 @@
   }, observerOptions);
 
   function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.home-section, .topic-card, .entry-card, .project-card, .guide-card, .info-card');
+    const animatedElements = document.querySelectorAll('.home-section, .pub-item, .project-item, .news-item, .background-item');
 
     animatedElements.forEach((el, index) => {
       el.classList.add('animate-on-scroll');
@@ -65,7 +65,7 @@
       if (!ticking) {
         window.requestAnimationFrame(() => {
           const scrolled = window.pageYOffset;
-          const hero = document.querySelector('.home-hero');
+          const hero = document.querySelector('.home-hero-simple');
 
           if (hero && scrolled < window.innerHeight * 1.5) {
             const translateY = scrolled * 0.15;
@@ -103,7 +103,7 @@
   }
 
   function initCardHoverEffects() {
-    const cards = document.querySelectorAll('.topic-card, .entry-card, .project-card');
+    const cards = document.querySelectorAll('.topic-card, .entry-card, .project-card, .pub-item, .news-item');
 
     cards.forEach(card => {
       card.addEventListener('mouseenter', function(e) {
@@ -169,18 +169,18 @@
       initProgressiveImageLoading();
 
       setTimeout(() => {
-        const metricSection = document.querySelector('.metric-grid');
-        if (metricSection) {
-          const metricObserver = new IntersectionObserver((entries) => {
+        const statBoxes = document.querySelectorAll('.highlight-box');
+        if (statBoxes.length > 0) {
+          const statObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
               if (entry.isIntersecting) {
-                initMetricCounters();
-                metricObserver.unobserve(entry.target);
+                initStatCounters();
+                statObserver.unobserve(entry.target);
               }
             });
           }, { threshold: 0.5 });
 
-          metricObserver.observe(metricSection);
+          statBoxes.forEach(box => statObserver.observe(box));
         }
       }, 100);
 
