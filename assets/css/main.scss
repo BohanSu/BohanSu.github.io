@@ -1710,10 +1710,9 @@ h6,
     position: absolute;
     inset: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.35rem;
-    padding: 1rem 1.15rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.9rem;
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(248, 251, 253, 0.8) 38%, rgba(244, 248, 252, 0.92)),
         linear-gradient(135deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.12));
@@ -1723,19 +1722,19 @@ h6,
 
 .homepage .privacy-cover__label {
     margin: 0;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.34rem 0.74rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(19, 63, 119, 0.12);
+    box-shadow: 0 6px 16px rgba(24, 43, 64, 0.08);
     color: var(--landing-accent);
     font-size: 0.74rem;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-}
-
-.homepage .privacy-cover__note {
-    margin: 0;
-    color: #36526a;
-    font-size: 0.92rem;
-    font-weight: 600;
-    line-height: 1.45;
 }
 
 .homepage .metric-row span,
