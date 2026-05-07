@@ -73,7 +73,7 @@ redirect_from:
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">近期成果</p>
         <h3>论文、系统、竞赛同时输出</h3>
-        <p>ECCV 投稿、PEARL 系统推进、TPAMI 综述成稿，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
+        <p>ECCV 审稿中、PEARL 主实验推进、TPAMI 综述写作深化，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">合作偏好</p>
@@ -87,30 +87,54 @@ redirect_from:
     <div class="section-heading" data-reveal="up">
       <p class="section-kicker">时间线</p>
       <h2>近期动态</h2>
-      <p>把研究、工程与竞赛进展放在同一个节奏里持续推进。</p>
+      <p>把当前最重要的研究信号、系统推进节点和公开可说的阶段进展放在同一块面板里。</p>
+    </div>
+    <div class="signal-grid" aria-label="当前关键信号">
+      <article class="signal-card signal-card--primary surface-card" data-reveal="up">
+        <p class="mini-label">当前主线</p>
+        <h3>3 条主线同时推进</h3>
+        <p>视觉表征、结构化推理、多智能体系统并行展开，研究与工程没有分家，而是在同一个闭环里相互校正。</p>
+      </article>
+      <article class="signal-card surface-card" data-reveal="up">
+        <p class="mini-label">论文状态</p>
+        <h3>1 篇审稿中，2 篇写作中</h3>
+        <p>主页公开阶段、方向与问题意识；细节层面只保留足够说明能力边界的信息，不直接展开完整方案。</p>
+      </article>
+      <article class="signal-card surface-card" data-reveal="up">
+        <p class="mini-label">系统状态</p>
+        <h3>系统工作强调可验证与可观测</h3>
+        <p>当前更关注评测协议、诊断闭环和系统稳定性，而不是只展示一个最终分数或单次 demo。</p>
+      </article>
     </div>
     <div class="news-board">
       <article class="timeline-card surface-card" data-reveal="up">
         <div class="timeline-list">
+          <div class="timeline-item timeline-item--active">
+            <span class="timeline-date">2026.05</span>
+            <div class="timeline-body">
+              <h3>主页改版并同步隐私分层展示</h3>
+              <p>重写研究主页的信息结构：公开你正在做什么，弱化仍在投稿或写作阶段的具体题目、命名与实验配置。</p>
+            </div>
+          </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.04</span>
             <div class="timeline-body">
               <h3>TPAMI 综述正文成稿</h3>
-              <p>外观变化 ReID 综述 §2–§8 正文与 231 条引用已成稿，§1 引言与文献引用对齐仍在继续迭代。</p>
+              <p>综述主体框架已经稳定，当前工作重心转向引言收束、语言打磨与问题边界的进一步讲清。</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>ECCV 2026 投稿完成</h3>
-              <p>提交 Reliability-Aware 3D Geometric Injection for Universal Person Re-identification。</p>
+              <h3>ECCV 2026 进入审稿阶段</h3>
+              <p>一项围绕外观变化下通用行人重识别的投稿工作已提交，当前公开层只保留问题定义与技术轮廓。</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
               <h3>PEARL 全链路就绪，Gate B 通过验收</h3>
-              <p>graph_spec IR、validator、compiler、issue-list 修复与 joint-score 评测的 Phase 1 主线代码全部就绪，Gate B 本地三项指标达标；Phase 3–5 主实验已排队。</p>
+              <p>主线代码、结构校验与修复闭环已经联通，后续工作重点转到主实验排程、结果归因和投稿叙事收束。</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -125,12 +149,17 @@ redirect_from:
 
       <article class="focus-note surface-card surface-card--accent" data-reveal="up">
         <p class="mini-label">聚焦</p>
-        <h3>更看重这三件事</h3>
+        <h3>当前更在意的三件事</h3>
         <ul class="compact-list">
-          <li>把研究假设落到清晰的评测协议上，避免只靠局部指标讲故事。</li>
-          <li>把模型方法做成可复用系统，而不是只保留实验脚本。</li>
-          <li>在视觉任务与 LLM 系统之间寻找可迁移的问题结构。</li>
+          <li>把研究假设翻译成别人可以复查的评测协议，而不是只留下“这个指标涨了”。</li>
+          <li>让系统具备诊断、修复、观测能力，而不是只在 happy path 上工作。</li>
+          <li>在视觉问题与推理系统之间提炼能迁移的问题结构，而不是割裂地做两个方向。</li>
         </ul>
+        <div class="focus-status-strip" aria-label="当前状态标签">
+          <span>审稿中</span>
+          <span>写作中</span>
+          <span>系统主实验推进中</span>
+        </div>
       </article>
     </div>
   </section>
@@ -163,57 +192,65 @@ redirect_from:
     <div class="work-stack">
       <article class="work-card work-card--featured surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">ECCV 2026 投稿</span>
+          <span class="work-badge">ECCV 2026 审稿中</span>
           <span class="work-date">2025.10 - 2026.03</span>
         </div>
-        <h3>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</h3>
+        <h3>外观变化下的通用行人重识别投稿项目</h3>
         <p>
-          在 Universal ReID 中把单目 3D 人体几何当作有条件使用的结构证据而非恒可信辅助：SMPL 参数做运动学解耦，
-          一致性感知门控判断当前 3D 是否可靠，残差式双流融合保证坏 3D 不污染 2D 主干，在 9 个 benchmark 上验证几何注入的作用边界。
+          当前聚焦在换衣、遮挡、跨模态等场景下，如何让结构线索在“有帮助时被利用、失真时不误导主干表示”。
+          公开层面保留问题定义、方法边界与验证意识，具体命名、实现细节与实验组织在审稿阶段暂不完全展开。
         </p>
-        <div class="metric-row">
-          <span>SMPL 运动学解耦</span>
-          <span>可靠性门控</span>
-          <span>残差式双流融合</span>
-          <span>9 个 benchmark</span>
+        <div class="privacy-glass" aria-label="审稿中细节已做隐私保护">
+          <p class="privacy-glass__hint">审稿中：保留研究方向与能力侧重点，具体题目、模块命名和实验配置做了磨砂处理。</p>
+          <div class="metric-row metric-row--blurred" aria-hidden="true">
+            <span>3D 结构线索注入</span>
+            <span>可靠性判断机制</span>
+            <span>双路融合设计</span>
+            <span>多基准系统验证</span>
+          </div>
         </div>
       </article>
 
-      <article class="work-card surface-card" data-reveal="up">
+      <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
           <span class="work-badge">EMNLP 投稿筹备</span>
           <span class="work-date">2026.03 - 至今</span>
         </div>
-        <h3>PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction</h3>
+        <h3>小模型科学推理图抽取论文</h3>
         <p>
-          面向 ARCHE 的 Peircean 科学推理图抽取：把结构学习与 DOT 语法生成解耦、把诊断与修复解耦，
-          4B Qwen 学生基于 graph_spec IR + validator + compiler + issue-list 修复进行学习，配合 5 教师质量加权 SFT 与 Smart Prompt，
-          目标是在 joint-score 上取得多数教师优势。
+          正在推进一条“生成负责提出候选，外部系统负责校验、诊断与修复”的结构化推理路线，
+          目标是让小模型在科学推理图这类强结构任务上具备更稳定、可验证、可扩展的输出能力。
         </p>
-        <div class="metric-row">
-          <span>graph_spec IR</span>
-          <span>validator + compiler</span>
-          <span>issue-list 修复</span>
-          <span>5 教师质量加权 SFT</span>
-          <span>joint-score 多数教师优势</span>
+        <div class="privacy-glass" aria-label="写作中细节已做隐私保护">
+          <p class="privacy-glass__hint">写作中：保留任务类型、方法范式和预期贡献，训练细节与系统命名不在主页完全公开。</p>
+          <div class="metric-row metric-row--blurred" aria-hidden="true">
+            <span>schema-first 表达</span>
+            <span>校验-修复闭环</span>
+            <span>小模型主生成</span>
+            <span>多教师监督</span>
+            <span>结构化评测目标</span>
+          </div>
         </div>
       </article>
 
-      <article class="work-card surface-card" data-reveal="up">
+      <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
           <span class="work-badge">TPAMI 综述筹备</span>
           <span class="work-date">2026.03 - 至今</span>
         </div>
-        <h3>Appearance Variations in Person Re-Identification: A Survey</h3>
+        <h3>外观变化下的行人重识别综述</h3>
         <p>
-          以短期 / 长期 / 复合三分支重建外观变化的分类体系，并用"鲁棒性 vs. 泛化性"框架重新组织现有方法；
-          长期尺度显式区分衣着状态 / 衣着之外 / 部署演化三轴。§2–§8 正文与 231 条引用已成稿，§1 引言与语言润色仍在迭代。
+          正在重组外观变化问题的分类方式与评测视角，希望把“鲁棒性、泛化性、部署演化”之间长期被混写的边界重新讲清楚，
+          让这篇综述既能服务文献地图，也能服务后续方法设计与实验解释。
         </p>
-        <div class="metric-row">
-          <span>三分支分类</span>
-          <span>鲁棒性 vs. 泛化性框架</span>
-          <span>§2–§8 正文成稿</span>
-          <span>231 条引用</span>
+        <div class="privacy-glass" aria-label="写作中细节已做隐私保护">
+          <p class="privacy-glass__hint">写作中：公开综述主题和问题意识，具体章节组织、表述框架与文献编排暂时弱化展示。</p>
+          <div class="metric-row metric-row--blurred" aria-hidden="true">
+            <span>分类体系重建</span>
+            <span>评测视角校正</span>
+            <span>主体内容已成型</span>
+            <span>大规模文献整理</span>
+          </div>
         </div>
       </article>
     </div>

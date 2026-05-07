@@ -87,30 +87,54 @@ author: en
     <div class="section-heading" data-reveal="up">
       <p class="section-kicker">Recent Signals</p>
       <h2>Recent Updates</h2>
-      <p>Research, systems work, and competition projects are moving in the same loop.</p>
+      <p>The homepage now foregrounds the strongest public signals: what is active, what has moved forward, and what remains intentionally softened.</p>
+    </div>
+    <div class="signal-grid" aria-label="Current key signals">
+      <article class="signal-card signal-card--primary surface-card" data-reveal="up">
+        <p class="mini-label">Now Shipping</p>
+        <h3>Three tracks are active at once</h3>
+        <p>Visual representation, structured reasoning, and multi-agent systems are moving in parallel, with research and engineering informing the same loop.</p>
+      </article>
+      <article class="signal-card surface-card" data-reveal="up">
+        <p class="mini-label">Paper Status</p>
+        <h3>One under review, two in writing</h3>
+        <p>The page keeps stage, direction, and problem framing public, while leaving title-level naming and low-level execution details partially obscured.</p>
+      </article>
+      <article class="signal-card surface-card" data-reveal="up">
+        <p class="mini-label">System State</p>
+        <h3>Systems work is centered on verification</h3>
+        <p>The current emphasis is explicit evaluation logic, diagnosis loops, and observability, not just a single score or a polished demo path.</p>
+      </article>
     </div>
     <div class="news-board">
       <article class="timeline-card surface-card" data-reveal="up">
         <div class="timeline-list">
+          <div class="timeline-item timeline-item--active">
+            <span class="timeline-date">2026.05</span>
+            <div class="timeline-body">
+              <h3>Homepage revised with privacy-layered presentation</h3>
+              <p>The research homepage now shows what is actively being pursued while frosting exact titles, naming, and experiment configuration for work still under review or in writing.</p>
+            </div>
+          </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.04</span>
             <div class="timeline-body">
               <h3>TPAMI survey main body drafted</h3>
-              <p>§2–§8 of the appearance-variation ReID survey and 231 references are drafted; §1 Introduction and literature alignment are still under revision.</p>
+              <p>The main survey structure is stable; current effort is on tightening the introduction, wording, and the boundaries of the argument.</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>ECCV 2026 submission completed</h3>
-              <p>Submitted Reliability-Aware 3D Geometric Injection for Universal Person Re-identification.</p>
+              <h3>ECCV 2026 work moved into review</h3>
+              <p>A submission on Universal ReID under appearance variation has entered review; the public layer now keeps the problem statement and technical shape without exposing the full package.</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
               <h3>PEARL pipeline ready; Gate B passed</h3>
-              <p>The graph_spec IR, validator, compiler, issue-list repair loop, and joint-score evaluation pipeline are in place; Gate B local checks passed and Phase 3–5 main experiments are queued.</p>
+              <p>The core implementation and verification-repair loop are in place; the next phase is main-experiment execution, attribution analysis, and tighter paper framing.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -125,12 +149,17 @@ author: en
 
       <article class="focus-note surface-card surface-card--accent" data-reveal="up">
         <p class="mini-label">Current Focus</p>
-        <h3>What matters most</h3>
+        <h3>What matters most right now</h3>
         <ul class="compact-list">
-          <li>Turning research claims into explicit evaluation protocols instead of loose benchmark narratives.</li>
-          <li>Separating generation from verification so small models can produce verifiable structure reliably.</li>
-          <li>Building agent systems that can clarify requirements, route work, and expose their own failure modes.</li>
+          <li>Translating research claims into evaluation protocols that others can actually audit.</li>
+          <li>Building systems with diagnosis, repair, and observability rather than only a happy-path demo.</li>
+          <li>Finding problem structures that transfer between vision tasks and reasoning systems.</li>
         </ul>
+        <div class="focus-status-strip" aria-label="Current status tags">
+          <span>under review</span>
+          <span>in writing</span>
+          <span>main experiments in progress</span>
+        </div>
       </article>
     </div>
   </section>
@@ -163,58 +192,65 @@ author: en
     <div class="work-stack">
       <article class="work-card work-card--featured surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">ECCV 2026 Submission</span>
+          <span class="work-badge">ECCV 2026 Under Review</span>
           <span class="work-date">2025.10 - 2026.03</span>
         </div>
-        <h3>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</h3>
+        <h3>Submission on Universal ReID under appearance variation</h3>
         <p>
-          Focused on Universal ReID under occlusion, clothing change, and cross-modality. I proposed UniGeo by decoupling SMPL parameters into global shape and joint-topology representations,
-          introducing a Reliability-Aware Gate for adaptive residual fusion between 2D visual features and 3D structural features, and validating the design with unified training,
-          comparative experiments, ablations, gate-correlation analysis, fusion-complexity checks, and perturbation-stability verification across 9 benchmarks.
+          This project studies when structural cues should help person re-identification and when they should be prevented from distorting the main visual representation.
+          The public layer keeps the problem setting, method boundary, and evaluation mindset visible, while title-level naming and implementation details are intentionally softened during review.
         </p>
-        <div class="metric-row">
-          <span>UniGeo</span>
-          <span>global shape + joint topology</span>
-          <span>reliability-aware residual fusion</span>
-          <span>9 benchmarks</span>
+        <div class="privacy-glass" aria-label="Active submission details intentionally softened">
+          <p class="privacy-glass__hint">Under review: the topic and technical shape stay visible, while exact title, module naming, and experiment configuration are frosted.</p>
+          <div class="metric-row metric-row--blurred" aria-hidden="true">
+            <span>3D structural cue injection</span>
+            <span>reliability judgment</span>
+            <span>two-branch fusion</span>
+            <span>multi-benchmark validation</span>
+          </div>
         </div>
       </article>
 
-      <article class="work-card surface-card" data-reveal="up">
+      <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
           <span class="work-badge">Target: EMNLP</span>
           <span class="work-date">2026.03 - present</span>
         </div>
-        <h3>PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction</h3>
+        <h3>Paper in progress on small-model scientific reasoning graphs</h3>
         <p>
-          For ARCHE's Peircean scientific reasoning graph extraction task, PEARL decouples structure learning from DOT syntax generation and diagnosis from repair.
-          I designed the graph_spec intermediate representation, validator, compiler, issue-list repair loop, and joint-score evaluation pipeline; a 4B Qwen student handles generation,
-          while structural checking and repair are managed externally and trained with five-teacher quality-weighted SFT plus Smart Prompt.
+          I am pushing a line of work where generation proposes candidates while external tooling performs structural checking, diagnosis, and repair,
+          with the goal of making small models more stable and verifiable on scientific reasoning graph extraction.
         </p>
-        <div class="metric-row">
-          <span>graph_spec IR</span>
-          <span>validator + compiler</span>
-          <span>issue-list repair</span>
-          <span>5-teacher weighted SFT</span>
-          <span>joint-score target</span>
+        <div class="privacy-glass" aria-label="Work-in-progress details intentionally softened">
+          <p class="privacy-glass__hint">In writing: the task type, method stance, and contribution shape are public; training specifics and system naming stay partially hidden.</p>
+          <div class="metric-row metric-row--blurred" aria-hidden="true">
+            <span>schema-first representation</span>
+            <span>verification-repair loop</span>
+            <span>small-model generation</span>
+            <span>multi-teacher supervision</span>
+            <span>structured evaluation target</span>
+          </div>
         </div>
       </article>
 
-      <article class="work-card surface-card" data-reveal="up">
+      <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
           <span class="work-badge">TPAMI Survey Preparation</span>
           <span class="work-date">2026.03 - present</span>
         </div>
-        <h3>Appearance Variations in Person Re-Identification: A Survey</h3>
+        <h3>Survey in progress on appearance variation in person re-identification</h3>
         <p>
-          Reconstructs the field through a three-branch framework of short-term, long-term, and compound appearance variations, then reorganizes existing methods through a robustness-vs-generalization lens.
-          The long-term branch is further split into clothing state, beyond-clothing, and deployment evolution. §2–§8 and 231 references are drafted, with current attention on evaluation blind spots and metric transferability.
+          This survey reorganizes how appearance variation should be grouped and evaluated, with an emphasis on clarifying the boundaries between robustness, generalization, and deployment evolution.
+          The aim is not just a literature map, but a cleaner frame for future method design and experimental interpretation.
         </p>
-        <div class="metric-row">
-          <span>short / long / compound</span>
-          <span>robustness vs. generalization</span>
-          <span>231 references</span>
-          <span>evaluation blind spots</span>
+        <div class="privacy-glass" aria-label="Work-in-progress details intentionally softened">
+          <p class="privacy-glass__hint">In writing: the survey topic and problem lens are public, while section structure, wording choices, and literature arrangement are deliberately softened.</p>
+          <div class="metric-row metric-row--blurred" aria-hidden="true">
+            <span>taxonomy redesign</span>
+            <span>evaluation reframing</span>
+            <span>main body drafted</span>
+            <span>large-scale literature synthesis</span>
+          </div>
         </div>
       </article>
     </div>
