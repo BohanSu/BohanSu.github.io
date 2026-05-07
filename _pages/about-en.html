@@ -87,24 +87,7 @@ author: en
     <div class="section-heading" data-reveal="up">
       <p class="section-kicker">Recent Signals</p>
       <h2>Recent Updates</h2>
-      <p>The homepage now foregrounds the strongest public signals: what is active, what has moved forward, and what remains intentionally softened.</p>
-    </div>
-    <div class="signal-grid" aria-label="Current key signals">
-      <article class="signal-card signal-card--primary surface-card" data-reveal="up">
-        <p class="mini-label">Now Shipping</p>
-        <h3>Three tracks are active at once</h3>
-        <p>Visual representation, structured reasoning, and multi-agent systems are moving in parallel, with research and engineering informing the same loop.</p>
-      </article>
-      <article class="signal-card surface-card" data-reveal="up">
-        <p class="mini-label">Paper Status</p>
-        <h3>One under review, two in writing</h3>
-        <p>The page keeps stage, direction, and problem framing public, while leaving title-level naming and low-level execution details partially obscured.</p>
-      </article>
-      <article class="signal-card surface-card" data-reveal="up">
-        <p class="mini-label">System State</p>
-        <h3>Systems work is centered on verification</h3>
-        <p>The current emphasis is explicit evaluation logic, diagnosis loops, and observability, not just a single score or a polished demo path.</p>
-      </article>
+      <p>This section is reserved for actual research and system progress, not for website-maintenance notes.</p>
     </div>
     <div class="news-board">
       <article class="timeline-card surface-card" data-reveal="up">
@@ -112,8 +95,8 @@ author: en
           <div class="timeline-item timeline-item--active">
             <span class="timeline-date">2026.05</span>
             <div class="timeline-body">
-              <h3>Homepage revised with privacy-layered presentation</h3>
-              <p>The research homepage now shows what is actively being pursued while frosting exact titles, naming, and experiment configuration for work still under review or in writing.</p>
+              <h3>PEARL main experiments and paper writing advancing together</h3>
+              <p>Main-experiment execution, result attribution, and paper framing are now being pushed in parallel, with attention on whether the small-model reasoning pipeline is truly stable and reusable.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -200,13 +183,22 @@ author: en
           This project studies when structural cues should help person re-identification and when they should be prevented from distorting the main visual representation.
           The public layer keeps the problem setting, method boundary, and evaluation mindset visible, while title-level naming and implementation details are intentionally softened during review.
         </p>
-        <div class="privacy-glass" aria-label="Active submission details intentionally softened">
-          <p class="privacy-glass__hint">Under review: the topic and technical shape stay visible, while exact title, module naming, and experiment configuration are frosted.</p>
-          <div class="metric-row metric-row--blurred" aria-hidden="true">
-            <span>3D structural cue injection</span>
-            <span>reliability judgment</span>
-            <span>two-branch fusion</span>
-            <span>multi-benchmark validation</span>
+        <div class="privacy-mask" aria-label="Under-review details are intentionally hidden">
+          <div class="privacy-mask__ghost" aria-hidden="true">
+            <span class="privacy-mask__line privacy-mask__line--long"></span>
+            <span class="privacy-mask__line privacy-mask__line--mid"></span>
+            <span class="privacy-mask__line privacy-mask__line--short"></span>
+            <div class="privacy-mask__chips">
+              <span>module naming</span>
+              <span>training details</span>
+              <span>experiment setup</span>
+              <span>ablation logic</span>
+            </div>
+          </div>
+          <div class="privacy-mask__overlay">
+            <p class="privacy-mask__kicker">Frosted While Under Review</p>
+            <h4>Problem public, recipe private</h4>
+            <p>Visitors can see that this is a submission on appearance-variation ReID and that it deals with when structural cues should or should not be trusted; exact title, module naming, and experiment packaging stay covered for now.</p>
           </div>
         </div>
       </article>
@@ -221,14 +213,22 @@ author: en
           I am pushing a line of work where generation proposes candidates while external tooling performs structural checking, diagnosis, and repair,
           with the goal of making small models more stable and verifiable on scientific reasoning graph extraction.
         </p>
-        <div class="privacy-glass" aria-label="Work-in-progress details intentionally softened">
-          <p class="privacy-glass__hint">In writing: the task type, method stance, and contribution shape are public; training specifics and system naming stay partially hidden.</p>
-          <div class="metric-row metric-row--blurred" aria-hidden="true">
-            <span>schema-first representation</span>
-            <span>verification-repair loop</span>
-            <span>small-model generation</span>
-            <span>multi-teacher supervision</span>
-            <span>structured evaluation target</span>
+        <div class="privacy-mask" aria-label="Work-in-progress details are intentionally hidden">
+          <div class="privacy-mask__ghost" aria-hidden="true">
+            <span class="privacy-mask__line privacy-mask__line--long"></span>
+            <span class="privacy-mask__line privacy-mask__line--mid"></span>
+            <span class="privacy-mask__line privacy-mask__line--short"></span>
+            <div class="privacy-mask__chips">
+              <span>system naming</span>
+              <span>training strategy</span>
+              <span>repair loop</span>
+              <span>evaluation target</span>
+            </div>
+          </div>
+          <div class="privacy-mask__overlay">
+            <p class="privacy-mask__kicker">Frosted While Writing</p>
+            <h4>Route public, training details private</h4>
+            <p>Visitors can understand that this work targets small-model scientific reasoning graphs and that the core stance is to decouple generation from verification; the system naming and training configuration remain covered during writing.</p>
           </div>
         </div>
       </article>
@@ -243,13 +243,22 @@ author: en
           This survey reorganizes how appearance variation should be grouped and evaluated, with an emphasis on clarifying the boundaries between robustness, generalization, and deployment evolution.
           The aim is not just a literature map, but a cleaner frame for future method design and experimental interpretation.
         </p>
-        <div class="privacy-glass" aria-label="Work-in-progress details intentionally softened">
-          <p class="privacy-glass__hint">In writing: the survey topic and problem lens are public, while section structure, wording choices, and literature arrangement are deliberately softened.</p>
-          <div class="metric-row metric-row--blurred" aria-hidden="true">
-            <span>taxonomy redesign</span>
-            <span>evaluation reframing</span>
-            <span>main body drafted</span>
-            <span>large-scale literature synthesis</span>
+        <div class="privacy-mask" aria-label="Work-in-progress details are intentionally hidden">
+          <div class="privacy-mask__ghost" aria-hidden="true">
+            <span class="privacy-mask__line privacy-mask__line--long"></span>
+            <span class="privacy-mask__line privacy-mask__line--mid"></span>
+            <span class="privacy-mask__line privacy-mask__line--short"></span>
+            <div class="privacy-mask__chips">
+              <span>section structure</span>
+              <span>taxonomy frame</span>
+              <span>literature layout</span>
+              <span>figure design</span>
+            </div>
+          </div>
+          <div class="privacy-mask__overlay">
+            <p class="privacy-mask__kicker">Frosted While Writing</p>
+            <h4>Topic public, organization private</h4>
+            <p>Visitors can see that the survey reworks the appearance-variation taxonomy and evaluation lens; the exact section ordering, narrative structure, and literature arrangement remain covered before finalization.</p>
           </div>
         </div>
       </article>

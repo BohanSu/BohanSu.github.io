@@ -87,24 +87,7 @@ redirect_from:
     <div class="section-heading" data-reveal="up">
       <p class="section-kicker">时间线</p>
       <h2>近期动态</h2>
-      <p>把当前最重要的研究信号、系统推进节点和公开可说的阶段进展放在同一块面板里。</p>
-    </div>
-    <div class="signal-grid" aria-label="当前关键信号">
-      <article class="signal-card signal-card--primary surface-card" data-reveal="up">
-        <p class="mini-label">当前主线</p>
-        <h3>3 条主线同时推进</h3>
-        <p>视觉表征、结构化推理、多智能体系统并行展开，研究与工程没有分家，而是在同一个闭环里相互校正。</p>
-      </article>
-      <article class="signal-card surface-card" data-reveal="up">
-        <p class="mini-label">论文状态</p>
-        <h3>1 篇审稿中，2 篇写作中</h3>
-        <p>主页公开阶段、方向与问题意识；细节层面只保留足够说明能力边界的信息，不直接展开完整方案。</p>
-      </article>
-      <article class="signal-card surface-card" data-reveal="up">
-        <p class="mini-label">系统状态</p>
-        <h3>系统工作强调可验证与可观测</h3>
-        <p>当前更关注评测协议、诊断闭环和系统稳定性，而不是只展示一个最终分数或单次 demo。</p>
-      </article>
+      <p>只放研究、系统与竞赛的真实推进节点，不放主页改版这种站点维护信息。</p>
     </div>
     <div class="news-board">
       <article class="timeline-card surface-card" data-reveal="up">
@@ -112,8 +95,8 @@ redirect_from:
           <div class="timeline-item timeline-item--active">
             <span class="timeline-date">2026.05</span>
             <div class="timeline-body">
-              <h3>主页改版并同步隐私分层展示</h3>
-              <p>重写研究主页的信息结构：公开你正在做什么，弱化仍在投稿或写作阶段的具体题目、命名与实验配置。</p>
+              <h3>PEARL 主实验与投稿写作并行推进</h3>
+              <p>当前把主实验排程、结果归因和论文叙事同时向前推进，重点验证小模型结构化推理链路是否真正稳定可复用。</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -200,13 +183,22 @@ redirect_from:
           当前聚焦在换衣、遮挡、跨模态等场景下，如何让结构线索在“有帮助时被利用、失真时不误导主干表示”。
           公开层面保留问题定义、方法边界与验证意识，具体命名、实现细节与实验组织在审稿阶段暂不完全展开。
         </p>
-        <div class="privacy-glass" aria-label="审稿中细节已做隐私保护">
-          <p class="privacy-glass__hint">审稿中：保留研究方向与能力侧重点，具体题目、模块命名和实验配置做了磨砂处理。</p>
-          <div class="metric-row metric-row--blurred" aria-hidden="true">
-            <span>3D 结构线索注入</span>
-            <span>可靠性判断机制</span>
-            <span>双路融合设计</span>
-            <span>多基准系统验证</span>
+        <div class="privacy-mask" aria-label="审稿中细节已隐藏">
+          <div class="privacy-mask__ghost" aria-hidden="true">
+            <span class="privacy-mask__line privacy-mask__line--long"></span>
+            <span class="privacy-mask__line privacy-mask__line--mid"></span>
+            <span class="privacy-mask__line privacy-mask__line--short"></span>
+            <div class="privacy-mask__chips">
+              <span>模块命名</span>
+              <span>训练细节</span>
+              <span>实验配置</span>
+              <span>消融设计</span>
+            </div>
+          </div>
+          <div class="privacy-mask__overlay">
+            <p class="privacy-mask__kicker">Frosted While Under Review</p>
+            <h4>公开问题，不公开配方</h4>
+            <p>访客能知道这是一个面向外观变化 ReID 的投稿项目，以及你在处理结构线索的可信使用边界；具体标题、模块命名和实验组织暂时不在主页展开。</p>
           </div>
         </div>
       </article>
@@ -221,14 +213,22 @@ redirect_from:
           正在推进一条“生成负责提出候选，外部系统负责校验、诊断与修复”的结构化推理路线，
           目标是让小模型在科学推理图这类强结构任务上具备更稳定、可验证、可扩展的输出能力。
         </p>
-        <div class="privacy-glass" aria-label="写作中细节已做隐私保护">
-          <p class="privacy-glass__hint">写作中：保留任务类型、方法范式和预期贡献，训练细节与系统命名不在主页完全公开。</p>
-          <div class="metric-row metric-row--blurred" aria-hidden="true">
-            <span>schema-first 表达</span>
-            <span>校验-修复闭环</span>
-            <span>小模型主生成</span>
-            <span>多教师监督</span>
-            <span>结构化评测目标</span>
+        <div class="privacy-mask" aria-label="写作中细节已隐藏">
+          <div class="privacy-mask__ghost" aria-hidden="true">
+            <span class="privacy-mask__line privacy-mask__line--long"></span>
+            <span class="privacy-mask__line privacy-mask__line--mid"></span>
+            <span class="privacy-mask__line privacy-mask__line--short"></span>
+            <div class="privacy-mask__chips">
+              <span>系统命名</span>
+              <span>训练策略</span>
+              <span>修复闭环</span>
+              <span>评测目标</span>
+            </div>
+          </div>
+          <div class="privacy-mask__overlay">
+            <p class="privacy-mask__kicker">Frosted While Writing</p>
+            <h4>公开路线，不公开训练细节</h4>
+            <p>访客能看懂你在做小模型科学推理图抽取，并且核心方法论是生成与校验解耦；系统命名、训练配置和投稿包装在写作阶段先做遮罩。</p>
           </div>
         </div>
       </article>
@@ -243,13 +243,22 @@ redirect_from:
           正在重组外观变化问题的分类方式与评测视角，希望把“鲁棒性、泛化性、部署演化”之间长期被混写的边界重新讲清楚，
           让这篇综述既能服务文献地图，也能服务后续方法设计与实验解释。
         </p>
-        <div class="privacy-glass" aria-label="写作中细节已做隐私保护">
-          <p class="privacy-glass__hint">写作中：公开综述主题和问题意识，具体章节组织、表述框架与文献编排暂时弱化展示。</p>
-          <div class="metric-row metric-row--blurred" aria-hidden="true">
-            <span>分类体系重建</span>
-            <span>评测视角校正</span>
-            <span>主体内容已成型</span>
-            <span>大规模文献整理</span>
+        <div class="privacy-mask" aria-label="写作中细节已隐藏">
+          <div class="privacy-mask__ghost" aria-hidden="true">
+            <span class="privacy-mask__line privacy-mask__line--long"></span>
+            <span class="privacy-mask__line privacy-mask__line--mid"></span>
+            <span class="privacy-mask__line privacy-mask__line--short"></span>
+            <div class="privacy-mask__chips">
+              <span>章节结构</span>
+              <span>分类框架</span>
+              <span>文献编排</span>
+              <span>图表设计</span>
+            </div>
+          </div>
+          <div class="privacy-mask__overlay">
+            <p class="privacy-mask__kicker">Frosted While Writing</p>
+            <h4>公开主题，不公开组织细节</h4>
+            <p>访客能知道你在重写外观变化 ReID 的分类与评测视角；具体章节组织、叙事框架和文献编排在正式定稿前不完全外放。</p>
           </div>
         </div>
       </article>
