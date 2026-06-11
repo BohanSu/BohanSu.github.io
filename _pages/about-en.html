@@ -73,7 +73,7 @@ author: en
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Current Output</p>
         <h3>Papers, systems, and competitions together</h3>
-        <p>An ECCV 2026 submission, PEARL system progress toward EMNLP, a TPAMI survey draft, and national-level systems work define the current output.</p>
+        <p>An ECCV 2026 submission, PEARL system progress toward AAAI, a TPAMI survey draft, MCM 2026 Finalist, and national-level systems work define the current output.</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Collaboration Fit</p>
@@ -109,8 +109,15 @@ author: en
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>PEARL pipeline ready; Gate B passed</h3>
-              <p>The core implementation and verification-repair loop are in place; the next phase is main-experiment execution, attribution analysis, and tighter paper framing.</p>
+              <h3>PEARL pipeline ready; targeting AAAI</h3>
+              <p>The core implementation and verification-repair loop are in place; the next phase is main-experiment execution, attribution analysis, and tighter paper framing for AAAI submission.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2026.02</span>
+            <div class="timeline-body">
+              <h3>MCM 2026 Finalist Award</h3>
+              <p>SmartPhone Battery modeling project earned Finalist recognition with dual-branch ECM-EKF + PINN approach achieving 1.24% SOC RMSE and 8.7% TTE MAPE.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -156,7 +163,7 @@ author: en
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 02</p>
         <h3>Schema-first structured scientific reasoning with small models</h3>
-        <p>Decoupling structure learning from syntax generation and diagnosis from repair. PEARL turns ARCHE's scientific reasoning graph extraction into a validator-centered, verifiable training framework for smaller models.</p>
+        <p>Decoupling generation from verification with training-free curation and student SFT. PEARL positions as a complete framework for scientific reasoning graph extraction, targeting small models like Qwen3.5-4B with curriculum learning and verifiable supervision.</p>
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">Direction 03</p>
@@ -197,26 +204,26 @@ author: en
 
       <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">Target: EMNLP</span>
+          <span class="work-badge">Target: AAAI</span>
           <span class="work-date">2026.03 - present</span>
         </div>
-        <h3>Paper in progress on small-model scientific reasoning graphs</h3>
+        <h3>PEARL: Verifiable curation and small-model learning for scientific reasoning graphs</h3>
         <p>
-          I am pushing a line of work where generation proposes candidates while external tooling performs structural checking, diagnosis, and repair,
-          with the goal of making small models more stable and verifiable on scientific reasoning graph extraction.
+          Positioned as a complete framework organized around generation-verification decoupling, with training-free data construction layer and student SFT layer.
+          Models propose reasoning graph candidates while code-side handles structural constraints, compilability, and source alignment.
         </p>
         <div class="privacy-cover" aria-label="Work-in-progress details are intentionally hidden">
           <div class="privacy-cover__content" aria-hidden="true">
             <p>
-              The detailed layer includes system naming, training strategy, repair-loop implementation, and evaluation packaging,
+              The detailed layer includes graph_spec IR design, semantic-closure workflow, curriculum learning strategy (nodes → reasoning units → graph_spec → DOT), and evaluation packaging,
               but remains visually softened on the homepage.
             </p>
             <div class="metric-row">
-              <span>schema-first representation</span>
-              <span>verification-repair loop</span>
-              <span>small-model generation</span>
-              <span>multi-teacher supervision</span>
-              <span>structured evaluation target</span>
+              <span>training-free curation</span>
+              <span>graph_spec IR</span>
+              <span>semantic closure</span>
+              <span>curriculum learning</span>
+              <span>small-model SFT</span>
             </div>
           </div>
           <div class="privacy-cover__veil">
@@ -311,16 +318,31 @@ author: en
 
       <article class="project-card surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">Innovation Project</span>
-          <span class="work-date">2024.10 - 2025.06</span>
+          <span class="work-badge">Xiaomi Cup National Third Prize</span>
+          <span class="work-date">2025.03 - 2025.08</span>
         </div>
-        <h3>Digital Legacy Interactive Exhibition System</h3>
-        <p>Participated in the design and development of a 3D interaction module for digital memory preservation and virtual asset revitalization, building a Unity3D-based interactive prototype and contributing interaction logic and scene-expression design.</p>
+        <h3>Xiaomi Quadruped Robot Intelligent Logistics Delivery System</h3>
+        <p>Built a complete logistics delivery system on Xiaomi Quadruped Platform decomposed into departure, pickup, navigation, storage identification, unloading, return, and secondary delivery stages. Focused on state transitions, action timing coordination, and reducing failure propagation.</p>
         <div class="metric-row">
-          <span>Unity3D</span>
-          <span>3D interaction</span>
-          <span>digital memory</span>
-          <span>exhibition prototype</span>
+          <span>task decomposition</span>
+          <span>state machine</span>
+          <span>closed-loop delivery</span>
+          <span>failure mitigation</span>
+        </div>
+      </article>
+
+      <article class="project-card surface-card" data-reveal="up">
+        <div class="work-header">
+          <span class="work-badge">MCM 2026 Finalist</span>
+          <span class="work-date">2026.01 - 2026.02</span>
+        </div>
+        <h3>SmartPhone Battery: The Moment of Depletion</h3>
+        <p>Built unified physical layer with dual-branch solvers: ECM-EKF for real-time SOC estimation and drift correction; PINN with identical dynamics for nonlinear fitting and factor attribution. Validated on 120,000+ time steps achieving 1.24% SOC RMSE and 8.7% TTE MAPE.</p>
+        <div class="metric-row">
+          <span>ECM-EKF</span>
+          <span>PINN</span>
+          <span>1.24% RMSE</span>
+          <span>8.7% MAPE</span>
         </div>
       </article>
     </div>
@@ -351,8 +373,10 @@ author: en
         <ul class="compact-list">
           <li>National University IoT Design Competition (Huawei Cup): National First Prize, Top 6</li>
           <li>China Youth Sci-Tech Innovation Challenge: National Second Prize</li>
-          <li>National University Computer System Capability Competition: National Third Prize</li>
-          <li>MCM/ICM: Honorable Mention</li>
+          <li>National University Computer System Capability Competition (Xiaomi Cup): National Third Prize</li>
+          <li>MCM 2026: Finalist</li>
+          <li>MCM 2025: Honorable Mention</li>
+          <li>CUMCM Hubei Division: Second Prize</li>
         </ul>
       </article>
 

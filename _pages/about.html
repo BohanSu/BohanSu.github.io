@@ -73,7 +73,7 @@ redirect_from:
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">近期成果</p>
         <h3>论文、系统、竞赛同时输出</h3>
-        <p>ECCV 审稿中、PEARL 主实验推进、TPAMI 综述写作深化，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
+        <p>ECCV 审稿中、PEARL 主实验推进（目标 AAAI）、TPAMI 综述写作深化、MCM 2026 Finalist，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">合作偏好</p>
@@ -109,8 +109,15 @@ redirect_from:
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>PEARL 全链路就绪，Gate B 通过验收</h3>
-              <p>主线代码、结构校验与修复闭环已经联通，后续工作重点转到主实验排程、结果归因和投稿叙事收束。</p>
+              <h3>PEARL 全链路就绪，投稿目标 AAAI</h3>
+              <p>主线代码、结构校验与修复闭环已经联通，后续工作重点转到主实验排程、结果归因和 AAAI 投稿叙事收束。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2026.02</span>
+            <div class="timeline-body">
+              <h3>MCM 2026 Finalist Award</h3>
+              <p>SmartPhone Battery 建模项目采用 ECM-EKF + PINN 双分支方案，获得 Finalist 荣誉，SOC RMSE 1.24%，TTE MAPE 8.7%。</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -156,7 +163,7 @@ redirect_from:
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">方向 02</p>
         <h3>生成-验证解耦的结构化科学推理</h3>
-        <p>关注把生成交给小模型、把结构校验与修复外包给 validator/compiler/repair，在 ARCHE 科学推理图抽取任务上推进 PEARL 这个 schema-first 框架。</p>
+        <p>将 PEARL 定位为面向科学推理图抽取的总框架，围绕"生成与验证解耦"组织 training-free 数据构建层与 student SFT 层，支持 Qwen3.5-4B 等小模型的课程学习与可验证监督。</p>
       </article>
       <article class="research-card surface-card" data-reveal="up">
         <p class="mini-label">方向 03</p>
@@ -195,32 +202,32 @@ redirect_from:
         </div>
       </article>
 
-      <article class="work-card work-card--private surface-card" data-reveal="up">
-        <div class="work-header">
-          <span class="work-badge">EMNLP 投稿筹备</span>
-          <span class="work-date">2026.03 - 至今</span>
+      <article class=”work-card work-card--private surface-card” data-reveal=”up”>
+        <div class=”work-header”>
+          <span class=”work-badge”>AAAI 投稿筹备</span>
+          <span class=”work-date”>2026.03 - 至今</span>
         </div>
-        <h3>小模型科学推理图抽取论文</h3>
+        <h3>PEARL：可验证数据构建与小模型学习的科学推理图抽取</h3>
         <p>
-          正在推进一条“生成负责提出候选，外部系统负责校验、诊断与修复”的结构化推理路线，
-          目标是让小模型在科学推理图这类强结构任务上具备更稳定、可验证、可扩展的输出能力。
+          将 PEARL 定位为总框架，围绕”生成与验证解耦”组织 training-free 数据构建层与 student SFT 层。
+          模型负责提出推理图候选，代码侧负责结构约束、可编译性和来源对齐。
         </p>
-        <div class="privacy-cover" aria-label="写作中细节已隐藏">
-          <div class="privacy-cover__content" aria-hidden="true">
+        <div class=”privacy-cover” aria-label=”写作中细节已隐藏”>
+          <div class=”privacy-cover__content” aria-hidden=”true”>
             <p>
-              细节层包含系统命名、训练策略、修复闭环实现与评测组织，
-              当前不在主页公开展开，只保留被遮罩的工作轮廓。
+              细节层包含 graph_spec 中间表示设计、semantic-closure 流程、课程学习策略（nodes → reasoning units → graph_spec → DOT）与评测组织，
+              当前不在主页公开展开。
             </p>
-            <div class="metric-row">
-              <span>schema-first 表达</span>
-              <span>校验-修复闭环</span>
-              <span>小模型主生成</span>
-              <span>多教师监督</span>
-              <span>结构化评测目标</span>
+            <div class=”metric-row”>
+              <span>training-free 构建</span>
+              <span>graph_spec IR</span>
+              <span>semantic closure</span>
+              <span>课程学习</span>
+              <span>小模型 SFT</span>
             </div>
           </div>
-          <div class="privacy-cover__veil">
-            <p class="privacy-cover__label">写作中</p>
+          <div class=”privacy-cover__veil”>
+            <p class=”privacy-cover__label”>写作中</p>
           </div>
         </div>
       </article>
@@ -305,10 +312,35 @@ redirect_from:
           <span>嵌入式联调</span>
         </div>
       </article>
-    </div>
-  </section>
+      <article class="project-card surface-card" data-reveal="up">
+        <div class="work-header">
+          <span class="work-badge">小米杯全国三等奖</span>
+          <span class="work-date">2025.03 - 2025.08</span>
+        </div>
+        <h3>小米四足机器人智能物流配送系统</h3>
+        <p>基于小米四足平台构建完整物流配送系统，拆分为出发、取货、路径行进、库位识别、卸货、返程和二次配送等阶段，重点优化状态切换、动作时序衔接与故障传播抑制。</p>
+        <div class="metric-row">
+          <span>任务拆解</span>
+          <span>状态机</span>
+          <span>闭环配送</span>
+          <span>故障抑制</span>
+        </div>
+      </article>
 
-  <section class="home-section home-section--compact" id="background">
+      <article class="project-card surface-card" data-reveal="up">
+        <div class="work-header">
+          <span class="work-badge">MCM 2026 Finalist</span>
+          <span class="work-date">2026.01 - 2026.02</span>
+        </div>
+        <h3>SmartPhone Battery: The Moment of Depletion</h3>
+        <p>建立统一物理层，采用双分支求解器：ECM-EKF 用于实时 SOC 估计和漂移修正；PINN 将相同动力学写入损失函数用于非线性拟合。在 120,000+ 时间步验证，SOC RMSE 1.24%，TTE MAPE 8.7%。</p>
+        <div class="metric-row">
+          <span>ECM-EKF</span>
+          <span>PINN</span>
+          <span>1.24% RMSE</span>
+          <span>8.7% MAPE</span>
+        </div>
+      </article>
     <div class="section-heading" data-reveal="up">
       <p class="section-kicker">履历</p>
       <h2>教育背景与获奖</h2>
@@ -333,6 +365,10 @@ redirect_from:
         <ul class="compact-list">
           <li>全国大学生物联网设计大赛（华为杯）全国一等奖 Top 6</li>
           <li>中国青年科技创新揭榜挂帅擂台赛 全国二等奖</li>
+          <li>全国大学生计算机系统能力大赛（小米杯）全国三等奖</li>
+          <li>美国大学生数学建模竞赛 2026 Finalist</li>
+          <li>美国大学生数学建模竞赛 2025 Honorable Mention</li>
+          <li>全国大学生数学建模竞赛湖北赛区 二等奖</li>
           <li>郑格如一等奖学金（年级答辩排名第一且唯一）</li>
         </ul>
       </article>
