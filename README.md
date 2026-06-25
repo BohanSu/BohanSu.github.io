@@ -10,9 +10,9 @@ I am an undergraduate in **Software Engineering** at **Wuhan University**. My cu
 
 ## Current Research
 - **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**
-  ECCV 2026 submission.
-- **PEARL: Decoupling Generation from Verification for Small-Model Scientific Reasoning Graph Extraction**
-  Ongoing work, planned submission to EMNLP.
+  ECCV 2026 accepted.
+- **PEARL: Verifiable Curation and Small-Model Learning for Scientific Reasoning Graph Extraction**
+  WAICA Workshop accepted; extended version targeting AAAI.
 - **Appearance Variations in Person Re-Identification: A Survey**
   Ongoing work, TPAMI survey preparation.
 

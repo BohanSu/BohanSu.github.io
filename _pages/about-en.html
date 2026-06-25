@@ -73,7 +73,7 @@ author: en
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Current Output</p>
         <h3>Papers, systems, and competitions together</h3>
-        <p>An ECCV 2026 submission, PEARL system progress toward AAAI, a TPAMI survey draft, MCM 2026 Finalist, and national-level systems work define the current output.</p>
+        <p>An ECCV 2026 acceptance, a WAICA Workshop acceptance with PEARL expanding toward AAAI, a TPAMI survey draft, MCM 2026 Finalist, and national-level systems work define the current output.</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">Collaboration Fit</p>
@@ -93,6 +93,13 @@ author: en
       <article class="timeline-card surface-card" data-reveal="up">
         <div class="timeline-list">
           <div class="timeline-item">
+            <span class="timeline-date">2026.06</span>
+            <div class="timeline-body">
+              <h3>ECCV 2026 paper accepted</h3>
+              <p><em>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</em> was accepted to ECCV 2026, so the homepage now exposes the full title and core technical framing.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
             <span class="timeline-date">2026.04</span>
             <div class="timeline-body">
               <h3>TPAMI survey main body drafted</h3>
@@ -102,15 +109,8 @@ author: en
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>ECCV 2026 work moved into review</h3>
-              <p>A submission on Universal ReID under appearance variation has entered review; the public layer now keeps the problem statement and technical shape without exposing the full package.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2026.03</span>
-            <div class="timeline-body">
-              <h3>PEARL pipeline ready; targeting AAAI</h3>
-              <p>The core implementation and verification-repair loop are in place; the next phase is main-experiment execution, attribution analysis, and tighter paper framing for AAAI submission.</p>
+              <h3>PEARL workshop version accepted; AAAI extension continues</h3>
+              <p>The earlier PEARL version was accepted by WAICA Workshop; current work is focused on the full extension, main-experiment execution, and tighter AAAI framing.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -139,7 +139,7 @@ author: en
           <li>Finding problem structures that transfer between vision tasks and reasoning systems.</li>
         </ul>
         <div class="focus-status-strip" aria-label="Current status tags">
-          <span>under review</span>
+          <span>ECCV 2026 accepted</span>
           <span>in writing</span>
           <span>main experiments in progress</span>
         </div>
@@ -175,42 +175,31 @@ author: en
     <div class="work-stack">
       <article class="work-card work-card--featured surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">ECCV 2026 Under Review</span>
+          <span class="work-badge">ECCV 2026 Accepted</span>
           <span class="work-date">2025.10 - 2026.03</span>
         </div>
-        <h3>Submission on Universal ReID under appearance variation</h3>
+        <h3>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</h3>
         <p>
-          This project studies when structural cues should help person re-identification and when they should be prevented from distorting the main visual representation.
-          The public layer keeps the problem setting, method boundary, and evaluation mindset visible, while title-level naming and implementation details are intentionally softened during review.
+          Completed as first-author work, this paper studies Universal ReID under occlusion, clothing change, and cross-modality by treating monocular 3D geometry as conditionally trustworthy structural evidence.
+          It introduces a Reliability-Aware Gate to coordinate 2D visual cues and 3D structural cues, and has now been accepted to ECCV 2026.
         </p>
-        <div class="privacy-cover" aria-label="Under-review details are intentionally hidden">
-          <div class="privacy-cover__content" aria-hidden="true">
-            <p>
-              The detailed layer includes method naming, structural-injection design, reliability logic, fusion strategy, and experiment packaging,
-              but remains visually softened on the homepage.
-            </p>
-            <div class="metric-row">
-              <span>3D structural cue injection</span>
-              <span>reliability judgment</span>
-              <span>two-branch fusion</span>
-              <span>multi-benchmark validation</span>
-            </div>
-          </div>
-          <div class="privacy-cover__veil">
-            <p class="privacy-cover__label">Under Review</p>
-          </div>
+        <div class="metric-row">
+          <span>first author</span>
+          <span>UniGeo</span>
+          <span>Reliability-Aware Gate</span>
+          <span>9-benchmark validation</span>
         </div>
       </article>
 
       <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">Target: AAAI</span>
+          <span class="work-badge">WAICA Workshop Accepted / AAAI Extension</span>
           <span class="work-date">2026.03 - present</span>
         </div>
         <h3>PEARL: Verifiable curation and small-model learning for scientific reasoning graphs</h3>
         <p>
           Positioned as a complete framework organized around generation-verification decoupling, with training-free data construction layer and student SFT layer.
-          Models propose reasoning graph candidates while code-side handles structural constraints, compilability, and source alignment.
+          The workshop version has been accepted by WAICA Workshop, and the current focus is the full AAAI extension with broader experiments, tighter evaluation, and stronger small-model training evidence.
         </p>
         <div class="privacy-cover" aria-label="Work-in-progress details are intentionally hidden">
           <div class="privacy-cover__content" aria-hidden="true">

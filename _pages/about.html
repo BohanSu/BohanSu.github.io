@@ -73,7 +73,7 @@ redirect_from:
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">近期成果</p>
         <h3>论文、系统、竞赛同时输出</h3>
-        <p>ECCV 审稿中、PEARL 主实验推进（目标 AAAI）、TPAMI 综述写作深化、MCM 2026 Finalist，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
+        <p>ECCV 2026 接收、PEARL Workshop 版本接收并继续扩展 AAAI、TPAMI 综述写作深化、MCM 2026 Finalist，以及全国一等奖 Top 6 项目构成当前工作主轴。</p>
       </article>
       <article class="hero-highlight surface-card" data-reveal="up">
         <p class="mini-label">合作偏好</p>
@@ -93,6 +93,13 @@ redirect_from:
       <article class="timeline-card surface-card" data-reveal="up">
         <div class="timeline-list">
           <div class="timeline-item">
+            <span class="timeline-date">2026.06</span>
+            <div class="timeline-body">
+              <h3>ECCV 2026 论文接收</h3>
+              <p><em>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</em> 已被 ECCV 2026 接收，主页同步公开论文标题与核心技术轮廓。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
             <span class="timeline-date">2026.04</span>
             <div class="timeline-body">
               <h3>TPAMI 综述正文成稿</h3>
@@ -102,15 +109,8 @@ redirect_from:
           <div class="timeline-item">
             <span class="timeline-date">2026.03</span>
             <div class="timeline-body">
-              <h3>ECCV 2026 进入审稿阶段</h3>
-              <p>一项围绕外观变化下通用行人重识别的投稿工作已提交，当前公开层只保留问题定义与技术轮廓。</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2026.03</span>
-            <div class="timeline-body">
-              <h3>PEARL 全链路就绪，投稿目标 AAAI</h3>
-              <p>主线代码、结构校验与修复闭环已经联通，后续工作重点转到主实验排程、结果归因和 AAAI 投稿叙事收束。</p>
+              <h3>PEARL Workshop 版本接收，继续扩展 AAAI</h3>
+              <p>PEARL 的前置版本已被 WAICA Workshop 接收，当前工作重点转向完整版本扩展、主实验排程和 AAAI 投稿叙事收束。</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -139,7 +139,7 @@ redirect_from:
           <li>在视觉问题与推理系统之间提炼能迁移的问题结构，而不是割裂地做两个方向。</li>
         </ul>
         <div class="focus-status-strip" aria-label="当前状态标签">
-          <span>审稿中</span>
+          <span>ECCV 2026 接收</span>
           <span>写作中</span>
           <span>系统主实验推进中</span>
         </div>
@@ -175,42 +175,32 @@ redirect_from:
     <div class="work-stack">
       <article class="work-card work-card--featured surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">ECCV 2026 审稿中</span>
+          <span class="work-badge">ECCV 2026 接收</span>
           <span class="work-date">2025.10 - 2026.03</span>
         </div>
-        <h3>外观变化下的通用行人重识别投稿项目</h3>
+        <h3>Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</h3>
         <p>
-          当前聚焦在换衣、遮挡、跨模态等场景下，如何让结构线索在“有帮助时被利用、失真时不误导主干表示”。
-          公开层面保留问题定义、方法边界与验证意识，具体命名、实现细节与实验组织在审稿阶段暂不完全展开。
+          这篇工作以第一作者身份完成，面向遮挡、换装、跨模态等复杂 Universal ReID 场景，
+          将单目 3D 几何作为有条件可信的结构先验注入表征学习，并通过 Reliability-Aware Gate
+          动态协调 2D 视觉线索与 3D 结构线索的融合，现已被 ECCV 2026 接收。
         </p>
-        <div class="privacy-cover" aria-label="审稿中细节已隐藏">
-          <div class="privacy-cover__content" aria-hidden="true">
-            <p>
-              细节层包含方法命名、几何结构注入形式、可靠性判断逻辑、融合策略与实验组织，
-              当前仅保留模糊可感知的轮廓，不在主页公开展开。
-            </p>
-            <div class="metric-row">
-              <span>3D 结构线索注入</span>
-              <span>可靠性判断机制</span>
-              <span>双路融合设计</span>
-              <span>多基准系统验证</span>
-            </div>
-          </div>
-          <div class="privacy-cover__veil">
-            <p class="privacy-cover__label">审稿中</p>
-          </div>
+        <div class="metric-row">
+          <span>第一作者</span>
+          <span>UniGeo</span>
+          <span>Reliability-Aware Gate</span>
+          <span>9 个基准验证</span>
         </div>
       </article>
 
       <article class="work-card work-card--private surface-card" data-reveal="up">
         <div class="work-header">
-          <span class="work-badge">AAAI 投稿筹备</span>
+          <span class="work-badge">WAICA Workshop 接收 / AAAI 扩展</span>
           <span class="work-date">2026.03 - 至今</span>
         </div>
         <h3>PEARL：可验证数据构建与小模型学习的科学推理图抽取</h3>
         <p>
           将 PEARL 定位为总框架，围绕“生成与验证解耦”组织 training-free 数据构建层与 student SFT 层。
-          模型负责提出推理图候选，代码侧负责结构约束、可编译性和来源对齐。
+          前置版本已被 WAICA Workshop 接收，当前继续围绕完整实验组织、结构校验闭环和小模型训练路线扩展 AAAI 版本。
         </p>
         <div class="privacy-cover" aria-label="写作中细节已隐藏">
           <div class="privacy-cover__content" aria-hidden="true">
