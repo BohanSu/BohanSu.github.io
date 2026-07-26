@@ -6,7 +6,7 @@ main:
   - title: "动态"
     url: "/#news"
 
-  - title: "论文"
+  - title: "研究"
     url: "/#publications"
 
   - title: "项目"

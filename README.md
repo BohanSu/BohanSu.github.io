@@ -1,25 +1,21 @@
-# Bohan Su Academic Homepage
+# Bohan Su's Academic Homepage
 
-This repository hosts the academic homepage of Bohan Su (苏渤涵).
+This repository contains the bilingual academic homepage of Bohan Su (苏渤涵), a Software Engineering undergraduate at Wuhan University.
 
-## About
-I am an undergraduate in **Software Engineering** at **Wuhan University**. My current research spans three parallel tracks:
-- **Visual representation under appearance variation** — reliability-aware 3D geometric injection (UniGeo) and a survey on appearance variations in person Re-ID
-- **Small-model structured scientific reasoning** — PEARL, a schema-first framework that decouples generation from verification
-- **Multi-agent systems for real tasks** — guided mobile interaction, A2A-protocol multi-agent workflows, and modular robot communication
+- Website: [bohansu.github.io](https://bohansu.github.io/)
+- English CV: [Bohan_Su_CV_en.pdf](https://bohansu.github.io/files/Bohan_Su_CV_en.pdf)
+- Chinese resume: [苏渤涵简历.pdf](https://bohansu.github.io/files/%E8%8B%8F%E6%B8%A4%E6%B6%B5%E7%AE%80%E5%8E%86.pdf)
+- Email: [2023302143001@whu.edu.cn](mailto:2023302143001@whu.edu.cn)
 
-## Current Research
-- **Reliability-Aware 3D Geometric Injection for Universal Person Re-identification**
-  ECCV 2026 accepted.
-- **PEARL: Verifiable Curation and Small-Model Learning for Scientific Reasoning Graph Extraction**
-  WAICA Workshop accepted; extended version targeting AAAI.
-- **Appearance Variations in Person Re-Identification: A Survey**
-  Ongoing work, TPAMI survey preparation.
+The homepage introduces my current work on structured representations and reasoning for computer vision and scientific problem solving, together with selected systems projects. I am actively seeking research collaborations and RA opportunities.
 
-## Website
-After deployment, the homepage is expected to be available at:
-- **https://bohansu.github.io/**
+## Local Preview
 
-## Contact
-- Email: **2023302143001@whu.edu.cn**
-- GitHub: **https://github.com/BohanSu**
+Use a current Ruby environment (Ruby 3.2 or later is recommended):
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+The Chinese homepage is served at `/`, and the English version is served at `/en/`.
