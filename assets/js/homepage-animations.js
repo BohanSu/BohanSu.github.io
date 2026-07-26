@@ -7,61 +7,10 @@
     return;
   }
 
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const SCROLL_PADDING = 18;
   const navLinks = Array.from(document.querySelectorAll('.masthead a[data-section-link]'));
 
   let sectionObserver;
-
-  function initReveals() {
-    const revealItems = Array.from(homeRoot.querySelectorAll('[data-reveal]'));
-
-    if (revealItems.length === 0) {
-      return;
-    }
-
-    revealItems.forEach((item, index) => {
-      item.style.setProperty('--reveal-order', index);
-    });
-
-    if (prefersReducedMotion || typeof IntersectionObserver === 'undefined') {
-      revealItems.forEach(item => item.classList.add('is-visible'));
-      return;
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.18,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealItems.forEach(item => observer.observe(item));
-  }
-
-  function initSpotlightCards() {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    const cards = homeRoot.querySelectorAll('.surface-card');
-
-    cards.forEach(card => {
-      card.addEventListener('pointermove', (event) => {
-        const rect = card.getBoundingClientRect();
-        const x = ((event.clientX - rect.left) / rect.width) * 100;
-        const y = ((event.clientY - rect.top) / rect.height) * 100;
-
-        card.style.setProperty('--spotlight-x', `${x}%`);
-        card.style.setProperty('--spotlight-y', `${y}%`);
-      });
-    });
-  }
 
   function getHeaderOffset() {
     const masthead = document.querySelector('.masthead');
@@ -77,6 +26,30 @@
     document.documentElement.style.setProperty('--home-scroll-offset', `${getHeaderOffset()}px`);
   }
 
+  function initMenuAccessibility() {
+    const menuButton = document.querySelector('#site-nav > button');
+    const hiddenMenu = document.getElementById('site-nav-hidden-links');
+
+    if (!menuButton || !hiddenMenu) {
+      return;
+    }
+
+    const syncMenuState = () => {
+      const isExpanded = !hiddenMenu.classList.contains('hidden');
+      menuButton.setAttribute('aria-expanded', String(isExpanded));
+      menuButton.setAttribute(
+        'aria-label',
+        isExpanded ? menuButton.dataset.closeLabel : menuButton.dataset.openLabel
+      );
+    };
+
+    new MutationObserver(syncMenuState).observe(hiddenMenu, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+    syncMenuState();
+  }
+
   function setActiveNavLink(sectionId) {
     navLinks.forEach((link) => {
       const isActive = link.getAttribute('data-section-link') === sectionId;
@@ -90,6 +63,22 @@
     });
   }
 
+  function scrollToSection(target) {
+    const top = Math.max(0, window.scrollY + target.getBoundingClientRect().top - getHeaderOffset());
+    window.scrollTo(0, top);
+  }
+
+  function alignInitialHash() {
+    const targetId = window.location.hash.slice(1);
+    const target = targetId ? document.getElementById(targetId) : null;
+
+    if (!target) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => scrollToSection(target));
+  }
+
   function initSectionNavigation() {
     const sections = navLinks
       .map((link) => document.getElementById(link.getAttribute('data-section-link')))
@@ -97,6 +86,10 @@
 
     if (navLinks.length === 0 || sections.length === 0) {
       return;
+    }
+
+    if (window.jQuery) {
+      window.jQuery(navLinks).off('click.smoothscroll');
     }
 
     navLinks.forEach((link) => {
@@ -122,13 +115,13 @@
 
         event.preventDefault();
 
-        const top = window.scrollY + target.getBoundingClientRect().top - getHeaderOffset();
-
         window.history.replaceState(null, '', `${window.location.pathname}#${targetId}`);
-        window.scrollTo({
-          top,
-          behavior: prefersReducedMotion ? 'auto' : 'smooth'
-        });
+        scrollToSection(target);
+
+        const hiddenMenu = document.getElementById('site-nav-hidden-links');
+        const menuButton = document.querySelector('#site-nav > button');
+        hiddenMenu?.classList.add('hidden');
+        menuButton?.classList.remove('close');
       });
     });
 
@@ -163,9 +156,9 @@
 
   function init() {
     syncScrollOffset();
-    initReveals();
-    initSpotlightCards();
+    initMenuAccessibility();
     initSectionNavigation();
+    alignInitialHash();
 
     window.addEventListener('resize', () => {
       syncScrollOffset();

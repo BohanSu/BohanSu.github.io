@@ -2,25 +2,26 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button
+          type="button"
+          aria-label="{% if page.url contains '/en/' %}Open navigation menu{% else %}打开导航菜单{% endif %}"
+          aria-expanded="false"
+          aria-controls="site-nav-hidden-links"
+          data-open-label="{% if page.url contains '/en/' %}Open navigation menu{% else %}打开导航菜单{% endif %}"
+          data-close-label="{% if page.url contains '/en/' %}Close navigation menu{% else %}关闭导航菜单{% endif %}">
+          <span class="navicon" aria-hidden="true"></span>
+        </button>
         <ul class="visible-links">
           {% assign is_en = false %}
           {% if page.url contains '/en/' %}
             {% assign is_en = true %}
           {% endif %}
 
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            {% if is_en %}
-              <a href="/" aria-label="Switch to Chinese version">
-                <img class="svg" src="/images/cn.svg" width="20" alt="">
-                中文
-              </a>
-            {% else %}
-              <a href="/en/" aria-label="Switch to English version">
-                <img class="svg" src="/images/en.svg" width="20" alt="">
-                English
-              </a>
-            {% endif %}
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__brand-item">
+            <a href="{% if is_en %}/en/{% else %}/{% endif %}" aria-label="{% if is_en %}Bohan Su homepage{% else %}苏渤涵主页{% endif %}">
+              <span class="masthead__brand-name">{% if is_en %}Bohan Su{% else %}苏渤涵{% endif %}</span>
+              <span class="masthead__brand-affiliation">Wuhan University</span>
+            </a>
           </li>
 
           {% if is_en %}
@@ -40,8 +41,22 @@
               {% endif %}
             {% endfor %}
           {% endif %}
+
+          <li class="masthead__menu-item masthead__language-item">
+            {% if is_en %}
+              <a href="/" aria-label="Switch to Chinese version">
+                <img class="svg" src="/images/cn.svg" width="18" alt="">
+                中文
+              </a>
+            {% else %}
+              <a href="/en/" aria-label="Switch to English version">
+                <img class="svg" src="/images/en.svg" width="18" alt="">
+                English
+              </a>
+            {% endif %}
+          </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="site-nav-hidden-links" class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
