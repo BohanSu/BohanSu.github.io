@@ -89,7 +89,7 @@ The two framework figures are reproduced without modification from the authorsâ€
 
 ## <picture><img src="assets/icons/scholar.svg?v=47bfc45c" width="24" height="24" alt=""></picture> Education and honors
 
-Education and award names, levels, and academic years are checked against the supplied transcripts and certificates. The Wuhan University undergraduate program is the primary education entry. ITSTP appears as smaller, inset additional coursework, distinct from university enrollment. Provincial, regional, and preliminary-round awards retain their scope; the scholarship defense ranking is omitted because it is not stated in the certificate. Private certificates and validation codes are not published.
+Education and award names, levels, and years are based on the supplied transcripts, certificates, and user-confirmed profile updates. The Wuhan University undergraduate program is the primary education entry. ITSTP appears as smaller, inset additional coursework, distinct from university enrollment. Provincial, regional, and preliminary-round awards retain their scope; the scholarship defense ranking is omitted because it is not stated in the certificate. Private certificates and validation codes are not published.
 
 ## GitHub presentation
 
