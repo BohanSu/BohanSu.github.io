@@ -66,4 +66,4 @@ The two framework figures are reproduced without modification from the authorsâ€
 
 ## Education and honors
 
-Education and award names, levels, and academic years are checked against the supplied transcripts and certificates. Course training is listed separately from university enrollment. Provincial, regional, and preliminary-round awards retain their scope; the scholarship defense ranking is omitted because it is not stated in the certificate. Private certificates and validation codes are not published.
+Education and award names, levels, and academic years are checked against the supplied transcripts and certificates. The Wuhan University degree is the primary education entry. ITSTP appears as smaller, inset additional coursework, distinct from university enrollment. Provincial, regional, and preliminary-round awards retain their scope; the scholarship defense ranking is omitted because it is not stated in the certificate. Private certificates and validation codes are not published.

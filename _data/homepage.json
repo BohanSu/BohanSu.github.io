@@ -141,7 +141,8 @@
         "details": [
           "GPA：3.75 / 4.0（2026 年 7 月成绩单）",
           "英语成绩：CET-6 506（2024.12）；CET-4 595（2024.06）"
-        ]
+        ],
+        "kind": "degree"
       },
       {
         "institution": "国际化拔尖创新人才培养计划（ITSTP）",
@@ -150,7 +151,9 @@
         "details": [
           "课程成绩：93.10 / 100（A+）；54 学时",
           "授课教师：Jens Rittscher（牛津大学）；全英文授课及作业"
-        ]
+        ],
+        "kind": "course",
+        "label": "补充课程"
       }
     ],
     "honor_groups": [
@@ -403,7 +406,8 @@
         "details": [
           "GPA: 3.75 / 4.0 (July 2026 transcript)",
           "CET-6: 506 (Dec 2024); CET-4: 595 (Jun 2024)"
-        ]
+        ],
+        "kind": "degree"
       },
       {
         "institution": "Innovative Talents Science Training Program (ITSTP)",
@@ -412,7 +416,9 @@
         "details": [
           "Grade: 93.10 / 100 (A+); 54 class hours",
           "Instructor: Jens Rittscher, University of Oxford; lectures and coursework in English"
-        ]
+        ],
+        "kind": "course",
+        "label": "Additional coursework"
       }
     ],
     "honor_groups": [

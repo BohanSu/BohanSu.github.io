@@ -24,7 +24,11 @@
     <section class="content-section" id="education" aria-labelledby="education-heading">
       <div class="section-heading"><p class="eyebrow">01</p><h2 id="education-heading">{{ p.education_heading }}</h2></div>
       <div class="education-list">{% for item in p.education_records %}
-        <article class="education-record"><div class="record-heading"><h3>{{ item.institution }}</h3><p class="record-period">{{ item.period }}</p></div><p class="record-program">{{ item.program }}</p><ul>{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul></article>
+        <article class="education-record education-record--{{ item.kind }}">
+          {% if item.label %}<p class="education-label">{{ item.label }}</p>{% endif %}
+          <div class="record-heading"><h3>{{ item.institution }}</h3><p class="record-period">{{ item.period }}</p></div>
+          <p class="record-program">{{ item.program }}</p><ul>{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul>
+        </article>
       {% endfor %}</div>
     </section>
 

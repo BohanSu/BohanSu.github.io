@@ -198,13 +198,20 @@
 @layer components {
   .intro-section { padding-bottom: 46px; }
   .education-list { display: grid; gap: 25px; }
-  .education-record + .education-record { border-top: 1px solid var(--line); padding-top: 24px; }
   .record-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 20px; }
   .record-heading h3 { font-size: 1rem; }
   .record-period { font: .72rem/1.7 var(--mono); white-space: nowrap; }
   .record-program { margin-top: 7px; font-size: .88rem; color: var(--ink); }
   .education-record ul { margin: 12px 0 0; padding-left: 18px; font-size: .85rem; }
   .education-record li + li { margin-top: 7px; }
+  .education-record--degree .record-heading h3 { font-size: 1.3rem; font-weight: 650; }
+  .education-record--course { border-left: 2px solid var(--line); padding-left: 18px; }
+  .education-label { margin-bottom: 7px; font-size: .72rem; color: var(--muted); }
+  .education-record--course .record-heading { display: block; }
+  .education-record--course .record-heading h3 { font-size: .9rem; font-weight: 500; }
+  .education-record--course .record-period { margin-top: 4px; }
+  .education-record--course .record-program { font-size: .83rem; }
+  .education-record--course ul { margin-top: 9px; font-size: .82rem; }
   .project-card { padding-top: 24px; }
   .project-card h3 { margin: 0; }
   .project-recognition { margin-block: 7px 12px; }
