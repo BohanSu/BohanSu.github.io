@@ -1,14 +1,22 @@
-# Bohan Su · Academic Homepage
+<h1 align="center">Bohan Su · Academic Homepage</h1>
 
-A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. Current research interests are **world models and multimodal foundation models**. The site presents education, publications, research manuscripts, projects, and documented honors.
+<p align="center">
+  A bilingual academic portfolio for <strong>苏渤涵 / Bohan Su</strong><br>
+  Software Engineering undergraduate · Wuhan University · Class of 2027
+</p>
 
-<p>
+<p align="center"><strong>World models · Multimodal foundation models</strong></p>
+
+<p align="center">
   <a href="https://bohansu.github.io/en/"><img src="assets/icons/link-home.svg" alt="Open homepage" width="118" height="34"></a>
   <a href="https://github.com/BohanSu"><img src="assets/icons/link-github.svg" alt="GitHub profile" width="140" height="34"></a>
   <a href="https://scholar.google.com/citations?user=QXCpAoIAAAAJ&amp;hl=zh-CN"><img src="assets/icons/link-scholar.svg" alt="Google Scholar" width="145" height="34"></a>
 </p>
 
-[中文主页](https://bohansu.github.io/) · [Email](mailto:2023302143001@whu.edu.cn)
+<p align="center">
+  <a href="https://bohansu.github.io/">中文主页</a> ·
+  <a href="mailto:2023302143001@whu.edu.cn">Email</a>
+</p>
 
 ## <picture><img src="assets/icons/code.svg" width="24" height="24" alt=""></picture> Design and implementation
 
@@ -77,6 +85,6 @@ Education and award names, levels, and academic years are checked against the su
 
 ## GitHub presentation
 
-The [profile README](https://github.com/BohanSu/BohanSu) uses the same academic information and cobalt accent. Four icon links lead to the homepage, Google Scholar, CV and email. Additional coursework, paper frameworks and the full honors list are expandable to keep the overview easy to scan. Navigation badges and section icons are static SVG files in the repositories, with visible labels and descriptive alt text for links.
+The [profile README](https://github.com/BohanSu/BohanSu) uses the same academic information and cobalt accent. The introduction and navigation are centered; education, research and project descriptions follow a consistent left-aligned reading column. Paper figures, source credits and the closing contact block are centered within that column. Four icon links lead to the homepage, Google Scholar, CV and email. Additional coursework, paper frameworks and the full honors list are expandable to keep the overview easy to scan. Navigation badges and section icons are static SVG files in the repositories, with visible labels and descriptive alt text for links.
 
 When updating research, education or honors, keep the profile README aligned with both website languages. The GitHub repository descriptions, homepage links and topics should identify the academic portfolio and its implementation.
