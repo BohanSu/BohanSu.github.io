@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "苏渤涵 | Bohan Su"
-description              : "武汉大学软件工程本科生，关注大模型推理与机器学习，以及结构化表示和推理增强在计算机视觉与科学问题求解中的应用；目前正在积极寻求研究合作与 RA 机会。"
+description              : "武汉大学软件工程本科生，研究兴趣为世界模型与多模态基础模型；正在寻求研究合作与 RA 机会。"
 url                      : "https://bohansu.github.io"
 baseurl                  : ""
 repository               : "BohanSu/BohanSu.github.io"

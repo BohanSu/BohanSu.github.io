@@ -1,0 +1,245 @@
+{
+  "zh": {
+    "name": "苏渤涵",
+    "other_name": "Bohan Su",
+    "other_lang": "en",
+    "role": "软件工程本科生",
+    "school": "武汉大学",
+    "graduation": "2027 届",
+    "location": "中国 · 武汉",
+    "cv": "下载简历",
+    "cv_path": "/files/苏渤涵简历.pdf",
+    "contact_label": "联系我",
+    "interest_label": "Research interests / 研究兴趣",
+    "headline": [
+      "世界模型",
+      "多模态基础模型"
+    ],
+    "intro": "我就读于武汉大学软件工程专业，预计 2027 年毕业。研究兴趣是世界模型与多模态基础模型。已有研究和项目经历涵盖计算机视觉、科学推理、智能体与机器人系统。",
+    "availability": "正在寻求研究合作与 RA 机会",
+    "interests": [
+      {
+        "title": "世界模型",
+        "body": "关注如何从观测中学习环境的表征与动态。"
+      },
+      {
+        "title": "多模态基础模型",
+        "body": "关注视觉、语言等不同模态的统一表征与建模。"
+      }
+    ],
+    "research_label": "Selected research / 研究",
+    "research_heading": "论文与研究经历",
+    "research_note": "已有工作涉及视觉表征、科学推理与方法综述。",
+    "projects_label": "Engineering / 工程实践",
+    "projects_heading": "从想法到实际系统",
+    "projects_note": "参与系统设计、算法调试、工程实现与端到端评测。",
+    "archive_label": "Previous work / 此前研究",
+    "archive_heading": "PEARL",
+    "archive_status": "Workshop 已接收 · 已停止推进",
+    "archive_body": "PEARL 探索科学推理图的可验证构建，将模型生成的候选与结构、可编译性和来源对齐检查结合。前置版本已获 WAICA Workshop 接收；该项目目前不再继续推进。",
+    "archive_author": "第一作者 · 2026",
+    "news_label": "Milestones / 重要节点",
+    "news_heading": "一些研究与实践进展",
+    "background_label": "Background / 背景",
+    "background_heading": "教育与荣誉",
+    "education_label": "教育经历",
+    "recognition_label": "代表性荣誉",
+    "service_label": "校园服务",
+    "education": "软件工程本科，2023.09 – 2027.06（预计毕业）",
+    "education_items": [
+      "GPA：3.75 / 4.0",
+      "计算机视觉机器学习课程：93.10 / 100，A+（ITSTP，2025 年春；非学位课程）"
+    ],
+    "awards": [
+      "郑格如一等奖学金（年级答辩第一）",
+      "武汉大学甲等奖学金、三好学生各两次",
+      "全国大学生物联网设计大赛全国一等奖（Top 6）",
+      "MCM 2026 Finalist；小米杯全国三等奖"
+    ],
+    "service": "参与校园学生工作的稿件组织、内容统筹与发布流程优化，以及第二课堂平台的质量监控与问题跟进。",
+    "contact_heading": "期待一起探索新的问题",
+    "contact_body": "正在寻求世界模型与多模态基础模型方向的研究合作及 RA 机会。欢迎通过邮件交流研究想法与合作项目。",
+    "top_label": "返回顶部",
+    "news": [
+      {
+        "date": "2026",
+        "title": "论文获 ECCV 2026 接收",
+        "body": "共同第一作者（列名第一）。UniGeo 研究可靠性感知的 3D 几何信息如何服务于通用行人重识别。"
+      },
+      {
+        "date": "2026",
+        "title": "MCM Finalist",
+        "body": "团队结合物理模型与数据驱动方法，研究智能手机电池耗尽问题。"
+      },
+      {
+        "date": "2025",
+        "title": "全国一等奖 · Top 6",
+        "body": "模块化机器人项目获全国大学生物联网设计大赛全国一等奖，进入全国 Top 6。"
+      }
+    ],
+    "works": [
+      {
+        "id": "research-unigeo",
+        "status": "ECCV 2026",
+        "detail": "已接收 · 共同第一作者（列名第一）",
+        "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
+        "body": "UniGeo 将单目 3D 人体几何作为行人重识别的补充信息，由可靠性感知门控抑制低置信几何估计的干扰。在 9 个基准上完成对比实验、消融分析与扰动稳定性检验。",
+        "meta": "计算机视觉 / 行人重识别",
+        "url": "https://github.com/BohanSu/UniGeo",
+        "link": "查看开源代码"
+      },
+      {
+        "id": "research-survey",
+        "status": "进行中",
+        "detail": "第一作者 · 目标 TPAMI",
+        "title": "Appearance Variations in Person Re-Identification: A Survey",
+        "body": "以短期扰动、长期外观变化与复合变化重新组织 ReID 文献，从外观鲁棒性与外观泛化两个角度审视方法和评测。当前仍在推进写作、模型微调与实验。",
+        "meta": "计算机视觉 / 综述"
+      }
+    ],
+    "projects": [
+      {
+        "title": "A4R 引导式手机 AI 助手",
+        "body": "参与设计“先澄清、再执行、再验证”的交互流程，并构建 150 余条真实交互样本，覆盖 6 个领域和 16 款应用。在中国联通真实任务上，系统完成率达到 64.68%，有效引导率达到 72.33%。",
+        "recognition": "揭榜挂帅全国二等奖"
+      },
+      {
+        "title": "模块化机器人系统",
+        "body": "负责模块协同、总线仲裁、热插拔识别与总线合并等底层控制逻辑，使模块增删或重排后能够重新发现拓扑并恢复通信。系统通信成功率达到 98.5%，通信效率较原方案提升约 40%。",
+        "recognition": "全国一等奖 · Top 6"
+      },
+      {
+        "title": "SmartPhone Battery: The Moment of Depletion",
+        "body": "团队把屏幕、计算和通信负载纳入统一物理模型，并用 ECM-EKF 与 PINN 两条路径交叉验证。在 8 类数据、超过 12 万个时间步上，SOC RMSE 为 1.24%，整体 TTE MAPE 为 8.7%。",
+        "recognition": "MCM 2026 Finalist"
+      },
+      {
+        "title": "小米四足机器人智能物流配送系统",
+        "body": "参与系统方案、算法调试、任务流程优化和现场测试，重点处理配送阶段之间的状态切换与动作时序，降低识别失败或路径偏移对后续任务的连锁影响。",
+        "recognition": "小米杯全国三等奖"
+      }
+    ]
+  },
+  "en": {
+    "name": "Bohan Su",
+    "other_name": "苏渤涵",
+    "other_lang": "zh-CN",
+    "role": "Software Engineering Undergraduate",
+    "school": "Wuhan University",
+    "graduation": "Class of 2027",
+    "location": "Wuhan, China",
+    "cv": "CV / Résumé",
+    "cv_path": "/files/Bohan_Su_CV_en.pdf",
+    "contact_label": "Get in touch",
+    "interest_label": "Research interests",
+    "headline": [
+      "World models.",
+      "Multimodal",
+      "foundation models."
+    ],
+    "intro": "I am a Software Engineering undergraduate at Wuhan University, graduating in 2027. My research interests are world models and multimodal foundation models. My previous work spans computer vision, scientific reasoning, agents, and robotics.",
+    "availability": "Open to research collaborations & RA opportunities",
+    "interests": [
+      {
+        "title": "World models",
+        "body": "Learning representations and dynamics of the world from observations."
+      },
+      {
+        "title": "Multimodal foundation models",
+        "body": "Exploring shared representations across vision, language, and other modalities."
+      }
+    ],
+    "research_label": "Selected research",
+    "research_heading": "Papers & research",
+    "research_note": "Selected work in visual representation and scientific reasoning.",
+    "projects_label": "Engineering",
+    "projects_heading": "Ideas put into practice.",
+    "projects_note": "A selection of systems I have helped design, implement, and evaluate.",
+    "archive_label": "Previous work",
+    "archive_heading": "PEARL",
+    "archive_status": "Workshop accepted · Further development discontinued",
+    "archive_body": "PEARL explored verifiable scientific reasoning graph construction, combining model-generated candidates with checks for structure, compilation, and source alignment. The preliminary version was accepted to the WAICA Workshop. The project is no longer being advanced.",
+    "archive_author": "First author · 2026",
+    "news_label": "Milestones",
+    "news_heading": "A few recent milestones.",
+    "background_label": "Background",
+    "background_heading": "Education & recognition",
+    "education_label": "Education",
+    "recognition_label": "Selected recognition",
+    "service_label": "University service",
+    "education": "BEng student in Software Engineering, Sep 2023 – Jun 2027 (expected)",
+    "education_items": [
+      "GPA: 3.75 / 4.0",
+      "Machine Learning for Computer Vision: 93.10 / 100, A+ (ITSTP, Spring 2025; non-degree course)"
+    ],
+    "awards": [
+      "Zheng Geru First-Class Scholarship; first in the grade-level defense",
+      "Wuhan University First-Class Scholarship and Merit Student, twice each",
+      "National University IoT Design Competition: First Prize, Top 6",
+      "MCM 2026 Finalist; Xiaomi Cup National Third Prize"
+    ],
+    "service": "I contributed to article coordination and publishing workflows in university student activities, and quality monitoring for the Second Classroom platform.",
+    "contact_heading": "Let’s explore what comes next.",
+    "contact_body": "I am seeking research collaborations and RA opportunities in world models and multimodal foundation models. I would be glad to discuss ideas and potential projects.",
+    "top_label": "Back to top",
+    "news": [
+      {
+        "date": "2026",
+        "title": "ECCV 2026 paper accepted",
+        "body": "Co-first author, listed first. UniGeo studies reliability-aware 3D geometry for universal person re-identification."
+      },
+      {
+        "date": "2026",
+        "title": "MCM Finalist",
+        "body": "Our team combined physical modeling and data-driven methods to study smartphone battery depletion."
+      },
+      {
+        "date": "2025",
+        "title": "National First Prize · Top 6",
+        "body": "The modular robot project received a National First Prize at the National University IoT Design Competition."
+      }
+    ],
+    "works": [
+      {
+        "id": "research-unigeo",
+        "status": "ECCV 2026",
+        "detail": "Accepted · Co-first author, listed first",
+        "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
+        "body": "UniGeo introduces monocular 3D body geometry as complementary evidence for person re-identification. A reliability-aware gate suppresses unreliable geometric estimates. Comparisons, ablations, and perturbation tests span nine benchmarks.",
+        "meta": "Computer vision / Person re-identification",
+        "url": "https://github.com/BohanSu/UniGeo",
+        "link": "Code on GitHub"
+      },
+      {
+        "id": "research-survey",
+        "status": "In progress",
+        "detail": "First author · Targeting TPAMI",
+        "title": "Appearance Variations in Person Re-Identification: A Survey",
+        "body": "A survey organized around short-term perturbations, long-term appearance changes, and compound variations. The work examines methods and evaluation through appearance robustness and generalization; writing and experiments are ongoing.",
+        "meta": "Computer vision / Survey"
+      }
+    ],
+    "projects": [
+      {
+        "title": "A4R: Guided Smartphone AI Assistant",
+        "body": "I co-designed a clarify-execute-verify interaction workflow and built more than 150 real interactions across six domains and 16 applications. On China Unicom tasks, the system achieved a 64.68% completion rate and a 72.33% effective-guidance rate.",
+        "recognition": "National Second Prize"
+      },
+      {
+        "title": "Modular Robot System",
+        "body": "I was responsible for module coordination, bus arbitration, hot-plug discovery, and bus merging, allowing the controller to rediscover topology and restore communication after modules were added or reordered. The system reached a 98.5% communication success rate and improved communication efficiency by about 40% over the original design.",
+        "recognition": "National First Prize · Top 6"
+      },
+      {
+        "title": "SmartPhone Battery: The Moment of Depletion",
+        "body": "Our team modeled screen, computation, and communication loads in a shared physical framework, then cross-checked an ECM-EKF solver with a physics-informed neural network. Across eight data sources and more than 120,000 time steps, SOC RMSE was 1.24% and overall TTE MAPE was 8.7%.",
+        "recognition": "MCM 2026 Finalist"
+      },
+      {
+        "title": "Xiaomi Quadruped Logistics System",
+        "body": "I contributed to system design, algorithm debugging, workflow optimization, and on-site testing. My work focused on state transitions and action timing between delivery stages, reducing the downstream effects of recognition failures and path deviations.",
+        "recognition": "Xiaomi Cup National Third Prize"
+      }
+    ]
+  }
+}

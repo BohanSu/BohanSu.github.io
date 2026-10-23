@@ -1,15 +1,15 @@
 # Bohan Su · Academic Homepage
 
-A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. It presents work in computer vision, structured reasoning, agents, and robotics, with clear distinctions between accepted papers and ongoing research.
+A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. Current research interests are **world models and multimodal foundation models**. The site presents previous and ongoing work in computer vision, scientific reasoning, agents, and robotics. PEARL is retained as previous work; its development has been discontinued.
 
 [中文主页](https://bohansu.github.io/) · [English](https://bohansu.github.io/en/) · [Profile README](https://github.com/BohanSu/BohanSu) · [Email](mailto:2023302143001@whu.edu.cn)
 
 ## Design and implementation
 
-A restrained academic layout puts research first, followed by projects, updates, background, and contact. Both languages share one layout and a lightweight stylesheet.
+A white, near-black, and cobalt-blue design pairs a compact profile rail with a research-focused content column. The portrait retains its full original proportions in a small rectangular frame. On mobile, identity details become a compact horizontal block. Both languages share one content template and stylesheet.
 
 - **Static HTML first:** Jekyll and GitHub Pages; all content, anchors, language switching, and CV links work without JavaScript.
-- **Modern native CSS:** cascade layers, container queries, fluid typography, logical properties, balanced headings, and system light/dark colors. Media-query fallbacks keep research rows usable without container-query support.
+- **Modern native CSS:** cascade layers, container queries, fluid typography, logical properties, balanced headings, and neutral light/dark colors. Media-query fallbacks preserve the core layout without container-query support.
 - **Progressive enhancement:** a small deferred script highlights the current section. Native cross-document view transitions enhance language switching where supported.
 - **Accessible reading:** visible keyboard focus, a skip link, semantic landmarks, reduced-motion support, forced-colors adjustments, and print styles.
 - **Small asset footprint:** system fonts, an explicitly sized portrait, and no jQuery, external font service, or icon font on the homepage.
@@ -39,15 +39,16 @@ The build follows the `github-pages` dependency set in `Gemfile`. The existing `
 
 | File | Purpose |
 | --- | --- |
-| `_pages/about.html` | Chinese content and research status |
-| `_pages/about-en.html` | English counterpart |
+| `_pages/about.html`, `_pages/about-en.html` | Routes, language selection, and localized search descriptions |
+| `_data/homepage.json` | Bilingual profile, interests, research status, and project content |
+| `_includes/homepage.html` | Shared content template |
 | `_layouts/page-full.html` | Shared shell, navigation, metadata, and footer |
 | `assets/css/homepage.css` | Homepage design, responsive behavior, and accessibility |
 | `assets/js/homepage-animations.js` | Optional active-section indicator |
 | `_config.yml` | Site identity and Jekyll settings |
 | `files/` | Public English and Chinese CVs |
 
-Update both languages together. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials; a target venue is not an acceptance. The UniGeo paper credits equal contribution, reflected as **co-first author, listed first**.
+Update both languages together in `_data/homepage.json`, and keep descriptions in the page front matter and `_config.yml` aligned. World models and multimodal foundation models are current **interests**, not claims of completed projects. PEARL belongs to previous work, with no active extension or submission target. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials; a target venue is not an acceptance. The UniGeo paper credits equal contribution, reflected as **co-first author, listed first**.
 
 Only publish intentionally public CVs and assets. Supporting certificates and identity documents are source material, not website downloads.
 
