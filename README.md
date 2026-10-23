@@ -1,8 +1,8 @@
 # Bohan Su · Academic Homepage
 
-A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. Current research interests are **world models and multimodal foundation models**. The site presents previous and ongoing work in computer vision, scientific reasoning, agents, and robotics. PEARL is retained as previous work; its development has been discontinued.
+A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. Current research interests are **world models and multimodal foundation models**. The site presents previous and ongoing work in computer vision, scientific reasoning, agents, and robotics.
 
-[中文主页](https://bohansu.github.io/) · [English](https://bohansu.github.io/en/) · [Profile README](https://github.com/BohanSu/BohanSu) · [Email](mailto:2023302143001@whu.edu.cn)
+[中文主页](https://bohansu.github.io/) · [English](https://bohansu.github.io/en/) · [Profile README](https://github.com/BohanSu/BohanSu) · [Google Scholar](https://scholar.google.com/citations?user=QXCpAoIAAAAJ&hl=zh-CN) · [Email](mailto:2023302143001@whu.edu.cn)
 
 ## Design and implementation
 
@@ -47,11 +47,19 @@ The build follows the `github-pages` dependency set in `Gemfile`. The existing `
 | `assets/js/homepage-animations.js` | Optional active-section indicator |
 | `_config.yml` | Site identity and Jekyll settings |
 | `files/` | Public English and Chinese CVs |
+| `images/research/` | Original framework figures from the public arXiv papers |
 
-Update both languages together in `_data/homepage.json`, and keep descriptions in the page front matter and `_config.yml` aligned. World models and multimodal foundation models are current **interests**, not claims of completed projects. PEARL belongs to previous work, with no active extension or submission target. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials; a target venue is not an acceptance. The UniGeo paper credits equal contribution, reflected as **co-first author, listed first**.
+Update both languages together in `_data/homepage.json`, and keep descriptions in the page front matter and `_config.yml` aligned. World models and multimodal foundation models are current **interests**, not claims of completed projects. Keep paper metadata consistent with the linked arXiv and publisher pages. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials; a target venue is not an acceptance. The UniGeo and PEARL papers credit equal contribution, reflected as **co-first author, listed first**.
 
 Only publish intentionally public CVs and assets. Supporting certificates and identity documents are source material, not website downloads.
 
 ## Publishing
 
 GitHub Pages builds the root of `main`. After a verified commit is pushed, check the repository's Pages build result. Before publishing a visual change, inspect both languages at desktop and narrow mobile widths, check keyboard navigation and internal links, and verify dark mode and reduced-motion behavior.
+
+## Paper figures and resources
+
+The two framework figures are reproduced without modification from the authors’ arXiv papers, both under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Each figure links to its source paper; click the image to inspect the full-resolution original. Image dimensions are reserved and figures load lazily.
+
+- **UniGeo, Figure 2:** Bohan Su, Jiashuo Wang, Fangyi Liu, and Mang Ye, 2026. [Paper](https://arxiv.org/abs/2607.18863) · [Original figure](https://arxiv.org/html/2607.18863v1/figures/fig_unigeo_framework.png).
+- **PEARL, Figure 1:** Bohan Su, Pengze Li, Yuchen Lu, and Xi Chen, 2026. [Paper](https://arxiv.org/abs/2607.17917) · [Original figure](https://arxiv.org/html/2607.17917v1/figures/fig1_pearl_framework.png).

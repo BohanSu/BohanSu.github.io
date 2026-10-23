@@ -33,11 +33,6 @@
     "projects_label": "Engineering / 工程实践",
     "projects_heading": "从想法到实际系统",
     "projects_note": "参与系统设计、算法调试、工程实现与端到端评测。",
-    "archive_label": "Previous work / 此前研究",
-    "archive_heading": "PEARL",
-    "archive_status": "Workshop 已接收 · 已停止推进",
-    "archive_body": "PEARL 探索科学推理图的可验证构建，将模型生成的候选与结构、可编译性和来源对齐检查结合。前置版本已获 WAICA Workshop 接收；该项目目前不再继续推进。",
-    "archive_author": "第一作者 · 2026",
     "news_label": "Milestones / 重要节点",
     "news_heading": "一些研究与实践进展",
     "background_label": "Background / 背景",
@@ -85,8 +80,66 @@
         "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
         "body": "UniGeo 将单目 3D 人体几何作为行人重识别的补充信息，由可靠性感知门控抑制低置信几何估计的干扰。在 9 个基准上完成对比实验、消融分析与扰动稳定性检验。",
         "meta": "计算机视觉 / 行人重识别",
-        "url": "https://github.com/BohanSu/UniGeo",
-        "link": "查看开源代码"
+        "paper_url": "https://arxiv.org/abs/2607.18863",
+        "resources": [
+          {
+            "label": "论文",
+            "url": "https://arxiv.org/abs/2607.18863"
+          },
+          {
+            "label": "PDF",
+            "url": "https://arxiv.org/pdf/2607.18863"
+          },
+          {
+            "label": "代码",
+            "url": "https://github.com/BohanSu/UniGeo"
+          },
+          {
+            "label": "出版页",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-032-37035-8_32"
+          }
+        ],
+        "figure": {
+          "src": "/images/research/unigeo-framework.png",
+          "width": 3519,
+          "height": 2110,
+          "alt": "UniGeo 框架：视觉流与 3D 结构流通过可靠性感知门控融合。",
+          "caption": "UniGeo 方法框架 · 原论文 Fig. 2",
+          "open_label": "查看 UniGeo 框架图原图",
+          "source": "https://arxiv.org/abs/2607.18863"
+        }
+      },
+      {
+        "id": "research-pearl",
+        "status": "WAICA 2026 Workshop",
+        "detail": "已接收 · 共同第一作者（列名第一）",
+        "title": "PEARL: Auditable Repair for Scientific Reasoning Graph Extraction",
+        "body": "PEARL 将结构约束下的推理图构建与基于评估反馈的语义修复相结合，使模型生成的科学推理图更加可验证、可追溯。论文已获 WAICA 2026 Multi-Modal Agents for Science Workshop 接收。",
+        "meta": "科学推理 / 可追溯推理图",
+        "paper_url": "https://arxiv.org/abs/2607.17917",
+        "resources": [
+          {
+            "label": "论文",
+            "url": "https://arxiv.org/abs/2607.17917"
+          },
+          {
+            "label": "PDF",
+            "url": "https://arxiv.org/pdf/2607.17917"
+          },
+          {
+            "label": "代码",
+            "url": "https://github.com/BohanSu/auditable-repair-reasoning-graphs/tree/300-350_workshop"
+          }
+        ],
+        "figure": {
+          "src": "/images/research/pearl-framework.png",
+          "width": 5733,
+          "height": 3139,
+          "alt": "PEARL 框架：推理图抽取、结构修复、语义修复、重新评估与严格闭合校验。",
+          "caption": "PEARL 方法框架 · 原论文 Fig. 1",
+          "open_label": "查看 PEARL 框架图原图",
+          "source": "https://arxiv.org/abs/2607.17917"
+        }
       },
       {
         "id": "research-survey",
@@ -155,11 +208,6 @@
     "projects_label": "Engineering",
     "projects_heading": "Ideas put into practice.",
     "projects_note": "A selection of systems I have helped design, implement, and evaluate.",
-    "archive_label": "Previous work",
-    "archive_heading": "PEARL",
-    "archive_status": "Workshop accepted · Further development discontinued",
-    "archive_body": "PEARL explored verifiable scientific reasoning graph construction, combining model-generated candidates with checks for structure, compilation, and source alignment. The preliminary version was accepted to the WAICA Workshop. The project is no longer being advanced.",
-    "archive_author": "First author · 2026",
     "news_label": "Milestones",
     "news_heading": "A few recent milestones.",
     "background_label": "Background",
@@ -207,8 +255,66 @@
         "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
         "body": "UniGeo introduces monocular 3D body geometry as complementary evidence for person re-identification. A reliability-aware gate suppresses unreliable geometric estimates. Comparisons, ablations, and perturbation tests span nine benchmarks.",
         "meta": "Computer vision / Person re-identification",
-        "url": "https://github.com/BohanSu/UniGeo",
-        "link": "Code on GitHub"
+        "paper_url": "https://arxiv.org/abs/2607.18863",
+        "resources": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/abs/2607.18863"
+          },
+          {
+            "label": "PDF",
+            "url": "https://arxiv.org/pdf/2607.18863"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/BohanSu/UniGeo"
+          },
+          {
+            "label": "Publisher",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-032-37035-8_32"
+          }
+        ],
+        "figure": {
+          "src": "/images/research/unigeo-framework.png",
+          "width": 3519,
+          "height": 2110,
+          "alt": "UniGeo framework: visual and 3D structural streams combined through reliability-aware gating.",
+          "caption": "UniGeo framework · Figure 2",
+          "open_label": "View the full-size UniGeo framework figure",
+          "source": "https://arxiv.org/abs/2607.18863"
+        }
+      },
+      {
+        "id": "research-pearl",
+        "status": "WAICA 2026 Workshop",
+        "detail": "Accepted · Co-first author, listed first",
+        "title": "PEARL: Auditable Repair for Scientific Reasoning Graph Extraction",
+        "body": "PEARL combines schema-constrained graph materialization with judge-feedback semantic repair, turning model-generated scientific reasoning graphs into auditable artifacts. The paper was accepted to the WAICA 2026 Multi-Modal Agents for Science Workshop.",
+        "meta": "Scientific reasoning / Auditable graphs",
+        "paper_url": "https://arxiv.org/abs/2607.17917",
+        "resources": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/abs/2607.17917"
+          },
+          {
+            "label": "PDF",
+            "url": "https://arxiv.org/pdf/2607.17917"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/BohanSu/auditable-repair-reasoning-graphs/tree/300-350_workshop"
+          }
+        ],
+        "figure": {
+          "src": "/images/research/pearl-framework.png",
+          "width": 5733,
+          "height": 3139,
+          "alt": "PEARL framework: graph extraction, structure repair, semantic repair, re-evaluation, and the strict closure gate.",
+          "caption": "PEARL framework · Figure 1",
+          "open_label": "View the full-size PEARL framework figure",
+          "source": "https://arxiv.org/abs/2607.17917"
+        }
       },
       {
         "id": "research-survey",
