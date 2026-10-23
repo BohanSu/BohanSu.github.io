@@ -10,75 +10,24 @@
     "cv": "下载简历",
     "cv_path": "/files/苏渤涵简历.pdf",
     "contact_label": "联系我",
-    "interest_label": "Research interests / 研究兴趣",
+    "interest_label": "研究兴趣",
     "headline": [
       "世界模型",
       "多模态基础模型"
     ],
-    "intro": "我就读于武汉大学软件工程专业，预计 2027 年毕业。研究兴趣是世界模型与多模态基础模型。已有研究和项目经历涵盖计算机视觉、科学推理、智能体与机器人系统。",
-    "availability": "正在寻求研究合作与 RA 机会",
-    "interests": [
-      {
-        "title": "世界模型",
-        "body": "关注如何从观测中学习环境的表征与动态。"
-      },
-      {
-        "title": "多模态基础模型",
-        "body": "关注视觉、语言等不同模态的统一表征与建模。"
-      }
-    ],
-    "research_label": "Selected research / 研究",
-    "research_heading": "论文与研究经历",
-    "research_note": "已有工作涉及视觉表征、科学推理与方法综述。",
-    "projects_label": "Engineering / 工程实践",
-    "projects_heading": "从想法到实际系统",
-    "projects_note": "参与系统设计、算法调试、工程实现与端到端评测。",
-    "news_label": "Milestones / 重要节点",
-    "news_heading": "一些研究与实践进展",
-    "background_label": "Background / 背景",
-    "background_heading": "教育与荣誉",
-    "education_label": "教育经历",
-    "recognition_label": "代表性荣誉",
-    "service_label": "校园服务",
-    "education": "软件工程本科，2023.09 – 2027.06（预计毕业）",
-    "education_items": [
-      "GPA：3.75 / 4.0",
-      "计算机视觉机器学习课程：93.10 / 100，A+（ITSTP，2025 年春；非学位课程）"
-    ],
-    "awards": [
-      "郑格如一等奖学金（年级答辩第一）",
-      "武汉大学甲等奖学金、三好学生各两次",
-      "全国大学生物联网设计大赛全国一等奖（Top 6）",
-      "MCM 2026 Finalist；小米杯全国三等奖"
-    ],
-    "service": "参与校园学生工作的稿件组织、内容统筹与发布流程优化，以及第二课堂平台的质量监控与问题跟进。",
-    "contact_heading": "期待一起探索新的问题",
-    "contact_body": "正在寻求世界模型与多模态基础模型方向的研究合作及 RA 机会。欢迎通过邮件交流研究想法与合作项目。",
-    "top_label": "返回顶部",
-    "news": [
-      {
-        "date": "2026",
-        "title": "论文获 ECCV 2026 接收",
-        "body": "共同第一作者（列名第一）。UniGeo 研究可靠性感知的 3D 几何信息如何服务于通用行人重识别。"
-      },
-      {
-        "date": "2026",
-        "title": "MCM Finalist",
-        "body": "团队结合物理模型与数据驱动方法，研究智能手机电池耗尽问题。"
-      },
-      {
-        "date": "2025",
-        "title": "全国一等奖 · Top 6",
-        "body": "模块化机器人项目获全国大学生物联网设计大赛全国一等奖，进入全国 Top 6。"
-      }
-    ],
+    "intro": "武汉大学软件工程本科生。研究经历包括行人重识别和科学推理图抽取，也参与智能体与机器人系统开发。",
+    "availability": "寻求研究合作与研究助理（RA）机会",
+    "research_heading": "论文与研究",
+    "projects_heading": "项目经历",
+    "contact_heading": "联系方式",
+    "contact_body": "欢迎通过邮件交流世界模型、多模态基础模型方向的研究合作与研究助理机会。",
     "works": [
       {
         "id": "research-unigeo",
         "status": "ECCV 2026",
-        "detail": "已接收 · 共同第一作者（列名第一）",
+        "detail": "共同第一作者（第一署名）",
         "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
-        "body": "UniGeo 将单目 3D 人体几何作为行人重识别的补充信息，由可靠性感知门控抑制低置信几何估计的干扰。在 9 个基准上完成对比实验、消融分析与扰动稳定性检验。",
+        "body": "UniGeo 利用单目 3D 人体几何补充行人重识别中的外观信息，通过可靠性感知门控限制低置信几何估计的影响，并在 9 个基准上开展对比、消融与扰动测试。",
         "meta": "计算机视觉 / 行人重识别",
         "paper_url": "https://arxiv.org/abs/2607.18863",
         "resources": [
@@ -104,17 +53,17 @@
           "width": 3519,
           "height": 2110,
           "alt": "UniGeo 框架：视觉流与 3D 结构流通过可靠性感知门控融合。",
-          "caption": "UniGeo 方法框架 · 原论文 Fig. 2",
-          "open_label": "查看 UniGeo 框架图原图",
+          "caption": "UniGeo 方法框架",
+          "open_label": "查看 UniGeo 框架大图",
           "source": "https://arxiv.org/abs/2607.18863"
         }
       },
       {
         "id": "research-pearl",
         "status": "WAICA 2026 Workshop",
-        "detail": "已接收 · 共同第一作者（列名第一）",
+        "detail": "共同第一作者（第一署名）",
         "title": "PEARL: Auditable Repair for Scientific Reasoning Graph Extraction",
-        "body": "PEARL 将结构约束下的推理图构建与基于评估反馈的语义修复相结合，使模型生成的科学推理图更加可验证、可追溯。论文已获 WAICA 2026 Multi-Modal Agents for Science Workshop 接收。",
+        "body": "PEARL 结合结构约束与评估反馈，检查并修复科学推理图中的结构和语义问题，并保留可供检查与追溯的记录。",
         "meta": "科学推理 / 可追溯推理图",
         "paper_url": "https://arxiv.org/abs/2607.17917",
         "resources": [
@@ -135,41 +84,180 @@
           "src": "/images/research/pearl-framework.png",
           "width": 5733,
           "height": 3139,
-          "alt": "PEARL 框架：推理图抽取、结构修复、语义修复、重新评估与严格闭合校验。",
-          "caption": "PEARL 方法框架 · 原论文 Fig. 1",
-          "open_label": "查看 PEARL 框架图原图",
+          "alt": "PEARL 的推理图抽取、结构与语义修复、重新评估流程。",
+          "caption": "PEARL 方法框架",
+          "open_label": "查看 PEARL 框架大图",
           "source": "https://arxiv.org/abs/2607.17917"
         }
       },
       {
         "id": "research-survey",
-        "status": "进行中",
-        "detail": "第一作者 · 目标 TPAMI",
+        "status": "研究手稿",
+        "detail": "第一作者",
         "title": "Appearance Variations in Person Re-Identification: A Survey",
-        "body": "以短期扰动、长期外观变化与复合变化重新组织 ReID 文献，从外观鲁棒性与外观泛化两个角度审视方法和评测。当前仍在推进写作、模型微调与实验。",
+        "body": "综述以短期扰动、长期外观变化与复合变化组织行人重识别研究，并从外观鲁棒性和外观泛化两个角度分析方法与评测协议。",
         "meta": "计算机视觉 / 综述"
       }
     ],
     "projects": [
       {
-        "title": "A4R 引导式手机 AI 助手",
-        "body": "参与设计“先澄清、再执行、再验证”的交互流程，并构建 150 余条真实交互样本，覆盖 6 个领域和 16 款应用。在中国联通真实任务上，系统完成率达到 64.68%，有效引导率达到 72.33%。",
-        "recognition": "揭榜挂帅全国二等奖"
-      },
-      {
-        "title": "模块化机器人系统",
-        "body": "负责模块协同、总线仲裁、热插拔识别与总线合并等底层控制逻辑，使模块增删或重排后能够重新发现拓扑并恢复通信。系统通信成功率达到 98.5%，通信效率较原方案提升约 40%。",
-        "recognition": "全国一等奖 · Top 6"
-      },
-      {
         "title": "SmartPhone Battery: The Moment of Depletion",
-        "body": "团队把屏幕、计算和通信负载纳入统一物理模型，并用 ECM-EKF 与 PINN 两条路径交叉验证。在 8 类数据、超过 12 万个时间步上，SOC RMSE 为 1.24%，整体 TTE MAPE 为 8.7%。",
-        "recognition": "MCM 2026 Finalist"
+        "body": "结合电池物理模型、ECM-EKF 与物理信息神经网络进行求解。在 8 类数据、超过 12 万个时间步上评测，SOC RMSE 为 1.24%，TTE MAPE 为 8.7%。",
+        "recognition": "美国大学生数学建模竞赛（MCM）Finalist",
+        "period": "2026.01–2026.02"
+      },
+      {
+        "title": "A2A 协议多智能体系统",
+        "period": "2025.11",
+        "body": "基于 Holos 平台与 A2A v0.3.0 协议，实现接口适配、流式响应、上下文传递、降级处理与日志调试，完成旅行规划和邮件协作的端到端演示。",
+        "recognition": "上海创智学院金秋营项目"
+      },
+      {
+        "title": "A4R 引导式手机 AI 助手",
+        "body": "参与设计“澄清—执行—验证”流程，构建覆盖 6 个领域、16 款应用的 150 余条交互样本。在中国联通任务评测中，完成率为 64.68%，有效引导率为 72.33%。",
+        "recognition": "“挑战杯”揭榜挂帅擂台赛二等奖",
+        "period": "2025.05–2025.08"
       },
       {
         "title": "小米四足机器人智能物流配送系统",
-        "body": "参与系统方案、算法调试、任务流程优化和现场测试，重点处理配送阶段之间的状态切换与动作时序，降低识别失败或路径偏移对后续任务的连锁影响。",
-        "recognition": "小米杯全国三等奖"
+        "body": "参与系统方案设计、算法调试、流程优化与现场测试，重点处理配送阶段之间的状态切换和动作时序。",
+        "recognition": "小米杯全国三等奖",
+        "period": "2025.03–2025.08"
+      },
+      {
+        "title": "模块化机器人系统",
+        "body": "负责模块协同、总线仲裁、热插拔识别与总线合并。项目测试中，通信成功率为 98.5%，通信效率较原方案提升约 40%。",
+        "recognition": "全国大学生物联网设计竞赛全国一等奖、六强",
+        "period": "2023.11–2025.08"
+      }
+    ],
+    "education_heading": "教育经历",
+    "honors_heading": "荣誉奖项",
+    "education_records": [
+      {
+        "institution": "武汉大学",
+        "period": "2023.09–2027.06（预计）",
+        "program": "计算机学院 · 软件工程本科",
+        "details": [
+          "GPA：3.75 / 4.0（2026 年 7 月成绩单）",
+          "英语成绩：CET-6 506（2024.12）；CET-4 595（2024.06）"
+        ]
+      },
+      {
+        "institution": "国际化拔尖创新人才培养计划（ITSTP）",
+        "period": "2025.03–2025.05",
+        "program": "Machine Learning for Computer Vision · 非学位课程",
+        "details": [
+          "课程成绩：93.10 / 100（A+）；54 学时",
+          "授课教师：Jens Rittscher（牛津大学）；全英文授课及作业"
+        ]
+      }
+    ],
+    "honor_groups": [
+      {
+        "title": "学科竞赛",
+        "items": [
+          {
+            "year": "2026",
+            "name": "美国大学生数学建模竞赛（MCM）",
+            "detail": "Finalist"
+          },
+          {
+            "year": "2026",
+            "name": "第十九届全国大学生软件创新大赛",
+            "detail": "华南区域赛三等奖"
+          },
+          {
+            "year": "2025",
+            "name": "全国大学生物联网设计竞赛",
+            "detail": "全国总决赛一等奖、六强赛入围"
+          },
+          {
+            "year": "2025",
+            "name": "中国青年科技创新“揭榜挂帅”擂台赛",
+            "detail": "二等奖（第十九届“挑战杯”全国大学生课外学术科技作品竞赛专项赛事）"
+          },
+          {
+            "year": "2025",
+            "name": "全国大学生计算机系统能力大赛",
+            "detail": "智能系统创新设计赛（小米杯）三等奖"
+          },
+          {
+            "year": "2025",
+            "name": "全国大学生数学建模竞赛",
+            "detail": "湖北赛区二等奖"
+          },
+          {
+            "year": "2025",
+            "name": "美国大学生数学建模竞赛（MCM）",
+            "detail": "Honorable Mention"
+          },
+          {
+            "year": "2024",
+            "name": "全国大学生物联网设计竞赛（华为杯）",
+            "detail": "华中及西南赛区一等奖"
+          },
+          {
+            "year": "2024",
+            "name": "2023–2024 年度 AIGC 青年大学生就业创业促进行动作品征集（大赛）",
+            "detail": "应用开发赛道初赛一等奖"
+          }
+        ]
+      },
+      {
+        "title": "奖学金与校内荣誉",
+        "items": [
+          {
+            "year": "2024–2025",
+            "name": "郑格如奖学金",
+            "detail": "一等奖"
+          },
+          {
+            "year": "2023–2025",
+            "name": "武汉大学优秀学生甲等奖学金",
+            "detail": "2023–2024、2024–2025 学年度各一次"
+          },
+          {
+            "year": "2023–2025",
+            "name": "武汉大学三好学生",
+            "detail": "2023–2024、2024–2025 学年度各一次"
+          },
+          {
+            "year": "2024–2025",
+            "name": "武汉大学优秀学生干部",
+            "detail": ""
+          },
+          {
+            "year": "2025",
+            "name": "武汉大学大学生课外学术科技创新创业竞赛先进个人",
+            "detail": ""
+          },
+          {
+            "year": "2025–2026",
+            "name": "武汉大学社会活动先进个人",
+            "detail": ""
+          }
+        ]
+      },
+      {
+        "title": "体育与志愿服务",
+        "items": [
+          {
+            "year": "2025",
+            "name": "湖北省定向、无线电测向运动锦标赛",
+            "detail": "M21-A 组：3.5MHz 无线电测向第二名、个人全能第三名"
+          },
+          {
+            "year": "2024",
+            "name": "武汉大学阳光体育运动先进个人",
+            "detail": ""
+          },
+          {
+            "year": "2024",
+            "name": "武汉大学樱花开放期间优秀青年志愿者",
+            "detail": ""
+          }
+        ]
       }
     ]
   },
@@ -186,74 +274,22 @@
     "contact_label": "Get in touch",
     "interest_label": "Research interests",
     "headline": [
-      "World models.",
-      "Multimodal",
-      "foundation models."
+      "World models",
+      "Multimodal foundation models"
     ],
-    "intro": "I am a Software Engineering undergraduate at Wuhan University, graduating in 2027. My research interests are world models and multimodal foundation models. My previous work spans computer vision, scientific reasoning, agents, and robotics.",
-    "availability": "Open to research collaborations & RA opportunities",
-    "interests": [
-      {
-        "title": "World models",
-        "body": "Learning representations and dynamics of the world from observations."
-      },
-      {
-        "title": "Multimodal foundation models",
-        "body": "Exploring shared representations across vision, language, and other modalities."
-      }
-    ],
-    "research_label": "Selected research",
-    "research_heading": "Papers & research",
-    "research_note": "Selected work in visual representation and scientific reasoning.",
-    "projects_label": "Engineering",
-    "projects_heading": "Ideas put into practice.",
-    "projects_note": "A selection of systems I have helped design, implement, and evaluate.",
-    "news_label": "Milestones",
-    "news_heading": "A few recent milestones.",
-    "background_label": "Background",
-    "background_heading": "Education & recognition",
-    "education_label": "Education",
-    "recognition_label": "Selected recognition",
-    "service_label": "University service",
-    "education": "BEng student in Software Engineering, Sep 2023 – Jun 2027 (expected)",
-    "education_items": [
-      "GPA: 3.75 / 4.0",
-      "Machine Learning for Computer Vision: 93.10 / 100, A+ (ITSTP, Spring 2025; non-degree course)"
-    ],
-    "awards": [
-      "Zheng Geru First-Class Scholarship; first in the grade-level defense",
-      "Wuhan University First-Class Scholarship and Merit Student, twice each",
-      "National University IoT Design Competition: First Prize, Top 6",
-      "MCM 2026 Finalist; Xiaomi Cup National Third Prize"
-    ],
-    "service": "I contributed to article coordination and publishing workflows in university student activities, and quality monitoring for the Second Classroom platform.",
-    "contact_heading": "Let’s explore what comes next.",
-    "contact_body": "I am seeking research collaborations and RA opportunities in world models and multimodal foundation models. I would be glad to discuss ideas and potential projects.",
-    "top_label": "Back to top",
-    "news": [
-      {
-        "date": "2026",
-        "title": "ECCV 2026 paper accepted",
-        "body": "Co-first author, listed first. UniGeo studies reliability-aware 3D geometry for universal person re-identification."
-      },
-      {
-        "date": "2026",
-        "title": "MCM Finalist",
-        "body": "Our team combined physical modeling and data-driven methods to study smartphone battery depletion."
-      },
-      {
-        "date": "2025",
-        "title": "National First Prize · Top 6",
-        "body": "The modular robot project received a National First Prize at the National University IoT Design Competition."
-      }
-    ],
+    "intro": "I am a Software Engineering undergraduate at Wuhan University. My research experience includes person re-identification and scientific reasoning graph extraction, alongside projects in agents and robotics.",
+    "availability": "Open to research collaborations and RA opportunities",
+    "research_heading": "Publications & research",
+    "projects_heading": "Projects",
+    "contact_heading": "Contact",
+    "contact_body": "I am interested in research collaborations and research assistant opportunities in world models and multimodal foundation models. Please contact me by email.",
     "works": [
       {
         "id": "research-unigeo",
         "status": "ECCV 2026",
-        "detail": "Accepted · Co-first author, listed first",
+        "detail": "Co-first author (listed first)",
         "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
-        "body": "UniGeo introduces monocular 3D body geometry as complementary evidence for person re-identification. A reliability-aware gate suppresses unreliable geometric estimates. Comparisons, ablations, and perturbation tests span nine benchmarks.",
+        "body": "UniGeo uses monocular 3D body geometry as complementary evidence for person re-identification. A reliability-aware gate limits the influence of low-confidence geometric estimates. Evaluation covers comparisons, ablations, and perturbation tests on nine benchmarks.",
         "meta": "Computer vision / Person re-identification",
         "paper_url": "https://arxiv.org/abs/2607.18863",
         "resources": [
@@ -279,17 +315,17 @@
           "width": 3519,
           "height": 2110,
           "alt": "UniGeo framework: visual and 3D structural streams combined through reliability-aware gating.",
-          "caption": "UniGeo framework · Figure 2",
-          "open_label": "View the full-size UniGeo framework figure",
+          "caption": "UniGeo framework",
+          "open_label": "View the UniGeo framework at full size",
           "source": "https://arxiv.org/abs/2607.18863"
         }
       },
       {
         "id": "research-pearl",
         "status": "WAICA 2026 Workshop",
-        "detail": "Accepted · Co-first author, listed first",
+        "detail": "Co-first author (listed first)",
         "title": "PEARL: Auditable Repair for Scientific Reasoning Graph Extraction",
-        "body": "PEARL combines schema-constrained graph materialization with judge-feedback semantic repair, turning model-generated scientific reasoning graphs into auditable artifacts. The paper was accepted to the WAICA 2026 Multi-Modal Agents for Science Workshop.",
+        "body": "PEARL combines structural constraints with evaluator feedback to identify and repair structural and semantic issues in scientific reasoning graphs, with records that support inspection and tracing.",
         "meta": "Scientific reasoning / Auditable graphs",
         "paper_url": "https://arxiv.org/abs/2607.17917",
         "resources": [
@@ -310,41 +346,180 @@
           "src": "/images/research/pearl-framework.png",
           "width": 5733,
           "height": 3139,
-          "alt": "PEARL framework: graph extraction, structure repair, semantic repair, re-evaluation, and the strict closure gate.",
-          "caption": "PEARL framework · Figure 1",
-          "open_label": "View the full-size PEARL framework figure",
+          "alt": "PEARL pipeline for graph extraction, structural and semantic repair, and re-evaluation.",
+          "caption": "PEARL framework",
+          "open_label": "View the PEARL framework at full size",
           "source": "https://arxiv.org/abs/2607.17917"
         }
       },
       {
         "id": "research-survey",
-        "status": "In progress",
-        "detail": "First author · Targeting TPAMI",
+        "status": "Research manuscript",
+        "detail": "First author",
         "title": "Appearance Variations in Person Re-Identification: A Survey",
-        "body": "A survey organized around short-term perturbations, long-term appearance changes, and compound variations. The work examines methods and evaluation through appearance robustness and generalization; writing and experiments are ongoing.",
+        "body": "This survey organizes person re-identification research around short-term perturbations, long-term appearance changes, and compound variations. It examines methods and evaluation protocols through appearance robustness and generalization.",
         "meta": "Computer vision / Survey"
       }
     ],
     "projects": [
       {
-        "title": "A4R: Guided Smartphone AI Assistant",
-        "body": "I co-designed a clarify-execute-verify interaction workflow and built more than 150 real interactions across six domains and 16 applications. On China Unicom tasks, the system achieved a 64.68% completion rate and a 72.33% effective-guidance rate.",
-        "recognition": "National Second Prize"
-      },
-      {
-        "title": "Modular Robot System",
-        "body": "I was responsible for module coordination, bus arbitration, hot-plug discovery, and bus merging, allowing the controller to rediscover topology and restore communication after modules were added or reordered. The system reached a 98.5% communication success rate and improved communication efficiency by about 40% over the original design.",
-        "recognition": "National First Prize · Top 6"
-      },
-      {
         "title": "SmartPhone Battery: The Moment of Depletion",
-        "body": "Our team modeled screen, computation, and communication loads in a shared physical framework, then cross-checked an ECM-EKF solver with a physics-informed neural network. Across eight data sources and more than 120,000 time steps, SOC RMSE was 1.24% and overall TTE MAPE was 8.7%.",
-        "recognition": "MCM 2026 Finalist"
+        "body": "Combined a physical battery model with ECM-EKF and physics-informed neural network solvers. Evaluation covered eight types of data and more than 120,000 time steps, with 1.24% SOC RMSE and 8.7% TTE MAPE.",
+        "recognition": "Mathematical Contest in Modeling, Finalist",
+        "period": "2026.01–2026.02"
+      },
+      {
+        "title": "A2A Multi-Agent System",
+        "period": "2025.11",
+        "body": "Implemented protocol adaptation, streaming responses, context propagation, fallback handling, and logging on Holos and A2A v0.3.0. Integrated travel-planning and email-collaboration demos.",
+        "recognition": "Shanghai Innovation Institute, autumn camp project"
+      },
+      {
+        "title": "A4R: Guided Smartphone AI Assistant",
+        "body": "Co-designed a clarify–execute–verify workflow and built more than 150 interactions spanning six domains and 16 apps. In the China Unicom task evaluation, completion was 64.68% and effective guidance was 72.33%.",
+        "recognition": "Challenge Cup — Jiebang Guashuai Special Competition, second prize",
+        "period": "2025.05–2025.08"
       },
       {
         "title": "Xiaomi Quadruped Logistics System",
-        "body": "I contributed to system design, algorithm debugging, workflow optimization, and on-site testing. My work focused on state transitions and action timing between delivery stages, reducing the downstream effects of recognition failures and path deviations.",
-        "recognition": "Xiaomi Cup National Third Prize"
+        "body": "Contributed to system design, algorithm debugging, workflow optimization, and on-site testing, focusing on state transitions and action timing between delivery stages.",
+        "recognition": "Xiaomi Cup national third prize",
+        "period": "2025.03–2025.08"
+      },
+      {
+        "title": "Modular Robot System",
+        "body": "Implemented module coordination, bus arbitration, hot-plug discovery, and bus merging. Project tests reported 98.5% communication success and approximately 40% higher communication efficiency than the original design.",
+        "recognition": "National University IoT Design Competition, national first prize and final six",
+        "period": "2023.11–2025.08"
+      }
+    ],
+    "education_heading": "Education",
+    "honors_heading": "Honors & awards",
+    "education_records": [
+      {
+        "institution": "Wuhan University",
+        "period": "2023.09–2027.06 (expected)",
+        "program": "Undergraduate in Software Engineering · School of Computer Science",
+        "details": [
+          "GPA: 3.75 / 4.0 (July 2026 transcript)",
+          "CET-6: 506 (Dec 2024); CET-4: 595 (Jun 2024)"
+        ]
+      },
+      {
+        "institution": "Innovative Talents Science Training Program (ITSTP)",
+        "period": "2025.03–2025.05",
+        "program": "Machine Learning for Computer Vision · Non-degree course",
+        "details": [
+          "Grade: 93.10 / 100 (A+); 54 class hours",
+          "Instructor: Jens Rittscher, University of Oxford; lectures and coursework in English"
+        ]
+      }
+    ],
+    "honor_groups": [
+      {
+        "title": "Competitions",
+        "items": [
+          {
+            "year": "2026",
+            "name": "Mathematical Contest in Modeling (MCM)",
+            "detail": "Finalist"
+          },
+          {
+            "year": "2026",
+            "name": "19th National College Student Software Innovation Competition",
+            "detail": "South China Regional Round · Third Prize"
+          },
+          {
+            "year": "2025",
+            "name": "National University IoT Design Competition",
+            "detail": "National Finals · First Prize; qualified for the final six"
+          },
+          {
+            "year": "2025",
+            "name": "“Challenge Cup” — “Jiebang Guashuai” Special Competition",
+            "detail": "Second Prize"
+          },
+          {
+            "year": "2025",
+            "name": "National College Student Computer System Capability Competition",
+            "detail": "Intelligent System Innovation Design (Xiaomi Cup) · Third Prize"
+          },
+          {
+            "year": "2025",
+            "name": "China Undergraduate Mathematical Contest in Modeling (CUMCM)",
+            "detail": "Hubei Division · Second Prize"
+          },
+          {
+            "year": "2025",
+            "name": "Mathematical Contest in Modeling (MCM)",
+            "detail": "Honorable Mention"
+          },
+          {
+            "year": "2024",
+            "name": "National University IoT Design Competition (Huawei Cup)",
+            "detail": "Central China and Southwest Division · First Prize"
+          },
+          {
+            "year": "2024",
+            "name": "2023–2024 AIGC Student Employment and Entrepreneurship Competition",
+            "detail": "Application Development Track · Preliminary Round · First Prize"
+          }
+        ]
+      },
+      {
+        "title": "Scholarships & university honors",
+        "items": [
+          {
+            "year": "2024–2025",
+            "name": "Zheng Geru Scholarship",
+            "detail": "First Class"
+          },
+          {
+            "year": "2023–2025",
+            "name": "First-Class Scholarship for Outstanding Students, Wuhan University",
+            "detail": "Awarded in both 2023–2024 and 2024–2025"
+          },
+          {
+            "year": "2023–2025",
+            "name": "Merit Student, Wuhan University",
+            "detail": "Awarded in both 2023–2024 and 2024–2025"
+          },
+          {
+            "year": "2024–2025",
+            "name": "Outstanding Student Leader, Wuhan University",
+            "detail": ""
+          },
+          {
+            "year": "2025",
+            "name": "Award for Outstanding Contributions to Extracurricular Science, Technology, Innovation and Entrepreneurship Competitions, Wuhan University",
+            "detail": ""
+          },
+          {
+            "year": "2025–2026",
+            "name": "Award for Outstanding Participation in Student Activities, Wuhan University",
+            "detail": ""
+          }
+        ]
+      },
+      {
+        "title": "Sports & volunteering",
+        "items": [
+          {
+            "year": "2025",
+            "name": "Hubei Orienteering and Radio Direction-Finding Championships",
+            "detail": "M21-A: second in 3.5 MHz direction finding; third in the individual all-around event"
+          },
+          {
+            "year": "2024",
+            "name": "Award for Outstanding Participation in University Sports, Wuhan University",
+            "detail": ""
+          },
+          {
+            "year": "2024",
+            "name": "Outstanding Young Volunteer during the Cherry Blossom Season, Wuhan University",
+            "detail": ""
+          }
+        ]
       }
     ]
   }

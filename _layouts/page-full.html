@@ -27,10 +27,10 @@
     <div class="header-inner">
       <a class="site-brand" aria-label="{% if is_en %}Bohan Su homepage{% else %}苏渤涵主页{% endif %}" href="{% if is_en %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"><span class="brand-mark" aria-hidden="true">BS</span><span>Bohan Su <span class="brand-chinese" lang="zh-CN">苏渤涵</span></span></a>
       <nav class="section-nav" aria-label="{% if is_en %}Main navigation{% else %}主导航{% endif %}">
+        <a href="#education" data-section-link="education">{% if is_en %}Education{% else %}教育{% endif %}</a>
         <a href="#publications" data-section-link="publications">{% if is_en %}Research{% else %}研究{% endif %}</a>
         <a href="#projects" data-section-link="projects">{% if is_en %}Projects{% else %}项目{% endif %}</a>
-        <a href="#news" data-section-link="news">{% if is_en %}Updates{% else %}近况{% endif %}</a>
-        <a href="#background" data-section-link="background">{% if is_en %}Background{% else %}背景{% endif %}</a>
+        <a href="#honors" data-section-link="honors">{% if is_en %}Honors{% else %}荣誉{% endif %}</a>
         <a href="#contact" data-section-link="contact">{% if is_en %}Contact{% else %}联系{% endif %}</a>
       </nav>
       <a class="language-link" href="{% if is_en %}{{ '/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}" lang="{% if is_en %}zh-CN{% else %}en{% endif %}" hreflang="{% if is_en %}zh-CN{% else %}en{% endif %}">{% if is_en %}中文{% else %}EN{% endif %}<span aria-hidden="true"> ↗</span></a>
