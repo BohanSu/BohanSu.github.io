@@ -1,21 +1,56 @@
-# Bohan Su's Academic Homepage
+# Bohan Su · Academic Homepage
 
-This repository contains the bilingual academic homepage of Bohan Su (苏渤涵), a Software Engineering undergraduate at Wuhan University.
+A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. It presents work in computer vision, structured reasoning, agents, and robotics, with clear distinctions between accepted papers and ongoing research.
 
-- Website: [bohansu.github.io](https://bohansu.github.io/)
-- English CV: [Bohan_Su_CV_en.pdf](https://bohansu.github.io/files/Bohan_Su_CV_en.pdf)
-- Chinese resume: [苏渤涵简历.pdf](https://bohansu.github.io/files/%E8%8B%8F%E6%B8%A4%E6%B6%B5%E7%AE%80%E5%8E%86.pdf)
-- Email: [2023302143001@whu.edu.cn](mailto:2023302143001@whu.edu.cn)
+[中文主页](https://bohansu.github.io/) · [English](https://bohansu.github.io/en/) · [Profile README](https://github.com/BohanSu/BohanSu) · [Email](mailto:2023302143001@whu.edu.cn)
 
-The homepage introduces my current work on structured representations and reasoning for computer vision and scientific problem solving, together with selected systems projects. I am actively seeking research collaborations and RA opportunities.
+## Design and implementation
 
-## Local Preview
+A restrained academic layout puts research first, followed by projects, updates, background, and contact. Both languages share one layout and a lightweight stylesheet.
 
-Use a current Ruby environment (Ruby 3.2 or later is recommended):
+- **Static HTML first:** Jekyll and GitHub Pages; all content, anchors, language switching, and CV links work without JavaScript.
+- **Modern native CSS:** cascade layers, container queries, fluid typography, logical properties, balanced headings, and system light/dark colors. Media-query fallbacks keep research rows usable without container-query support.
+- **Progressive enhancement:** a small deferred script highlights the current section. Native cross-document view transitions enhance language switching where supported.
+- **Accessible reading:** visible keyboard focus, a skip link, semantic landmarks, reduced-motion support, forced-colors adjustments, and print styles.
+- **Small asset footprint:** system fonts, an explicitly sized portrait, and no jQuery, external font service, or icon font on the homepage.
+- **Discoverability:** localized descriptions, canonical URLs, reciprocal `hreflang` links, and `Person` structured data.
 
-```bash
+Technical references: [container queries](https://web.dev/articles/baseline-in-action-container-queries), [view transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API), and [reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion).
+
+## Local development
+
+Use Ruby 3.2+ with Bundler:
+
+```sh
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --host 127.0.0.1
 ```
 
-The Chinese homepage is served at `/`, and the English version is served at `/en/`.
+Open `http://127.0.0.1:4000/` (Chinese) or `/en/` (English).
+
+```sh
+bundle exec jekyll build --strict_front_matter
+python3 scripts/check_site.py _site
+```
+
+The build follows the `github-pages` dependency set in `Gemfile`. The existing `.bundle/config` contains local Bundler preferences; adapt those locally if its mirror or install path is unsuitable. Dependencies and generated site files do not belong in commits.
+
+## Content map
+
+| File | Purpose |
+| --- | --- |
+| `_pages/about.html` | Chinese content and research status |
+| `_pages/about-en.html` | English counterpart |
+| `_layouts/page-full.html` | Shared shell, navigation, metadata, and footer |
+| `assets/css/homepage.css` | Homepage design, responsive behavior, and accessibility |
+| `assets/js/homepage-animations.js` | Optional active-section indicator |
+| `_config.yml` | Site identity and Jekyll settings |
+| `files/` | Public English and Chinese CVs |
+
+Update both languages together. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials; a target venue is not an acceptance. The UniGeo paper credits equal contribution, reflected as **co-first author, listed first**.
+
+Only publish intentionally public CVs and assets. Supporting certificates and identity documents are source material, not website downloads.
+
+## Publishing
+
+GitHub Pages builds the root of `main`. After a verified commit is pushed, check the repository's Pages build result. Before publishing a visual change, inspect both languages at desktop and narrow mobile widths, check keyboard navigation and internal links, and verify dark mode and reduced-motion behavior.

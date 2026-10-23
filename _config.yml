@@ -80,6 +80,8 @@ exclude:
   - Gruntfile.js
   - LICENSE
   - README
+  - README.md
+  - scripts
   - Rakefile
   - assets/js/_main.js
   - assets/js/plugins
