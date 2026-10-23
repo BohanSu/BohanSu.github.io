@@ -2,11 +2,17 @@
 
 A bilingual research portfolio for **苏渤涵 / Bohan Su**, a Software Engineering undergraduate at Wuhan University, Class of 2027. Current research interests are **world models and multimodal foundation models**. The site presents education, publications, research manuscripts, projects, and documented honors.
 
-[中文主页](https://bohansu.github.io/) · [English](https://bohansu.github.io/en/) · [Profile README](https://github.com/BohanSu/BohanSu) · [Google Scholar](https://scholar.google.com/citations?user=QXCpAoIAAAAJ&hl=zh-CN) · [Email](mailto:2023302143001@whu.edu.cn)
+<p>
+  <a href="https://bohansu.github.io/en/"><img src="assets/icons/link-home.svg" alt="Open homepage" width="118" height="34"></a>
+  <a href="https://github.com/BohanSu"><img src="assets/icons/link-github.svg" alt="GitHub profile" width="140" height="34"></a>
+  <a href="https://scholar.google.com/citations?user=QXCpAoIAAAAJ&amp;hl=zh-CN"><img src="assets/icons/link-scholar.svg" alt="Google Scholar" width="145" height="34"></a>
+</p>
 
-## Design and implementation
+[中文主页](https://bohansu.github.io/) · [Email](mailto:2023302143001@whu.edu.cn)
 
-A white, near-black, and cobalt-blue design pairs a compact profile rail with a research-focused content column. The portrait retains its full original proportions in a small rectangular frame. On mobile, identity details become a compact horizontal block. Both languages share one content template and stylesheet. The reading order is introduction, education, publications and research, projects, honors, and contact. There is no news or progress feed. All research entries use the same card style.
+## <picture><img src="assets/icons/code.svg" width="24" height="24" alt=""></picture> Design and implementation
+
+A white, near-black, and cobalt-blue design pairs a compact profile rail with a research-focused content column. The portrait retains its full original proportions in a small rectangular frame. On mobile, identity details become a compact horizontal block. Both languages share one content template and stylesheet. The reading order is introduction, education, publications and research, projects, honors, and contact. All research entries use the same card style. University education is visually primary; additional coursework uses a smaller, inset block.
 
 - **Static HTML first:** Jekyll and GitHub Pages; all content, anchors, language switching, and CV links work without JavaScript.
 - **Modern native CSS:** cascade layers, container queries, fluid typography, logical properties, balanced headings, and neutral light/dark colors. Media-query fallbacks preserve the core layout without container-query support.
@@ -45,6 +51,7 @@ The build follows the `github-pages` dependency set in `Gemfile`. The existing `
 | `_layouts/page-full.html` | Shared shell, navigation, metadata, and footer |
 | `assets/css/homepage.css` | Homepage design, responsive behavior, and accessibility |
 | `assets/js/homepage-animations.js` | Optional active-section indicator |
+| `assets/icons/` | Self-contained SVG navigation badges and README section icons |
 | `_config.yml` | Site identity and Jekyll settings |
 | `files/` | Public English and Chinese CVs |
 | `images/research/` | Original framework figures from the public arXiv papers |
@@ -57,13 +64,19 @@ Only publish intentionally public CVs and assets. Supporting certificates and id
 
 GitHub Pages builds the root of `main`. After a verified commit is pushed, check the repository's Pages build result. Before publishing a visual change, inspect both languages at desktop and narrow mobile widths, check keyboard navigation and internal links, and verify dark mode and reduced-motion behavior.
 
-## Paper figures and resources
+## <picture><img src="assets/icons/research.svg" width="24" height="24" alt=""></picture> Paper figures and resources
 
 The two framework figures are reproduced without modification from the authors’ arXiv papers, both under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Each figure links to its source paper; click the image to inspect it at full size. Image dimensions are reserved and figures load lazily.
 
 - **UniGeo framework:** Bohan Su, Jiashuo Wang, Fangyi Liu, and Mang Ye, 2026. [Paper](https://arxiv.org/abs/2607.18863) · [Original figure](https://arxiv.org/html/2607.18863v1/figures/fig_unigeo_framework.png).
 - **PEARL framework:** Bohan Su, Pengze Li, Yuchen Lu, and Xi Chen, 2026. [Paper](https://arxiv.org/abs/2607.17917) · [Original figure](https://arxiv.org/html/2607.17917v1/figures/fig1_pearl_framework.png).
 
-## Education and honors
+## <picture><img src="assets/icons/scholar.svg" width="24" height="24" alt=""></picture> Education and honors
 
-Education and award names, levels, and academic years are checked against the supplied transcripts and certificates. The Wuhan University degree is the primary education entry. ITSTP appears as smaller, inset additional coursework, distinct from university enrollment. Provincial, regional, and preliminary-round awards retain their scope; the scholarship defense ranking is omitted because it is not stated in the certificate. Private certificates and validation codes are not published.
+Education and award names, levels, and academic years are checked against the supplied transcripts and certificates. The Wuhan University undergraduate program is the primary education entry. ITSTP appears as smaller, inset additional coursework, distinct from university enrollment. Provincial, regional, and preliminary-round awards retain their scope; the scholarship defense ranking is omitted because it is not stated in the certificate. Private certificates and validation codes are not published.
+
+## GitHub presentation
+
+The [profile README](https://github.com/BohanSu/BohanSu) uses the same academic information and cobalt accent. Four icon links lead to the homepage, Google Scholar, CV and email. Additional coursework, paper frameworks and the full honors list are expandable to keep the overview easy to scan. Navigation badges and section icons are static SVG files in the repositories, with visible labels and descriptive alt text for links.
+
+When updating research, education or honors, keep the profile README aligned with both website languages. The GitHub repository descriptions, homepage links and topics should identify the academic portfolio and its implementation.
