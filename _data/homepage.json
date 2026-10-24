@@ -102,7 +102,7 @@
     "projects": [
       {
         "title": "SmartPhone Battery: The Moment of Depletion",
-        "body": "结合电池物理模型、ECM-EKF 与物理信息神经网络进行求解。在 8 类数据、超过 12 万个时间步上评测，SOC RMSE 为 1.24%，TTE MAPE 为 8.7%。",
+        "body": "负责电池模型设计，将部件功耗、库仑计数与热平衡耦合，设计 ECM-EKF 与 PINN 互补求解路径。方案在 8 类数据、12 万余时间步上评估；ECM-EKF 分支的 TTE MAPE 为 8.7%。",
         "recognition": "美国大学生数学建模竞赛（MCM）Finalist",
         "period": "2026.01–2026.02"
       },
@@ -367,7 +367,7 @@
     "projects": [
       {
         "title": "SmartPhone Battery: The Moment of Depletion",
-        "body": "Combined a physical battery model with ECM-EKF and physics-informed neural network solvers. Evaluation covered eight types of data and more than 120,000 time steps, with 1.24% SOC RMSE and 8.7% TTE MAPE.",
+        "body": "Designed the battery model by coupling component power consumption, Coulomb counting, and thermal balance, with complementary ECM-EKF and PINN solvers. The approach was evaluated on eight types of data and over 120,000 time steps; the ECM-EKF branch achieved 8.7% TTE MAPE.",
         "recognition": "Mathematical Contest in Modeling, Finalist",
         "period": "2026.01–2026.02"
       },
