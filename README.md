@@ -11,8 +11,9 @@
 </p>
 
 <p align="center">
+  <picture><img src="assets/visuals/topic-embodied.svg?v=d4ed7d0e" alt="Research interest: Embodied AI" width="128" height="32"></picture>
   <picture><img src="assets/visuals/topic-world.svg?v=3958a69c" alt="Research interest: World models" width="144" height="32"></picture>
-  <picture><img src="assets/visuals/topic-multimodal.svg?v=80e96f4d" alt="Research interest: Multimodal foundation models" width="228" height="32"></picture>
+  <picture><img src="assets/visuals/topic-multimodal.svg?v=657d7108" alt="Research interest: Multimodal understanding" width="206" height="32"></picture>
 </p>
 
 <p align="center">
@@ -74,7 +75,7 @@ The build follows the `github-pages` dependency set in `Gemfile`. The existing `
 | `files/` | Public English and Chinese CVs |
 | `images/research/` | Original framework figures from the public arXiv papers |
 
-Update both languages together in `_data/homepage.json`, and keep descriptions in the page front matter and `_config.yml` aligned. World models and multimodal foundation models are current **interests**, not claims of completed projects. Keep paper metadata consistent with the linked arXiv and publisher pages. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials. Use “research manuscript” for unpublished work; do not display target journals as publication venues. The UniGeo and PEARL papers credit equal contribution, reflected as **co-first author, listed first**.
+Update both languages together in `_data/homepage.json`, and keep descriptions in the page front matter and `_config.yml` aligned. Embodied AI, world models, and multimodal understanding are current **interests**, not claims of completed projects. Keep paper metadata consistent with the linked arXiv and publisher pages. Keep the stable `research-unigeo`, `research-pearl`, and `research-survey` anchors used by the GitHub profile. Research claims and quantitative results should remain grounded in project materials. Use “research manuscript” for unpublished work; do not display target journals as publication venues. The UniGeo and PEARL papers credit equal contribution, reflected as **co-first author, listed first**.
 
 Only publish intentionally public CVs and assets. Supporting certificates and identity documents are source material, not website downloads.
 

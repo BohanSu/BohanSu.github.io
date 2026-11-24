@@ -105,8 +105,8 @@
   /* Intro */
   .eyebrow { font: 500 .68rem/1.7 var(--mono); color: var(--faint); letter-spacing: .08em; text-transform: uppercase; }
   .intro-title { display: grid; margin-top: 20px; font-size: clamp(2.7rem, 4.4vw, 4rem); line-height: 1.08; letter-spacing: -.055em; font-weight: 650; }
-  .intro-title span { justify-self: start; }
-  .intro-title span:last-child { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .06em; }
+  /* The interests are parallel, so every line shares the same gradient. */
+  .intro-title span { justify-self: start; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .06em; }
   .homepage--zh .intro-title { font-size: clamp(2.6rem, 4.6vw, 4rem); line-height: 1.3; letter-spacing: -.02em; }
   .intro-text { margin-top: 24px; max-width: 68ch; font-size: .95rem; line-height: 1.9; }
   .intro-text a { color: var(--ink); font-weight: 550; text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); text-decoration-thickness: 1.5px; }
@@ -343,7 +343,7 @@
   }
   @media (forced-colors: active) {
     .badge, .news-tag, .record-badge { border: 1px solid CanvasText; }
-    .intro-title span:last-child { color: LinkText; background: none; }
+    .intro-title span { color: LinkText; background: none; }
     .profile-photo-frame, .section-icon, .brand-mark { background: Canvas; border: 1px solid CanvasText; color: CanvasText; }
     .contact-card { background: Canvas; color: CanvasText; border: 1px solid CanvasText; }
   }
@@ -353,7 +353,7 @@
     .site-header, .skip-link, .site-footer a, .contact-actions .button:not(.button--primary), .contact-actions .icon, .contact-card::before { display: none; }
     .contact-actions .button--primary { min-height: 0; padding: 0; border: 0; background: none; color: #111; }
     .contact-card .eyebrow { color: #666; }
-    .intro-title span:last-child { background: none; color: var(--accent); padding-bottom: 0; }
+    .intro-title span { background: none; color: var(--accent); padding-bottom: 0; }
     main, .site-footer { width: 100%; }
     .site-shell { grid-template-columns: 150px minmax(0,1fr); gap: 30px; padding-top: 0; }
     .profile-rail { position: static; }

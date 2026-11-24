@@ -16,10 +16,11 @@
     "contact_label": "联系我",
     "interest_label": "研究兴趣",
     "headline": [
+      "具身智能",
       "世界模型",
-      "多模态基础模型"
+      "多模态理解"
     ],
-    "intro": "武汉大学计算机学院软件工程本科生，本科阶段师从<a href=\"https://marswhu.github.io/\">叶茫教授</a>；将于 2027 年秋季进入中国科学院自动化研究所攻读硕士学位，师从<a href=\"https://people.ucas.ac.cn/~jygao\">高君宇副研究员</a>。研究经历包括行人重识别和科学推理图抽取，也参与智能体与机器人系统开发。",
+    "intro": "武汉大学计算机学院软件工程本科生，本科阶段师从<a href=\"https://marswhu.github.io/\">叶茫教授</a>；将于 2027 年秋季进入中国科学院自动化研究所攻读硕士学位，师从<a href=\"https://people.ucas.ac.cn/~jygao\">高君宇副研究员</a>。研究经历包括行人重识别和科学推理图抽取，也参与智能体与机器人系统开发；目前关注视觉语言导航、机器人操作、智能体决策等具身智能任务。",
     "availability": "寻求研究合作与研究助理（RA）机会",
     "news_heading": "近期动态",
     "news": [
@@ -49,7 +50,7 @@
     "equal_note": "（* 共同第一作者）",
     "projects_heading": "项目经历",
     "contact_heading": "联系方式",
-    "contact_body": "欢迎通过邮件交流世界模型、多模态基础模型方向的研究合作与研究助理机会。",
+    "contact_body": "欢迎通过邮件交流具身智能、世界模型、多模态理解方向的研究合作与研究助理机会。",
     "works": [
       {
         "id": "research-unigeo",
@@ -366,10 +367,11 @@
     "contact_label": "Get in touch",
     "interest_label": "Research interests",
     "headline": [
+      "Embodied AI",
       "World models",
-      "Multimodal foundation models"
+      "Multimodal understanding"
     ],
-    "intro": "I am a Software Engineering undergraduate at the School of Computer Science, Wuhan University, advised by <a href=\"https://marswhu.github.io/\">Prof. Mang Ye</a>. In Fall 2027, I will join the Institute of Automation, Chinese Academy of Sciences (CASIA) as an M.S. student advised by <a href=\"https://people.ucas.ac.cn/~jygao\">Assoc. Prof. Junyu Gao</a>. My research experience includes person re-identification and scientific reasoning graph extraction, alongside projects in agents and robotics.",
+    "intro": "I am a Software Engineering undergraduate at the School of Computer Science, Wuhan University, advised by <a href=\"https://marswhu.github.io/\">Prof. Mang Ye</a>. In Fall 2027, I will join the Institute of Automation, Chinese Academy of Sciences (CASIA) as an M.S. student advised by <a href=\"https://people.ucas.ac.cn/~jygao\">Assoc. Prof. Junyu Gao</a>. My research experience includes person re-identification and scientific reasoning graph extraction, alongside projects in agents and robotics. I am currently interested in embodied AI tasks such as vision-and-language navigation, robot manipulation, and agent decision-making.",
     "availability": "Open to research collaborations and RA opportunities",
     "news_heading": "News",
     "news": [
@@ -399,7 +401,7 @@
     "equal_note": "(* equal contribution)",
     "projects_heading": "Projects",
     "contact_heading": "Contact",
-    "contact_body": "I am interested in research collaborations and research assistant opportunities in world models and multimodal foundation models. Please contact me by email.",
+    "contact_body": "I am interested in research collaborations and research assistant opportunities in embodied AI, world models, and multimodal understanding. Please contact me by email.",
     "works": [
       {
         "id": "research-unigeo",
