@@ -1,64 +1,100 @@
 {% assign p = site.data.homepage[page.locale] %}
+{% include icons.html %}
 <div class="site-shell" id="about-me">
   <aside class="profile-rail" aria-label="{% if page.locale == 'en' %}About Bohan Su{% else %}个人信息{% endif %}">
     <div class="profile-identity">
-      <img class="profile-photo" src="{{ '/images/photo.jpg' | relative_url }}" width="295" height="413" alt="{% if page.locale == 'en' %}Portrait of Bohan Su{% else %}苏渤涵的照片{% endif %}" fetchpriority="high" decoding="async">
+      <div class="profile-photo-frame"><img class="profile-photo" src="{{ '/images/photo.jpg' | relative_url }}" width="295" height="413" alt="{% if page.locale == 'en' %}Portrait of Bohan Su{% else %}苏渤涵的照片{% endif %}" fetchpriority="high" decoding="async"></div>
       <div class="profile-name"><h1>{{ p.name }}</h1><p class="other-name" lang="{{ p.other_lang }}">{{ p.other_name }}</p></div>
     </div>
-    <div class="profile-info"><p>{{ p.school }}</p><p>{{ p.role }}</p><p>{{ p.graduation }}</p><p>{{ p.location }}</p></div>
+    <ul class="profile-info">
+      <li>{% include icon.html name="institution" %}<span>{{ p.school }}</span></li>
+      <li>{% include icon.html name="cap" %}<span>{{ p.role }} · {{ p.graduation }}</span></li>
+      <li>{% include icon.html name="pin" %}<span>{{ p.location }}</span></li>
+    </ul>
+    <p class="profile-next"><span class="profile-next-label">{% include icon.html name="next" %}{{ p.next_step.label }}</span><span class="profile-next-text">{{ p.next_step.text }}</span></p>
     <div class="profile-links">
-      <a href="{{ p.cv_path | relative_url }}">{{ p.cv }} <span aria-hidden="true">↗</span></a>
-      <a href="{{ site.author.googlescholar | escape }}">Google Scholar <span aria-hidden="true">↗</span></a>
-      <a href="https://github.com/BohanSu">GitHub <span aria-hidden="true">↗</span></a>
-      <a href="mailto:2023302143001@whu.edu.cn">{{ p.contact_label }} <span aria-hidden="true">↗</span></a>
+      <a href="{{ p.cv_path | relative_url }}">{% include icon.html name="file" %}<span>{{ p.cv }}</span>{% include icon.html name="arrow" class="icon-arrow" %}</a>
+      <a href="{{ site.author.googlescholar | escape }}">{% include icon.html name="scholar" %}<span>Google Scholar</span>{% include icon.html name="arrow" class="icon-arrow" %}</a>
+      <a href="https://github.com/BohanSu">{% include icon.html name="github" %}<span>GitHub</span>{% include icon.html name="arrow" class="icon-arrow" %}</a>
+      <a href="mailto:2023302143001@whu.edu.cn">{% include icon.html name="mail" %}<span>{{ p.contact_label }}</span>{% include icon.html name="arrow" class="icon-arrow" %}</a>
     </div>
     <p class="availability"><span aria-hidden="true"></span>{{ p.availability }}</p>
   </aside>
   <div class="content-column">
     <section class="intro-section" aria-labelledby="interests-heading">
       <p class="eyebrow">{{ p.interest_label }}</p>
-      <h2 class="intro-title" id="interests-heading">{% for line in p.headline %}<span>{{ line }}</span>{% endfor %}</h2>
+      <h2 class="intro-title" id="interests-heading">{% for line in p.headline %}<span>{{ line }}</span>{% unless forloop.last %} {% endunless %}{% endfor %}</h2>
       <p class="intro-text">{{ p.intro }}</p>
+      <div class="news-panel">
+        <h3 class="news-heading">{% include icon.html name="spark" %}{{ p.news_heading }}</h3>
+        <ul class="news-list">{% for item in p.news %}
+          <li class="news-item{% if item.highlight %} news-item--highlight{% endif %}"><span class="news-date">{{ item.date }}</span><span class="news-tag">{{ item.tag }}</span><p>{{ item.text }}</p></li>{% endfor %}
+        </ul>
+      </div>
     </section>
 
     <section class="content-section" id="education" aria-labelledby="education-heading">
-      <div class="section-heading"><p class="eyebrow">01</p><h2 id="education-heading">{{ p.education_heading }}</h2></div>
-      <div class="education-list">{% for item in p.education_records %}
-        <article class="education-record education-record--{{ item.kind }}">
-          {% if item.label %}<p class="education-label">{{ item.label }}</p>{% endif %}
-          <div class="record-heading"><h3>{{ item.institution }}</h3><p class="record-period">{{ item.period }}</p></div>
-          <p class="record-program">{{ item.program }}</p><ul>{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul>
-        </article>
-      {% endfor %}</div>
+      <div class="section-heading"><span class="section-icon">{% include icon.html name="cap" %}</span><div><p class="eyebrow">01</p><h2 id="education-heading">{{ p.education_heading }}</h2></div></div>
+      <ol class="education-timeline">{% for item in p.education_records %}
+        <li class="education-record education-record--{{ item.kind }}">
+          <div class="education-mark{% if item.logo %} education-mark--logo{% else %} education-mark--icon{% endif %}">{% if item.logo %}<img src="{{ item.logo.src | relative_url }}" width="{{ item.logo.width }}" height="{{ item.logo.height }}" alt="{{ item.logo.alt }}" loading="lazy" decoding="async">{% else %}{% include icon.html name=item.icon %}{% endif %}</div>
+          <div class="education-body">
+            {% if item.label %}<p class="education-label">{{ item.label }}</p>{% endif %}
+            <div class="record-heading"><h3>{{ item.institution }}{% if item.badge %} <span class="record-badge">{{ item.badge }}</span>{% endif %}</h3><p class="record-period">{{ item.period }}</p></div>
+            <p class="record-program">{{ item.program }}</p>
+            {% if item.advisor %}<p class="record-advisor">{% include icon.html name="user" %}<span><span class="advisor-label">{{ item.advisor.label }}</span> <a href="{{ item.advisor.url }}">{{ item.advisor.name }}</a>{% if item.advisor.title %}<span class="advisor-title">{{ item.advisor.title }}</span>{% endif %}</span></p>{% endif %}
+            {% if item.details %}<ul class="record-details">{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}
+          </div>
+        </li>{% endfor %}
+      </ol>
     </section>
 
     <section class="content-section" id="publications" aria-labelledby="research-heading">
-      <div class="section-heading"><p class="eyebrow">02</p><h2 id="research-heading">{{ p.research_heading }}</h2></div>
+      <div class="section-heading"><span class="section-icon">{% include icon.html name="flask" %}</span><div><p class="eyebrow">02</p><h2 id="research-heading">{{ p.research_heading }}</h2></div></div>
       <div class="research-list">{% for work in p.works %}
-        <article class="research-card" id="{{ work.id }}">
-          <div class="research-status"><span class="status-label">{{ work.status }}</span><span class="status-detail">{{ work.detail }}</span></div>
-          <h3>{% if work.paper_url %}<a class="paper-title-link" href="{{ work.paper_url }}">{{ work.title }}</a>{% else %}{{ work.title }}{% endif %}</h3><p>{{ work.body }}</p>
+        <article class="research-card{% if work.figure %} research-card--figure{% endif %}" id="{{ work.id }}">
           {% if work.figure %}<figure class="paper-figure">
             <a class="paper-image-link" href="{{ work.figure.src | relative_url }}" aria-label="{{ work.figure.open_label }}"><img src="{{ work.figure.src | relative_url }}" width="{{ work.figure.width }}" height="{{ work.figure.height }}" alt="{{ work.figure.alt }}" loading="lazy" decoding="async"></a>
-            <figcaption><span>{{ work.figure.caption }}</span><a href="{{ work.figure.source }}">arXiv <span aria-hidden="true">↗</span></a></figcaption>
+            <figcaption><span>{{ work.figure.caption }}</span><a href="{{ work.figure.source }}">arXiv {% include icon.html name="arrow" class="icon-arrow" %}</a></figcaption>
           </figure>{% endif %}
-          <div class="research-bottom"><span>{{ work.meta }}</span>{% if work.resources %}<div class="paper-links" role="group" aria-label="{{ work.title }} · {% if page.locale == 'en' %}Resources{% else %}论文资源{% endif %}">{% for resource in work.resources %}<a href="{{ resource.url }}">{{ resource.label }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>{% endif %}</div>
+          <div class="research-content">
+            <div class="research-badges"><span class="badge badge--{{ work.status_kind | default: 'venue' }}">{% if work.status_kind == 'manuscript' %}{% include icon.html name="pen" %}{% endif %}{{ work.status }}</span>{% for badge in work.badges %}<span class="badge badge--{{ badge.kind }}">{% include icon.html name=badge.icon %}{{ badge.label }}</span>{% endfor %}</div>
+            <h3>{% if work.paper_url %}<a class="paper-title-link" href="{{ work.paper_url }}">{{ work.title }}</a>{% else %}{{ work.title }}{% endif %}</h3>
+            {% if work.authors %}<p class="paper-authors">{% for author in work.authors %}{% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.mark %}<sup>{{ author.mark }}</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if p.equal_note %} <span class="author-note">{{ p.equal_note }}</span>{% endif %}</p>{% endif %}
+            <p class="paper-role">{% include icon.html name="star" %}<span>{{ work.detail }}</span></p>
+            <p class="paper-summary">{{ work.body }}</p>
+            <div class="research-bottom"><span class="research-meta">{{ work.meta }}</span>{% if work.resources %}<div class="paper-links" role="group" aria-label="{{ work.title }} · {% if page.locale == 'en' %}Resources{% else %}论文资源{% endif %}">{% for resource in work.resources %}<a href="{{ resource.url }}">{{ resource.label }} {% include icon.html name="arrow" class="icon-arrow" %}</a>{% endfor %}</div>{% endif %}</div>
+          </div>
         </article>{% endfor %}</div>
     </section>
 
     <section class="content-section" id="projects" aria-labelledby="projects-heading">
-      <div class="section-heading"><p class="eyebrow">03</p><h2 id="projects-heading">{{ p.projects_heading }}</h2></div>
-      <div class="project-list">{% for project in p.projects %}<article class="project-card"><div class="record-heading"><h3>{{ project.title }}</h3><p class="record-period">{{ project.period }}</p></div><p class="project-recognition">{{ project.recognition }}</p><p>{{ project.body }}</p></article>{% endfor %}</div>
+      <div class="section-heading"><span class="section-icon">{% include icon.html name="code" %}</span><div><p class="eyebrow">03</p><h2 id="projects-heading">{{ p.projects_heading }}</h2></div></div>
+      <div class="project-grid">{% for project in p.projects %}
+        <article class="project-card">
+          <div class="project-top"><span class="project-icon">{% include icon.html name=project.icon %}</span><p class="record-period">{{ project.period }}</p></div>
+          <h3>{{ project.title }}</h3>
+          <p class="project-recognition">{% include icon.html name="award" %}<span>{{ project.recognition }}</span></p>
+          <p class="project-body">{{ project.body }}</p>
+        </article>{% endfor %}</div>
     </section>
 
     <section class="content-section" id="honors" aria-labelledby="honors-heading">
-      <div class="section-heading"><p class="eyebrow">04</p><h2 id="honors-heading">{{ p.honors_heading }}</h2></div>
-      <div class="honors-groups">{% for group in p.honor_groups %}<div class="honors-group"><h3>{{ group.title }}</h3><ul class="honor-list">{% for item in group.items %}<li><span class="honor-year">{{ item.year }}</span><div><span class="honor-name">{{ item.name }}</span>{% if item.detail %}<p>{{ item.detail }}</p>{% endif %}</div></li>{% endfor %}</ul></div>{% endfor %}</div>
+      <div class="section-heading"><span class="section-icon">{% include icon.html name="award" %}</span><div><p class="eyebrow">04</p><h2 id="honors-heading">{{ p.honors_heading }}</h2></div></div>
+      <div class="honors-groups">{% for group in p.honor_groups %}
+        <div class="honors-group honors-group--{{ forloop.index }}"><h3>{% include icon.html name=group.icon %}{{ group.title }}</h3><ul class="honor-list">{% for item in group.items %}<li{% if item.highlight %} class="is-highlight"{% endif %}><span class="honor-year">{{ item.year }}</span><div><span class="honor-name">{{ item.name }}</span>{% if item.detail and item.detail != "" %}<p>{{ item.detail }}</p>{% endif %}</div></li>{% endfor %}</ul></div>{% endfor %}</div>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-heading">
-      <p class="eyebrow">05</p><h2 id="contact-heading">{{ p.contact_heading }}</h2><p>{{ p.contact_body }}</p>
-      <a class="contact-email" href="mailto:2023302143001@whu.edu.cn">2023302143001@whu.edu.cn <span aria-hidden="true">↗</span></a>
+      <div class="contact-card">
+        <p class="eyebrow">05</p><h2 id="contact-heading">{{ p.contact_heading }}</h2><p>{{ p.contact_body }}</p>
+        <div class="contact-actions">
+          <a class="button button--primary" href="mailto:2023302143001@whu.edu.cn">{% include icon.html name="mail" %}<span>2023302143001@whu.edu.cn</span></a>
+          <a class="button" href="{{ p.cv_path | relative_url }}">{% include icon.html name="file" %}<span>{{ p.cv }}</span></a>
+          <a class="button" href="{{ site.author.googlescholar | escape }}">{% include icon.html name="scholar" %}<span>Google Scholar</span></a>
+          <a class="button" href="https://github.com/BohanSu">{% include icon.html name="github" %}<span>GitHub</span></a>
+        </div>
+      </div>
     </section>
   </div>
 </div>
