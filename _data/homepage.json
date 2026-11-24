@@ -192,7 +192,7 @@
         "institution": "中国科学院自动化研究所",
         "badge": "即将入学",
         "icon": "institution",
-        "logo": { "src": "/images/logos/casia-mark.svg", "width": 104, "height": 104, "alt": "中国科学院自动化研究所标识" },
+        "logo": { "src": "/images/logos/casia-emblem.png", "width": 240, "height": 240, "alt": "中国科学院自动化研究所所徽" },
         "period": "2027.09 起",
         "program": "硕士研究生 · 多模态人工智能系统全国重点实验室",
         "advisor": {
@@ -206,7 +206,7 @@
       {
         "institution": "武汉大学",
         "icon": "institution",
-        "logo": { "src": "/images/logos/whu-mark.svg", "width": 104, "height": 104, "alt": "武汉大学标识" },
+        "logo": { "src": "/images/logos/whu-emblem.png", "width": 240, "height": 240, "alt": "武汉大学校徽" },
         "period": "2023.09–2027.06（预计）",
         "program": "计算机学院 · 软件工程本科",
         "advisor": {
@@ -542,7 +542,7 @@
         "institution": "Institute of Automation, Chinese Academy of Sciences (CASIA)",
         "badge": "Incoming",
         "icon": "institution",
-        "logo": { "src": "/images/logos/casia-mark.svg", "width": 104, "height": 104, "alt": "CASIA mark" },
+        "logo": { "src": "/images/logos/casia-emblem.png", "width": 240, "height": 240, "alt": "CASIA emblem" },
         "period": "From Fall 2027",
         "program": "M.S. student · State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS)",
         "advisor": {
@@ -556,7 +556,7 @@
       {
         "institution": "Wuhan University",
         "icon": "institution",
-        "logo": { "src": "/images/logos/whu-mark.svg", "width": 104, "height": 104, "alt": "Wuhan University mark" },
+        "logo": { "src": "/images/logos/whu-emblem.png", "width": 240, "height": 240, "alt": "Wuhan University emblem" },
         "period": "2023.09–2027.06 (expected)",
         "program": "Undergraduate in Software Engineering · School of Computer Science",
         "advisor": {
