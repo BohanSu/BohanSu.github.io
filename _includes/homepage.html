@@ -82,7 +82,7 @@
     <section class="content-section" id="honors" aria-labelledby="honors-heading">
       <div class="section-heading"><span class="section-icon">{% include icon.html name="award" %}</span><div><p class="eyebrow">04</p><h2 id="honors-heading">{{ p.honors_heading }}</h2></div></div>
       <div class="honors-groups">{% for group in p.honor_groups %}
-        <div class="honors-group honors-group--{{ forloop.index }}"><h3>{% include icon.html name=group.icon %}{{ group.title }}</h3><ul class="honor-list">{% for item in group.items %}<li{% if item.highlight %} class="is-highlight"{% endif %}><span class="honor-year">{{ item.year }}</span><div><span class="honor-name">{{ item.name }}</span>{% if item.detail and item.detail != "" %}<p>{{ item.detail }}</p>{% endif %}</div></li>{% endfor %}</ul></div>{% endfor %}</div>
+        <div class="honors-group honors-group--{{ forloop.index }}"><h3>{% include icon.html name=group.icon %}{{ group.title }}</h3><ul class="honor-list">{% for item in group.items %}<li{% if item.highlight %} class="is-highlight"{% endif %}><span class="honor-year">{{ item.year | split: " / " | join: "<br>" }}</span><div><span class="honor-name">{{ item.name }}</span>{% if item.detail and item.detail != "" %}<p>{{ item.detail }}</p>{% endif %}</div></li>{% endfor %}</ul></div>{% endfor %}</div>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-heading">
