@@ -32,6 +32,11 @@
       },
       {
         "date": "2026",
+        "tag": "奖学金",
+        "text": "获 2025–2026 学年度雷军计算机本科生奖学金。"
+      },
+      {
+        "date": "2026",
         "tag": "ECCV 2026",
         "text": "UniGeo 被 ECCV 2026 接收，期刊扩展版本正在进行中。"
       },
@@ -295,20 +300,26 @@
         "icon": "medal",
         "items": [
           {
+            "year": "2025–2026",
+            "name": "雷军计算机本科生奖学金",
+            "detail": "",
+            "highlight": true
+          },
+          {
             "year": "2024–2025",
             "name": "郑格如奖学金",
             "detail": "一等奖",
             "highlight": true
           },
           {
-            "year": "2023–2025",
+            "year": "2023–2026",
             "name": "武汉大学优秀学生甲等奖学金",
-            "detail": "2023–2024、2024–2025 学年度各一次"
+            "detail": "2023–2024、2024–2025、2025–2026 学年度各一次"
           },
           {
-            "year": "2023–2025",
+            "year": "2023–2026",
             "name": "武汉大学三好学生",
-            "detail": "2023–2024、2024–2025 学年度各一次"
+            "detail": "2023–2024、2024–2025、2025–2026 学年度各一次"
           },
           {
             "year": "2024–2025",
@@ -380,6 +391,11 @@
         "tag": "M.S. admission",
         "highlight": true,
         "text": "Admitted to the Institute of Automation, Chinese Academy of Sciences (CASIA) as an M.S. student starting in Fall 2027, advised by Junyu Gao."
+      },
+      {
+        "date": "2026",
+        "tag": "Scholarship",
+        "text": "Received the 2025–2026 Lei Jun Computer Scholarship (Undergraduate) at Wuhan University."
       },
       {
         "date": "2026",
@@ -646,20 +662,26 @@
         "icon": "medal",
         "items": [
           {
+            "year": "2025–2026",
+            "name": "Lei Jun Computer Scholarship (Undergraduate), Wuhan University",
+            "detail": "",
+            "highlight": true
+          },
+          {
             "year": "2024–2025",
             "name": "Zheng Geru Scholarship",
             "detail": "First Class",
             "highlight": true
           },
           {
-            "year": "2023–2025",
+            "year": "2023–2026",
             "name": "First-Class Scholarship for Outstanding Students, Wuhan University",
-            "detail": "Awarded in both 2023–2024 and 2024–2025"
+            "detail": "Awarded in 2023–2024, 2024–2025, and 2025–2026"
           },
           {
-            "year": "2023–2025",
+            "year": "2023–2026",
             "name": "Merit Student, Wuhan University",
-            "detail": "Awarded in both 2023–2024 and 2024–2025"
+            "detail": "Awarded in 2023–2024, 2024–2025, and 2025–2026"
           },
           {
             "year": "2024–2025",
