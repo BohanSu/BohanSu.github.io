@@ -24,7 +24,7 @@
 
 <p align="center">
   <a href="https://bohansu.github.io/">中文主页</a> ·
-  <a href="mailto:2023302143001@whu.edu.cn">Email</a>
+  <a href="mailto:bohansu@whu.edu.cn">Email</a>
 </p>
 
 ## <picture><img src="assets/icons/code.svg?v=02d42070" width="24" height="24" alt=""></picture> Design and implementation
