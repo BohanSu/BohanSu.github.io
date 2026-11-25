@@ -20,7 +20,7 @@
       "世界模型",
       "多模态理解"
     ],
-    "intro": "武汉大学计算机学院软件工程本科生，师从<a href=\"https://marswhu.github.io/\">叶茫教授</a>；将于 2027 年秋季进入中国科学院自动化研究所攻读硕士学位，师从<a href=\"https://people.ucas.ac.cn/~jygao\">高君宇副研究员</a>。研究经历包括行人重识别和科学推理图抽取，也参与智能体与机器人系统开发；目前关注视觉语言导航、机器人操作、智能体决策等具身智能任务。",
+    "intro": "武汉大学计算机学院软件工程本科生，师从<a href=\"https://marswhu.github.io/\">叶茫教授</a>；将于 2027 年秋季进入中国科学院自动化研究所攻读硕士学位，导师为<a href=\"https://ia.cas.cn/rcdw/fyjy/202404/t20240422_7129945.html\">高君宇副研究员</a>。曾开展行人重识别和科学推理图抽取研究，并参与智能体与机器人系统开发；目前关注视觉语言导航、机器人操作、智能体决策等具身智能任务。",
     "availability": "寻求研究合作与研究助理机会",
     "news_heading": "近期动态",
     "news": [
@@ -38,7 +38,7 @@
       {
         "date": "2026",
         "tag": "ECCV 2026",
-        "text": "UniGeo 被 ECCV 2026 接收，期刊扩展版本正在进行中。"
+        "text": "UniGeo 被 ECCV 2026 接收，期刊扩展工作正在进行中。"
       },
       {
         "date": "2026",
@@ -55,7 +55,7 @@
     "equal_note": "（* 共同第一作者）",
     "projects_heading": "项目经历",
     "contact_heading": "联系方式",
-    "contact_body": "欢迎通过邮件交流具身智能、世界模型、多模态理解方向的研究合作与研究助理机会。",
+    "contact_body": "如有具身智能、世界模型、多模态理解方向的研究合作与研究助理机会，欢迎邮件联系。",
     "works": [
       {
         "id": "research-unigeo",
@@ -64,7 +64,7 @@
           {
             "kind": "extension",
             "icon": "journal",
-            "label": "期刊扩展版本进行中"
+            "label": "期刊扩展进行中"
           }
         ],
         "detail": "共同第一作者（第一署名）",
@@ -75,7 +75,7 @@
           { "name": "Fangyi Liu" },
           { "name": "Mang Ye" }
         ],
-        "body": "UniGeo 利用单目 3D 人体几何补充行人重识别中的外观信息，通过可靠性感知门控限制低置信几何估计的影响，并在 9 个基准上开展对比、消融与扰动测试。",
+        "body": "UniGeo 利用单目 3D 人体几何补充行人重识别中的外观信息，通过可靠性感知门控限制低置信度几何估计的影响；论文在 9 个基准上进行了对比、消融与扰动实验。",
         "meta": "计算机视觉 / 行人重识别",
         "paper_url": "https://arxiv.org/abs/2607.18863",
         "resources": [
@@ -92,7 +92,7 @@
             "url": "https://github.com/BohanSu/UniGeo"
           },
           {
-            "label": "出版页",
+            "label": "出版社页面",
             "url": "https://link.springer.com/chapter/10.1007/978-3-032-37035-8_32"
           }
         ],
@@ -117,7 +117,7 @@
           { "name": "Yuchen Lu" },
           { "name": "Xi Chen" }
         ],
-        "body": "PEARL 结合结构约束与评估反馈，检查并修复科学推理图中的结构和语义问题，并保留可供检查与追溯的记录。",
+        "body": "PEARL 结合结构约束与评估反馈，检查并修复科学推理图中的结构和语义问题，同时保留可供审计与追溯的修改记录。",
         "meta": "科学推理 / 可追溯推理图",
         "paper_url": "https://arxiv.org/abs/2607.17917",
         "resources": [
@@ -150,7 +150,7 @@
         "status_kind": "manuscript",
         "detail": "学生第一作者（导师第一署名）",
         "title": "Appearance Variations in Person Re-Identification: A Survey",
-        "body": "综述以短期扰动、长期外观变化与复合变化组织行人重识别研究，并从外观鲁棒性和外观泛化两个角度分析方法与评测协议。",
+        "body": "该综述按短期扰动、长期外观变化与复合变化梳理行人重识别研究，并从外观鲁棒性和外观泛化两个角度分析方法与评测协议。",
         "meta": "计算机视觉 / 综述"
       }
     ],
@@ -158,7 +158,7 @@
       {
         "title": "SmartPhone Battery: The Moment of Depletion",
         "icon": "battery",
-        "body": "负责电池模型设计，将部件功耗、库仑计数与热平衡耦合，设计 ECM-EKF 与 PINN 互补求解路径。方案在 8 类数据、12 万余时间步上评估；ECM-EKF 分支的 TTE MAPE 为 8.7%。",
+        "body": "负责电池模型设计，将部件功耗、库仑计数与热平衡耦合，并构建 ECM-EKF 与 PINN 互补求解路径。方案在 8 类数据、12 万余个时间步上评估，其中 ECM-EKF 分支的剩余续航时间（TTE）预测 MAPE 为 8.7%。",
         "recognition": "美国大学生数学建模竞赛（MCM）Finalist",
         "period": "2026.01–2026.02"
       },
@@ -172,7 +172,7 @@
       {
         "title": "A4R 引导式手机 AI 助手",
         "icon": "phone",
-        "body": "参与设计“澄清—执行—验证”流程，构建覆盖 6 个领域、16 款应用的 150 余条交互样本。在中国联通任务评测中，完成率为 64.68%，有效引导率为 72.33%。",
+        "body": "参与设计“澄清—执行—验证”流程，构建覆盖 6 个领域、16 款应用的 150 余条交互样本。在中国联通任务评测中，系统完成率为 64.68%，有效引导率为 72.33%。",
         "recognition": "“挑战杯”揭榜挂帅擂台赛二等奖",
         "period": "2025.05–2025.08"
       },
@@ -186,8 +186,8 @@
       {
         "title": "模块化机器人系统",
         "icon": "cpu",
-        "body": "负责模块协同、总线仲裁、热插拔识别与总线合并。项目测试中，通信成功率为 98.5%，通信效率较原方案提升约 40%。",
-        "recognition": "全国大学生物联网设计竞赛全国一等奖、六强",
+        "body": "负责模块协同、总线仲裁、热插拔识别与总线合并。二总线通信测试中，通信成功率为 98.5%，通信效率较传统方案提升约 40%。",
+        "recognition": "全国大学生物联网设计竞赛全国总决赛一等奖、六强赛入围",
         "period": "2023.11–2025.08"
       }
     ],
@@ -204,7 +204,7 @@
         "advisor": {
           "label": "导师：",
           "name": "高君宇",
-          "url": "https://people.ucas.ac.cn/~jygao",
+          "url": "https://ia.cas.cn/rcdw/fyjy/202404/t20240422_7129945.html",
           "title": "副研究员 · 2026 年国家优青获得者"
         },
         "kind": "upcoming"
@@ -234,7 +234,7 @@
         "program": "Machine Learning for Computer Vision · 非学位课程",
         "details": [
           "课程成绩：93.10 / 100（A+）；54 学时",
-          "授课教师：Jens Rittscher（牛津大学）；全英文授课及作业"
+          "授课教师：Jens Rittscher（牛津大学）；课程与作业均为全英文"
         ],
         "kind": "course",
         "label": "补充课程"
@@ -382,7 +382,7 @@
       "World models",
       "Multimodal understanding"
     ],
-    "intro": "I am a Software Engineering undergraduate at the School of Computer Science, Wuhan University, advised by <a href=\"https://marswhu.github.io/\">Prof. Mang Ye</a>. In Fall 2027, I will join the Institute of Automation, Chinese Academy of Sciences (CASIA) as an M.S. student advised by <a href=\"https://people.ucas.ac.cn/~jygao\">Assoc. Prof. Junyu Gao</a>. My research experience includes person re-identification and scientific reasoning graph extraction, alongside projects in agents and robotics. I am currently interested in embodied AI tasks such as vision-and-language navigation, robot manipulation, and agent decision-making.",
+    "intro": "I am a Software Engineering undergraduate at the School of Computer Science, Wuhan University, advised by <a href=\"https://marswhu.github.io/\">Prof. Mang Ye</a>. In Fall 2027, I will join the Institute of Automation, Chinese Academy of Sciences (CASIA) as an M.S. student advised by <a href=\"https://ia.cas.cn/rcdw/fyjy/202404/t20240422_7129945.html\">Assoc. Prof. Junyu Gao</a>. My research experience includes person re-identification and scientific reasoning graph extraction, alongside projects in agents and robotics. I am currently interested in embodied AI tasks such as vision-and-language navigation, robot manipulation, and agent decision-making.",
     "availability": "Open to research collaborations and RA opportunities",
     "news_heading": "News",
     "news": [
@@ -410,7 +410,7 @@
       {
         "date": "2026",
         "tag": "Competition",
-        "text": "Finalist in the Mathematical Contest in Modeling (MCM)."
+        "text": "Named a Finalist in the Mathematical Contest in Modeling (MCM)."
       }
     ],
     "research_heading": "Publications & research",
@@ -437,7 +437,7 @@
           { "name": "Fangyi Liu" },
           { "name": "Mang Ye" }
         ],
-        "body": "UniGeo uses monocular 3D body geometry as complementary evidence for person re-identification. A reliability-aware gate limits the influence of low-confidence geometric estimates. Evaluation covers comparisons, ablations, and perturbation tests on nine benchmarks.",
+        "body": "UniGeo uses monocular 3D body geometry as complementary evidence for person re-identification. A reliability-aware gate limits the influence of low-confidence geometric estimates. It is evaluated through comparative experiments, ablations, and perturbation tests on nine benchmarks.",
         "meta": "Computer vision / Person re-identification",
         "paper_url": "https://arxiv.org/abs/2607.18863",
         "resources": [
@@ -512,7 +512,7 @@
         "status_kind": "manuscript",
         "detail": "First student author (advisor listed first)",
         "title": "Appearance Variations in Person Re-Identification: A Survey",
-        "body": "This survey organizes person re-identification research around short-term perturbations, long-term appearance changes, and compound variations. It examines methods and evaluation protocols through appearance robustness and generalization.",
+        "body": "This survey organizes person re-identification research around short-term perturbations, long-term appearance changes, and compound variations. It examines methods and evaluation protocols from the perspectives of appearance robustness and appearance generalization.",
         "meta": "Computer vision / Survey"
       }
     ],
@@ -520,7 +520,7 @@
       {
         "title": "SmartPhone Battery: The Moment of Depletion",
         "icon": "battery",
-        "body": "Designed the battery model by coupling component power consumption, Coulomb counting, and thermal balance, with complementary ECM-EKF and PINN solvers. The approach was evaluated on eight types of data and over 120,000 time steps; the ECM-EKF branch achieved 8.7% TTE MAPE.",
+        "body": "Designed a battery model that couples component power consumption, Coulomb counting, and thermal balance, and paired it with complementary ECM-EKF and PINN solvers. The approach was evaluated on eight types of data and over 120,000 time steps; the ECM-EKF branch achieved a TTE MAPE of 8.7%.",
         "recognition": "Mathematical Contest in Modeling, Finalist",
         "period": "2026.01–2026.02"
       },
@@ -529,13 +529,13 @@
         "icon": "network",
         "period": "2025.11",
         "body": "Implemented protocol adaptation, streaming responses, context propagation, fallback handling, and logging on Holos and A2A v0.3.0. Integrated travel-planning and email-collaboration demos.",
-        "recognition": "Shanghai Innovation Institute, autumn camp project"
+        "recognition": "Shanghai Innovation Institute Autumn Camp project"
       },
       {
         "title": "A4R: Guided Smartphone AI Assistant",
         "icon": "phone",
-        "body": "Co-designed a clarify–execute–verify workflow and built more than 150 interactions spanning six domains and 16 apps. In the China Unicom task evaluation, completion was 64.68% and effective guidance was 72.33%.",
-        "recognition": "Challenge Cup — Jiebang Guashuai Special Competition, second prize",
+        "body": "Co-designed a clarify–execute–verify workflow and built more than 150 interaction samples spanning six domains and 16 apps. In the China Unicom task evaluation, A4R achieved a 64.68% completion rate and a 72.33% effective-guidance rate.",
+        "recognition": "Challenge Cup — Jiebang Guashuai Special Competition, Second Prize",
         "period": "2025.05–2025.08"
       },
       {
@@ -548,8 +548,8 @@
       {
         "title": "Modular Robot System",
         "icon": "cpu",
-        "body": "Implemented module coordination, bus arbitration, hot-plug discovery, and bus merging. Project tests reported 98.5% communication success and approximately 40% higher communication efficiency than the original design.",
-        "recognition": "National University IoT Design Competition, national first prize and final six",
+        "body": "Implemented module coordination, bus arbitration, hot-plug discovery, and bus merging. In two-wire-bus communication tests, the success rate was 98.5% and communication efficiency was about 40% higher than conventional schemes.",
+        "recognition": "National University IoT Design Competition, National First Prize (final six)",
         "period": "2023.11–2025.08"
       }
     ],
@@ -561,12 +561,12 @@
         "badge": "Incoming",
         "icon": "institution",
         "logo": { "src": "/images/logos/casia-emblem.png", "width": 240, "height": 240, "alt": "CASIA emblem" },
-        "period": "From Fall 2027",
+        "period": "Starting Fall 2027",
         "program": "M.S. student · State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS)",
         "advisor": {
           "label": "Advisor:",
           "name": "Junyu Gao",
-          "url": "https://people.ucas.ac.cn/~jygao",
+          "url": "https://ia.cas.cn/rcdw/fyjy/202404/t20240422_7129945.html",
           "title": "Associate Professor · 2026 recipient of the NSFC Excellent Young Scientists Fund"
         },
         "kind": "upcoming"
@@ -690,7 +690,7 @@
           },
           {
             "year": "2025",
-            "name": "Award for Outstanding Contributions to Extracurricular Science, Technology, Innovation and Entrepreneurship Competitions, Wuhan University",
+            "name": "Award for Outstanding Contributions to Extracurricular Science, Technology, Innovation, and Entrepreneurship Competitions, Wuhan University",
             "detail": ""
           },
           {
@@ -716,7 +716,7 @@
           },
           {
             "year": "2024",
-            "name": "Outstanding Young Volunteer during the Cherry Blossom Season, Wuhan University",
+            "name": "Outstanding Young Volunteer, Cherry Blossom Season, Wuhan University",
             "detail": ""
           }
         ]
